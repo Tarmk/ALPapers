@@ -2994,11 +2994,432 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
   },
   physics: {
     name: "Physics",
-    description: "IAL Edexcel Physics papers.",
+    description: "CAIE Physics 9702 papers.",
     papers: {
       P1: {
-        description: "Paper 1",
-        years: {},
+        description: "Paper 1 - Multiple Choice",
+        years: {
+          "November 2024 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202024%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202024%20(v3)%20MS.pdf",
+          },
+          "November 2024 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202024%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202024%20(v2)%20MS.pdf",
+          },
+          "November 2024 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202024%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202024%20(v1)%20MS.pdf",
+          },
+          "June 2024 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202024%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202024%20(v3)%20MS.pdf",
+          },
+          "June 2024 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202024%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202024%20(v2)%20MS.pdf",
+          },
+          "June 2024 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202024%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202024%20(v1)%20MS.pdf",
+          },
+          "March 2024 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202024%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202024%20(v2)%20MS.pdf",
+          },
+          "November 2023 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202023%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202023%20(v3)%20MS.pdf",
+          },
+          "November 2023 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202023%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202023%20(v2)%20MS.pdf",
+          },
+          "November 2023 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202023%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202023%20(v1)%20MS.pdf",
+          },
+          "June 2023 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202023%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202023%20(v3)%20MS.pdf",
+          },
+          "June 2023 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202023%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202023%20(v2)%20MS.pdf",
+          },
+          "June 2023 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202023%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202023%20(v1)%20MS.pdf",
+          },
+          "March 2023 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202023%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202023%20(v2)%20MS.pdf",
+          },
+          "Specimen 2022": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/Specimen%202022%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/Specimen%202022%20MS.pdf",
+          },
+          "November 2022 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202022%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202022%20(v3)%20MS.pdf",
+          },
+          "November 2022 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202022%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202022%20(v2)%20MS.pdf",
+          },
+          "November 2022 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202022%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202022%20(v1)%20MS.pdf",
+          },
+          "June 2022 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202022%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202022%20(v3)%20MS.pdf",
+          },
+          "June 2022 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202022%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202022%20(v2)%20MS.pdf",
+          },
+          "June 2022 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202022%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202022%20(v1)%20MS.pdf",
+          },
+          "March 2022 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202022%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202022%20(v2)%20MS.pdf",
+          },
+          "November 2021 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202021%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202021%20(v3)%20MS.pdf",
+          },
+          "November 2021 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202021%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202021%20(v2)%20MS.pdf",
+          },
+          "November 2021 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202021%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202021%20(v1)%20MS.pdf",
+          },
+          "June 2021 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202021%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202021%20(v3)%20MS.pdf",
+          },
+          "June 2021 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202021%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202021%20(v2)%20MS.pdf",
+          },
+          "June 2021 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202021%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202021%20(v1)%20MS.pdf",
+          },
+          "March 2021 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202021%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202021%20(v2)%20MS.pdf",
+          },
+          "November 2020 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202020%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202020%20(v3)%20MS.pdf",
+          },
+          "November 2020 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202020%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202020%20(v2)%20MS.pdf",
+          },
+          "November 2020 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202020%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202020%20(v1)%20MS.pdf",
+          },
+          "June 2020 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202020%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202020%20(v3)%20MS.pdf",
+          },
+          "June 2020 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202020%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202020%20(v2)%20MS.pdf",
+          },
+          "June 2020 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202020%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202020%20(v1)%20MS.pdf",
+          },
+          "March 2020 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202020%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202020%20(v2)%20MS.pdf",
+          },
+          "November 2019 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202019%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202019%20(v3)%20MS.pdf",
+          },
+          "November 2019 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202019%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202019%20(v2)%20MS.pdf",
+          },
+          "November 2019 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202019%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202019%20(v1)%20MS.pdf",
+          },
+          "June 2019 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202019%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202019%20(v3)%20MS.pdf",
+          },
+          "June 2019 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202019%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202019%20(v2)%20MS.pdf",
+          },
+          "June 2019 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202019%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202019%20(v1)%20MS.pdf",
+          },
+          "March 2019 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202019%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202019%20(v2)%20MS.pdf",
+          },
+          "November 2018 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202018%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202018%20(v3)%20MS.pdf",
+          },
+          "November 2018 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202018%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202018%20(v2)%20MS.pdf",
+          },
+          "November 2018 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202018%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202018%20(v1)%20MS.pdf",
+          },
+          "June 2018 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202018%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202018%20(v3)%20MS.pdf",
+          },
+          "June 2018 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202018%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202018%20(v2)%20MS.pdf",
+          },
+          "June 2018 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202018%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202018%20(v1)%20MS.pdf",
+          },
+          "March 2018 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202018%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202018%20(v2)%20MS.pdf",
+          },
+          "November 2017 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202017%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202017%20(v3)%20MS.pdf",
+          },
+          "November 2017 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202017%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202017%20(v2)%20MS.pdf",
+          },
+          "November 2017 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202017%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202017%20(v1)%20MS.pdf",
+          },
+          "June 2017 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202017%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202017%20(v3)%20MS.pdf",
+          },
+          "June 2017 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202017%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202017%20(v2)%20MS.pdf",
+          },
+          "June 2017 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202017%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202017%20(v1)%20MS.pdf",
+          },
+          "March 2017 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202017%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202017%20(v2)%20MS.pdf",
+          },
+          "November 2016 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202016%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202016%20(v3)%20MS.pdf",
+          },
+          "November 2016 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202016%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202016%20(v2)%20MS.pdf",
+          },
+          "November 2016 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202016%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202016%20(v1)%20MS.pdf",
+          },
+          "June 2016 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202016%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202016%20(v3)%20MS.pdf",
+          },
+          "June 2016 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202016%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202016%20(v2)%20MS.pdf",
+          },
+          "June 2016 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202016%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202016%20(v1)%20MS.pdf",
+          },
+          "March 2016 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/March%202016%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/March%202016%20(v2)%20MS.pdf",
+          },
+          "November 2015 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202015%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202015%20(v3)%20MS.pdf",
+          },
+          "November 2015 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202015%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202015%20(v2)%20MS.pdf",
+          },
+          "November 2015 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202015%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202015%20(v1)%20MS.pdf",
+          },
+          "June 2015 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202015%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202015%20(v3)%20MS.pdf",
+          },
+          "June 2015 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202015%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202015%20(v2)%20MS.pdf",
+          },
+          "June 2015 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202015%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202015%20(v1)%20MS.pdf",
+          },
+          "November 2014 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202014%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202014%20(v3)%20MS.pdf",
+          },
+          "November 2014 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202014%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202014%20(v2)%20MS.pdf",
+          },
+          "November 2014 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202014%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202014%20(v1)%20MS.pdf",
+          },
+          "June 2014 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202014%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202014%20(v3)%20MS.pdf",
+          },
+          "June 2014 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202014%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202014%20(v2)%20MS.pdf",
+          },
+          "June 2014 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202014%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202014%20(v1)%20MS.pdf",
+          },
+          "November 2013 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202013%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202013%20(v3)%20MS.pdf",
+          },
+          "November 2013 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202013%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202013%20(v2)%20MS.pdf",
+          },
+          "November 2013 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202013%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202013%20(v1)%20MS.pdf",
+          },
+          "June 2013 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202013%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202013%20(v3)%20MS.pdf",
+          },
+          "June 2013 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202013%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202013%20(v2)%20MS.pdf",
+          },
+          "June 2013 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202013%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202013%20(v1)%20MS.pdf",
+          },
+          "November 2012 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202012%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202012%20(v3)%20MS.pdf",
+          },
+          "November 2012 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202012%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202012%20(v2)%20MS.pdf",
+          },
+          "November 2012 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202012%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202012%20(v1)%20MS.pdf",
+          },
+          "June 2012 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202012%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202012%20(v3)%20MS.pdf",
+          },
+          "June 2012 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202012%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202012%20(v2)%20MS.pdf",
+          },
+          "June 2012 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202012%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202012%20(v1)%20MS.pdf",
+          },
+          "November 2011 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202011%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202011%20(v3)%20MS.pdf",
+          },
+          "November 2011 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202011%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202011%20(v2)%20MS.pdf",
+          },
+          "November 2011 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202011%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202011%20(v1)%20MS.pdf",
+          },
+          "June 2011 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202011%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202011%20(v3)%20MS.pdf",
+          },
+          "June 2011 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202011%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202011%20(v2)%20MS.pdf",
+          },
+          "June 2011 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202011%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202011%20(v1)%20MS.pdf",
+          },
+          "November 2010 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202010%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202010%20(v3)%20MS.pdf",
+          },
+          "November 2010 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202010%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202010%20(v2)%20MS.pdf",
+          },
+          "November 2010 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202010%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202010%20(v1)%20MS.pdf",
+          },
+          "June 2010 (v3)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202010%20(v3)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202010%20(v3)%20MS.pdf",
+          },
+          "June 2010 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202010%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202010%20(v2)%20MS.pdf",
+          },
+          "June 2010 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202010%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202010%20(v1)%20MS.pdf",
+          },
+          "November 2009 (v2)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202009%20(v2)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202009%20(v2)%20MS.pdf",
+          },
+          "November 2009 (v1)": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202009%20(v1)%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202009%20(v1)%20MS.pdf",
+          },
+          "June 2009": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202009%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202009%20MS.pdf",
+          },
+          "November 2008": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202008%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202008%20MS.pdf",
+          },
+          "June 2008": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/June%202008%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/June%202008%20MS.pdf",
+          },
+        },
       },
       P2: {
         description: "Paper 2",
@@ -3014,168 +3435,169 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
     name: "Computer Science",
     description: "Cambridge AS & A Level Computer Science 9618 past papers.",
     papers: {
-      P1: {
-        description: "Paper 1 - Theory Fundamentals (AS)",
+      "P1-V1": {
+        description: "Paper 1 Variant 1 - Theory Fundamentals (AS)",
         years: {
-          "2025 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_12.pdf",
-          },
-          "2024 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_12.pdf",
-          },
-          "2024 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_12.pdf",
-          },
-          "2023 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_12.pdf",
-          },
-          "2023 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_12.pdf",
-          },
-          "2022 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_12.pdf",
-          },
-          "2022 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_12.pdf",
-          },
-          "2021 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_12.pdf",
-          },
-          "2021 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_12.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_12.pdf",
-          },
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_11.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_11.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_11.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_11.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_11.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_11.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_11.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_11.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_11.pdf" },
         },
       },
-      P2: {
-        description: "Paper 2 - Problem-solving and Programming (AS)",
+      "P1-V2": {
+        description: "Paper 1 Variant 2 - Theory Fundamentals (AS)",
         years: {
-          "2025 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_22.pdf",
-          },
-          "2024 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_22.pdf",
-          },
-          "2024 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_22.pdf",
-          },
-          "2023 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_22.pdf",
-          },
-          "2023 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_22.pdf",
-          },
-          "2022 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_22.pdf",
-          },
-          "2022 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_22.pdf",
-          },
-          "2021 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_22.pdf",
-          },
-          "2021 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_22.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_22.pdf",
-          },
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_12.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_12.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_12.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_12.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_12.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_12.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_12.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_12.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_12.pdf" },
         },
       },
-      P3: {
-        description: "Paper 3 - Advanced Theory (A Level)",
+      "P1-V3": {
+        description: "Paper 1 Variant 3 - Theory Fundamentals (AS)",
         years: {
-          "2025 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_32.pdf",
-          },
-          "2024 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_32.pdf",
-          },
-          "2024 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_32.pdf",
-          },
-          "2023 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_32.pdf",
-          },
-          "2023 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_32.pdf",
-          },
-          "2022 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_32.pdf",
-          },
-          "2022 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_32.pdf",
-          },
-          "2021 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_32.pdf",
-          },
-          "2021 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_32.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_32.pdf",
-          },
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_13.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_13.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_13.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_13.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_13.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_13.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_13.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_13.pdf" },
         },
       },
-      P4: {
-        description: "Paper 4 - Further Problem-solving and Programming (A Level)",
+      "P2-V1": {
+        description: "Paper 2 Variant 1 - Problem-solving and Programming (AS)",
         years: {
-          "2025 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_42.pdf",
-          },
-          "2024 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_42.pdf",
-          },
-          "2024 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_42.pdf",
-          },
-          "2023 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_42.pdf",
-          },
-          "2023 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_42.pdf",
-          },
-          "2022 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_42.pdf",
-          },
-          "2022 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_42.pdf",
-          },
-          "2021 November": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_42.pdf",
-          },
-          "2021 June": {
-            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_42.pdf",
-            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_42.pdf",
-          },
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_21.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_21.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_21.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_21.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_21.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_21.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_21.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_21.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_21.pdf" },
+        },
+      },
+      "P2-V2": {
+        description: "Paper 2 Variant 2 - Problem-solving and Programming (AS)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_22.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_22.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_22.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_22.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_22.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_22.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_22.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_22.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_22.pdf" },
+        },
+      },
+      "P2-V3": {
+        description: "Paper 2 Variant 3 - Problem-solving and Programming (AS)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_23.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_23.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_23.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_23.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_23.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_23.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_23.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_23.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_23.pdf" },
+        },
+      },
+      "P3-V1": {
+        description: "Paper 3 Variant 1 - Advanced Theory (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_31.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_31.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_31.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_31.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_31.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_31.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_31.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_31.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_31.pdf" },
+        },
+      },
+      "P3-V2": {
+        description: "Paper 3 Variant 2 - Advanced Theory (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_32.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_32.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_32.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_32.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_32.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_32.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_32.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_32.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_32.pdf" },
+        },
+      },
+      "P3-V3": {
+        description: "Paper 3 Variant 3 - Advanced Theory (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_33.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_33.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_33.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_33.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_33.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_33.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_33.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_33.pdf" },
+        },
+      },
+      "P4-V1": {
+        description: "Paper 4 Variant 1 - Further Problem-solving (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_41.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_41.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_41.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_41.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_41.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_41.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_41.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_41.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_41.pdf" },
+        },
+      },
+      "P4-V2": {
+        description: "Paper 4 Variant 2 - Further Problem-solving (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_42.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_42.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_42.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_42.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_42.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_42.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_42.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_42.pdf" },
+          "2021 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_42.pdf" },
+        },
+      },
+      "P4-V3": {
+        description: "Paper 4 Variant 3 - Further Problem-solving (A Level)",
+        years: {
+          "2025 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_43.pdf" },
+          "2024 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_43.pdf" },
+          "2024 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_43.pdf" },
+          "2023 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_43.pdf" },
+          "2023 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_43.pdf" },
+          "2022 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_43.pdf" },
+          "2022 June": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_43.pdf" },
+          "2021 November": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_43.pdf" },
         },
       },
     },

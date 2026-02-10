@@ -14,9 +14,9 @@
   --text-muted: #64748b;
   --border-color: #e2e8f0;
   --border-hover: #cbd5e1;
-  --accent-primary: #3b82f6;
-  --accent-secondary: #60a5fa;
-  --accent-light: #dbeafe;
+  --accent-primary: #6366f1;
+  --accent-secondary: #818cf8;
+  --accent-light: #e0e7ff;
   --success-bg: #dcfce7;
   --success-text: #15803d;
   --header-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -37,9 +37,9 @@
   --text-muted: #94a3b8;
   --border-color: #334155;
   --border-hover: #475569;
-  --accent-primary: #60a5fa;
-  --accent-secondary: #93c5fd;
-  --accent-light: #1e3a8a;
+  --accent-primary: #818cf8;
+  --accent-secondary: #a5b4fc;
+  --accent-light: #312e81;
   --success-bg: #064e3b;
   --success-text: #6ee7b7;
   --header-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -486,6 +486,73 @@ body {
   .paper-group-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* Year jump buttons */
+.year-jump-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.year-jump-btn {
+  padding: 0.5rem 1rem;
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .year-jump-btn {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.year-jump-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .year-jump-btn:hover {
+  color: #0f172a;
+}
+
+.year-jump-btn.old-spec-jump {
+  background: var(--text-muted);
+}
+
+[data-theme="dark"] .year-jump-btn.old-spec-jump {
+  color: #0f172a;
+}
+
+.year-jump-btn.old-spec-jump:hover {
+  background: var(--text-secondary);
+}
+
+[data-theme="dark"] .year-jump-btn.old-spec-jump:hover {
+  color: #0f172a;
+}
+
+/* Year groups */
+.year-group {
+  margin-bottom: 3rem;
+  scroll-margin-top: 2rem;
+}
+
+.year-group-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-primary);
 }
 
 @media (min-width: 640px) {
