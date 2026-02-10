@@ -113,15 +113,6 @@ export const App: React.FC = () => {
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <button
-            className="theme-toggle"
-            onClick={toggleTheme}
-            aria-label="Toggle theme"
-            title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-          >
-            {theme === "light" ? "🌙" : "☀️"}
-          </button>
-
           {view.type === "paper" ? (
             <>
               <button className="back-link" onClick={handleBackToPapers}>
@@ -130,6 +121,14 @@ export const App: React.FC = () => {
               <div>
                 <h1 className="site-title">
                   {view.paperCode} - {view.paper.description}
+                  <button
+                    className="theme-toggle"
+                    onClick={toggleTheme}
+                    aria-label="Toggle theme"
+                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                  >
+                    {theme === "light" ? "🌙" : "☀️"}
+                  </button>
                 </h1>
                 <p className="site-tagline">
                   Select a year to open the question paper (QP) or mark scheme (MS).
@@ -142,14 +141,34 @@ export const App: React.FC = () => {
                 &larr; All subjects
               </button>
               <div>
-                <h1 className="site-title">{view.subject.name}</h1>
+                <h1 className="site-title">
+                  {view.subject.name}
+                  <button
+                    className="theme-toggle"
+                    onClick={toggleTheme}
+                    aria-label="Toggle theme"
+                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                  >
+                    {theme === "light" ? "🌙" : "☀️"}
+                  </button>
+                </h1>
                 <p className="site-tagline">Select a paper to view past years.</p>
               </div>
             </>
           ) : (
             <>
               <div>
-                <h1 className="site-title">Past Papers</h1>
+                <h1 className="site-title">
+                  Past Papers
+                  <button
+                    className="theme-toggle"
+                    onClick={toggleTheme}
+                    aria-label="Toggle theme"
+                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                  >
+                    {theme === "light" ? "🌙" : "☀️"}
+                  </button>
+                </h1>
                 <p className="site-tagline">
                   Quickly find exam papers by subject and paper.
                 </p>

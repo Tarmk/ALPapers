@@ -6,6 +6,15 @@ type Props = {
   onOpenPaper: (paperCode: string) => void;
 };
 
+// Define paper groups in the desired order
+const PAPER_GROUPS = [
+  { prefix: "P", label: "Pure Mathematics", codes: ["P1", "P2", "P3", "P4"] },
+  { prefix: "FP", label: "Further Pure", codes: ["FP1", "FP2", "FP3"] },
+  { prefix: "M", label: "Mechanics", codes: ["M1", "M2", "M3"] },
+  { prefix: "S", label: "Statistics", codes: ["S1", "S2", "S3"] },
+  { prefix: "D", label: "Decision", codes: ["D1"] },
+];
+
 export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
   const paperCodes = Object.keys(subject.papers);
 
@@ -18,6 +27,17 @@ export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
     );
   }
 
+  // Group papers by type
+  const groupedPapers = PAPER_GROUPS.map((group) => ({
+    ...group,
+    papers: group.codes
+      .filter((code) => subject.papers[code])
+      .map((code) => ({
+        code,
+        paper: subject.papers[code],
+      })),
+  })).filter((group) => group.papers.length > 0);
+
   return (
     <>
       <section className="intro">
@@ -27,29 +47,39 @@ export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
         </p>
       </section>
 
-      <section className="card-grid" aria-label="Papers">
-        {paperCodes.map((code) => {
-          const paper = subject.papers[code];
-          const yearCount = Object.keys(paper.years || {}).length;
+      <div className="paper-groups">
+        {groupedPapers.map((group) => (
+          <section key={group.prefix} className="paper-group">
+            <h3 className="paper-group-label">{group.label}</h3>
+            <div className="paper-group-grid">
+              {group.papers.map(({ code, paper }) => {
+                const yearCount = Object.keys(paper.years || {}).length;
+                const oldSpecCount = paper.oldSpec
+                  ? Object.keys(paper.oldSpec.years || {}).length
+                  : 0;
+                const totalCount = yearCount + oldSpecCount;
 
-          return (
-            <button
-              key={code}
-              type="button"
-              className="card card-button"
-              onClick={() => onOpenPaper(code)}
-            >
-              <h3>{code}</h3>
-              <p>{paper.description}</p>
-              <span className="card-pill">
-                {yearCount === 0
-                  ? "No years added yet"
-                  : `${yearCount} ${yearCount === 1 ? "year" : "years"}`}
-              </span>
-            </button>
-          );
-        })}
-      </section>
+                return (
+                  <button
+                    key={code}
+                    type="button"
+                    className="card card-button"
+                    onClick={() => onOpenPaper(code)}
+                  >
+                    <h4>{code}</h4>
+                    <p>{paper.description}</p>
+                    <span className="card-pill">
+                      {totalCount === 0
+                        ? "No years added yet"
+                        : `${totalCount} ${totalCount === 1 ? "year" : "years"}`}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
     </>
   );
 };

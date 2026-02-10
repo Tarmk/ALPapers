@@ -30,6 +30,22 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Pure Mathematics 1",
         years: {
+          "2025 October": {
+            qp: "https://drive.google.com/file/d/1E1deD8HJrxjB_Qj3AcoFCvrIZSH70pBm/view?usp=sharing",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/12/p1.pdf",
+          },
+          "2025 June": {
+            qp: "https://drive.google.com/file/d/1sREBO3D-pqMlak33wfMAs0fU6O_woF3z/view?usp=sharing",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/MAY-2025-P1-MS.pdf",
+          },
+          "2025 January": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-P1-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-P1-MS.pdf",
+          },
+          "2024 October": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2024/10/OCT-2024-P1-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/01/OCT-2024-P1-MS.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P1/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P1/MS/January%202024%20MS.pdf",
@@ -202,10 +218,6 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",
             },
-            "2014 June": {
-              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/QP/June%202014%20QP.pdf",
-              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/MS/June%202014%20MS.pdf",
-            },
             "2013 June (R)": {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/C1/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
@@ -216,6 +228,22 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Pure Mathematics 2",
         years: {
+          "2025 October": {
+            qp: "https://drive.google.com/file/d/1RvR3qvhltS1srcyKyXFFsyIR_HX-JxDa/view?usp=sharing",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/12/p2.pdf",
+          },
+          "2025 June": {
+            qp: "https://drive.google.com/file/d/12l81mRkRaxuZU4ar09p3hBokazPAy_hL/view?usp=sharing",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/MAY-202-P2-MS.pdf",
+          },
+          "2025 January": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-P2-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-P2-MS.pdf",
+          },
+          "2024 October": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/01/OCT-2024-P2-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/01/OCT-2024-P2-MS.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/MS/January%202024%20MS.pdf",
@@ -394,9 +422,37 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Pure Mathematics 3",
         years: {
+          "2025 October": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2026/02/25_10_QP_P3.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/12/p3.pdf",
+          },
+          "2025 June": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/07/P3-2025-JUNE-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/MAY-2025-P3-MS.pdf",
+          },
+          "2025 January": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-P3-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-P3-MS.pdf",
+          },
+          "2024 October": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2024/11/OCTOBER-2024-P3-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/01/OCT-2024-P3-MS.pdf",
+          },
+          "2024 January": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/January%202024%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/MS/January%202024%20MS.pdf",
+          },
           "2024 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/June%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/MS/June%202024%20MS.pdf",
+          },
+          "2023 October": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/October%202023%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/MS/October%202023%20MS.pdf",
+          },
+          "2023 January": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/January%202023%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/MS/January%202023%20MS.pdf",
           },
           "2023 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P3/QP/June%202023%20QP.pdf",
@@ -552,6 +608,22 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Pure Mathematics 4",
         years: {
+          "2025 October": {
+            qp: "https://drive.google.com/file/d/1_o16QGszdkjTd-FRWsUzvk60XgKUNwS6/view?usp=sharing",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/12/p4.pdf",
+          },
+          "2025 June": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/07/P4-2025-June-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/MAY-2025-P4-MS.pdf",
+          },
+          "2025 January": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-P4-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-P4-MS.pdf",
+          },
+          "2024 October": {
+            qp: "https://dilanmaths.com/wp-content/uploads/2024/11/OCTOBER-2024-P4-QP.pdf",
+            ms: "https://dilanmaths.com/wp-content/uploads/2025/01/OCT-2024-P4-MS.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P4/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P4/MS/January%202024%20MS.pdf",
@@ -762,9 +834,13 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/October%202021%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/October%202021%20MS.pdf",
           },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/June%202020%20MS.pdf",
+          "2020 January": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/January%202020%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/January%202020%20MS.pdf",
+          },
+          "2020 October": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/October%202020%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/October%202020%20MS.pdf",
           },
           "2019 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/January%202019%20QP.pdf",
@@ -1322,6 +1398,46 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202010%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202010%20MS.pdf",
             },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2008 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202008%20MS.pdf",
+            },
+            "2007 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202007%20MS.pdf",
+            },
+            "2006 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202006%20MS.pdf",
+            },
+            "2006 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/January%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/January%202006%20MS.pdf",
+            },
+            "2005 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202005%20MS.pdf",
+            },
+            "2004 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202004%20MS.pdf",
+            },
+            "2003 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202003%20MS.pdf",
+            },
+            "2002 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202002%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/S3/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
           },
         },
       },
@@ -1766,6 +1882,90 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202010%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202010%20MS.pdf",
             },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2009 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202009%20MS.pdf",
+            },
+            "2008 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202008%20MS.pdf",
+            },
+            "2008 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202008%20MS.pdf",
+            },
+            "2007 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202007%20MS.pdf",
+            },
+            "2007 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202007%20MS.pdf",
+            },
+            "2006 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202006%20MS.pdf",
+            },
+            "2006 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202006%20MS.pdf",
+            },
+            "2005 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202005%20MS.pdf",
+            },
+            "2005 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202005%20MS.pdf",
+            },
+            "2004 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202004%20MS.pdf",
+            },
+            "2004 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202004%20MS.pdf",
+            },
+            "2003 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202003%20MS.pdf",
+            },
+            "2003 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202003%20MS.pdf",
+            },
+            "2002 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202002%20MS.pdf",
+            },
+            "2002 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202002%20MS.pdf",
+            },
+            "2001 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202001%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202001%20MS.pdf",
+            },
+            "2014 IAL January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202014%20(IAL)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202014%20(IAL)%20MS.pdf",
+            },
+            "2014 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",
+            },
+            "2013 June (Withdrawn)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202013%20(Withdrawn)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202013%20(Withdrawn)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
           },
         },
       },
@@ -1899,6 +2099,82 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             "2010 June": {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202010%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202010%20MS.pdf",
+            },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2009 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202009%20MS.pdf",
+            },
+            "2008 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202008%20MS.pdf",
+            },
+            "2008 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202008%20MS.pdf",
+            },
+            "2007 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202007%20MS.pdf",
+            },
+            "2007 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202007%20MS.pdf",
+            },
+            "2006 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202006%20MS.pdf",
+            },
+            "2006 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202006%20MS.pdf",
+            },
+            "2005 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202005%20MS.pdf",
+            },
+            "2005 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202005%20MS.pdf",
+            },
+            "2004 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202004%20MS.pdf",
+            },
+            "2004 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202004%20MS.pdf",
+            },
+            "2003 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202003%20MS.pdf",
+            },
+            "2003 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202003%20MS.pdf",
+            },
+            "2002 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202002%20MS.pdf",
+            },
+            "2002 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/January%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/January%202002%20MS.pdf",
+            },
+            "2001 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202001%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202001%20MS.pdf",
+            },
+            "2014 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M3/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
             },
           },
         },
@@ -2046,6 +2322,102 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202010%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202010%20MS.pdf",
             },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2009 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202009%20MS.pdf",
+            },
+            "2008 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202008%20MS.pdf",
+            },
+            "2008 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202008%20MS.pdf",
+            },
+            "2007 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202007%20MS.pdf",
+            },
+            "2007 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202007%20MS.pdf",
+            },
+            "2006 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202006%20MS.pdf",
+            },
+            "2006 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202006%20MS.pdf",
+            },
+            "2005 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202005%20MS.pdf",
+            },
+            "2005 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202005%20MS.pdf",
+            },
+            "2004 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202004%20MS.pdf",
+            },
+            "2004 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202004%20MS.pdf",
+            },
+            "2004 November": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/November%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/November%202004%20MS.pdf",
+            },
+            "2003 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202003%20MS.pdf",
+            },
+            "2003 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202003%20MS.pdf",
+            },
+            "2003 November": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/November%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/November%202003%20MS.pdf",
+            },
+            "2002 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202002%20MS.pdf",
+            },
+            "2002 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202002%20MS.pdf",
+            },
+            "2002 November": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/November%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/November%202002%20MS.pdf",
+            },
+            "2001 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202001%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202001%20MS.pdf",
+            },
+            "2001 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/January%202001%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/January%202001%20MS.pdf",
+            },
+            "2019 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202019%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202019%20MS.pdf",
+            },
+            "2014 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/D1/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
           },
         },
       },
@@ -2137,6 +2509,75 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/June%202014%20MS.pdf",
           },
         },
+        oldSpec: {
+          specNote: "6667",
+          years: {
+            "2018 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202018%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202018%20MS.pdf",
+            },
+            "2017 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202017%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202017%20MS.pdf",
+            },
+            "2016 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202016%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202016%20MS.pdf",
+            },
+            "2015 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202015%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202015%20MS.pdf",
+            },
+            "2014 IAL January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202014%20(IAL)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202014%20(IAL)%20MS.pdf",
+            },
+            "2013 June (Withdrawn)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202013%20(Withdrawn)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202013%20(Withdrawn)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
+            "2013 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202013%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202013%20MS.pdf",
+            },
+            "2012 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202012%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202012%20MS.pdf",
+            },
+            "2012 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202012%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202012%20MS.pdf",
+            },
+            "2011 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202011%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202011%20MS.pdf",
+            },
+            "2011 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202011%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202011%20MS.pdf",
+            },
+            "2010 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202010%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202010%20MS.pdf",
+            },
+            "2010 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202010%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202010%20MS.pdf",
+            },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2009 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/QP/January%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP1/Papers-Edexcel/MS/January%202009%20MS.pdf",
+            },
+          },
+        },
       },
       FP2: {
         description: "Further Pure Mathematics 2",
@@ -2206,6 +2647,82 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/June%202014%20MS.pdf",
           },
         },
+        oldSpec: {
+          specNote: "6668",
+          years: {
+            "2018 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202018%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202018%20MS.pdf",
+            },
+            "2017 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202017%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202017%20MS.pdf",
+            },
+            "2016 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202016%20QP.pdf",
+            },
+            "2015 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202015%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202015%20MS.pdf",
+            },
+            "2013 June (Withdrawn)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202013%20(Withdrawn)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202013%20(Withdrawn)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
+            "2012 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202012%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202012%20MS.pdf",
+            },
+            "2011 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202011%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202011%20MS.pdf",
+            },
+            "2010 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202010%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202010%20MS.pdf",
+            },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
+            "2008 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202008%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202008%20MS.pdf",
+            },
+            "2007 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202007%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202007%20MS.pdf",
+            },
+            "2006 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202006%20MS.pdf",
+            },
+            "2006 January": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/January%202006%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/January%202006%20MS.pdf",
+            },
+            "2005 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202005%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202005%20MS.pdf",
+            },
+            "2004 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202004%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202004%20MS.pdf",
+            },
+            "2003 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202003%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202003%20MS.pdf",
+            },
+            "2002 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/QP/June%202002%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP2/Papers-Edexcel/MS/June%202002%20MS.pdf",
+            },
+          },
+        },
       },
       FP3: {
         description: "Further Pure Mathematics 3",
@@ -2273,6 +2790,51 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
           "2014 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/June%202014%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/June%202014%20MS.pdf",
+          },
+        },
+        oldSpec: {
+          specNote: "6669",
+          years: {
+            "2018 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202018%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202018%20MS.pdf",
+            },
+            "2017 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202017%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202017%20MS.pdf",
+            },
+            "2016 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202016%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202016%20MS.pdf",
+            },
+            "2015 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202015%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202015%20MS.pdf",
+            },
+            "2014 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",
+            },
+            "2013 June (R)": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202013%20(R)%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202013%20(R)%20MS.pdf",
+            },
+            "2012 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202012%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202012%20MS.pdf",
+            },
+            "2011 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202011%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202011%20MS.pdf",
+            },
+            "2010 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202010%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202010%20MS.pdf",
+            },
+            "2009 June": {
+              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/QP/June%202009%20QP.pdf",
+              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/FP3/Papers-Edexcel/MS/June%202009%20MS.pdf",
+            },
           },
         },
       },

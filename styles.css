@@ -69,9 +69,15 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
 }
 
 .site-header {
@@ -92,6 +98,9 @@ body {
   margin: 0;
   font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .site-tagline {
@@ -117,21 +126,24 @@ body {
 }
 
 .theme-toggle {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  position: relative;
+  top: auto;
+  right: auto;
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 50%;
   width: 42px;
   height: 42px;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   transition: background 0.2s ease, transform 0.2s ease;
   backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
 }
 
 .theme-toggle:hover {
@@ -163,9 +175,15 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card {
@@ -379,6 +397,46 @@ body {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Paper groups */
+.paper-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.paper-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paper-group-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.paper-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .paper-group-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .paper-group-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (min-width: 640px) {
