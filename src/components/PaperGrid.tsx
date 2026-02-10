@@ -53,12 +53,6 @@ export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
             <h3 className="paper-group-label">{group.label}</h3>
             <div className="paper-group-grid">
               {group.papers.map(({ code, paper }) => {
-                const yearCount = Object.keys(paper.years || {}).length;
-                const oldSpecCount = paper.oldSpec
-                  ? Object.keys(paper.oldSpec.years || {}).length
-                  : 0;
-                const totalCount = yearCount + oldSpecCount;
-
                 return (
                   <button
                     key={code}
@@ -68,11 +62,6 @@ export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
                   >
                     <h4>{code}</h4>
                     <p>{paper.description}</p>
-                    <span className="card-pill">
-                      {totalCount === 0
-                        ? "No years added yet"
-                        : `${totalCount} ${totalCount === 1 ? "year" : "years"}`}
-                    </span>
                   </button>
                 );
               })}

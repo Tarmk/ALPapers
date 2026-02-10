@@ -46,7 +46,7 @@ export const SubjectGrid: React.FC<Props> = ({ onOpenSubject }) => {
         >
           <h3>Computer Science</h3>
           <p>{SUBJECTS.comsci.description}</p>
-          <span className="card-pill">P1 · P2 · P3 · P4</span>
+          <span className="card-pill">Cambridge 9618</span>
         </button>
       </section>
     </>
