@@ -16,10 +16,10 @@ export const SubjectGrid: React.FC<Props> = ({ onOpenSubject }) => {
         </p>
       </section>
 
-      <section className="card-grid" aria-label="Subjects">
+      <section className="subject-grid" aria-label="Subjects">
         <button
           type="button"
-          className="card card-button"
+          className="card card-button subject-card"
           onClick={() => onOpenSubject("maths")}
         >
           <h3>Mathematics</h3>
@@ -31,12 +31,22 @@ export const SubjectGrid: React.FC<Props> = ({ onOpenSubject }) => {
 
         <button
           type="button"
-          className="card card-button"
+          className="card card-button subject-card"
           onClick={() => onOpenSubject("physics")}
         >
           <h3>Physics</h3>
           <p>{SUBJECTS.physics.description}</p>
           <span className="card-pill">P1 · P2 · P3</span>
+        </button>
+
+        <button
+          type="button"
+          className="card card-button subject-card"
+          onClick={() => onOpenSubject("comsci")}
+        >
+          <h3>Computer Science</h3>
+          <p>{SUBJECTS.comsci.description}</p>
+          <span className="card-pill">P1 · P2 · P3 · P4</span>
         </button>
       </section>
     </>

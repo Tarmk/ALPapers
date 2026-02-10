@@ -14,7 +14,7 @@ export type Paper = {
   oldSpec?: PaperSpec;
 };
 
-export type SubjectKey = "maths" | "physics";
+export type SubjectKey = "maths" | "physics" | "comsci";
 
 export type Subject = {
   name: string;
@@ -296,13 +296,17 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/October%202020%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/MS/October%202020%20MS.pdf",
           },
+          "2019 October": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/October%202019%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/MS/October%202019%20MS.pdf",
+          },
           "2019 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/June%202019%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/MS/June%202019%20MS.pdf",
           },
-          "2019 October": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/October%202019%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/MS/October%202019%20MS.pdf",
+          "2019 January": {
+            qp: "https://edemat.alevelclouds.com/19_01_QP_P2.pdf",
+            ms: "https://edemat.alevelclouds.com/19_01_MS_P2.pdf",
           },
           "2018 Specimen": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Pure/P2/QP/Specimen%202018%20QP.pdf",
@@ -790,6 +794,22 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S1: {
         description: "Statistics 1",
         years: {
+          "2025 October": {
+            qp: "https://edemat.alevelclouds.com/25_10_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_10_MS_S1.pdf",
+          },
+          "2025 June": {
+            qp: "https://edemat.alevelclouds.com/25_06_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_S1.pdf",
+          },
+          "2025 January": {
+            qp: "https://edemat.alevelclouds.com/25_01_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_S1.pdf",
+          },
+          "2024 October": {
+            qp: "https://edemat.alevelclouds.com/24_10_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/24_10_MS_S1.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/January%202024%20MS.pdf",
@@ -849,6 +869,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
           "2019 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/June%202019%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/MS/June%202019%20MS.pdf",
+          },
+          "2019 October": {
+            qp: "https://edemat.alevelclouds.com/19_10_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/19_10_MS_S1.pdf",
           },
           "2018 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/January%202018%20QP.pdf",
@@ -1060,6 +1084,22 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S2: {
         description: "Statistics 2",
         years: {
+          "2025 October": {
+            qp: "https://edemat.alevelclouds.com/25_10_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/25_10_MS_S2.pdf",
+          },
+          "2025 June": {
+            qp: "https://edemat.alevelclouds.com/25_06_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_S2.pdf",
+          },
+          "2025 January": {
+            qp: "https://edemat.alevelclouds.com/25_01_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_S2.pdf",
+          },
+          "2024 October": {
+            qp: "https://edemat.alevelclouds.com/24_10_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/24_10_MS_S2.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/MS/January%202024%20MS.pdf",
@@ -1104,9 +1144,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/October%202021%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/MS/October%202021%20MS.pdf",
           },
+          "2020 January": {
+            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/January%202020%20QP.pdf",
+            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/MS/January%202020%20MS.pdf",
+          },
           "2020 October": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/October%202020%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/MS/October%202020%20MS.pdf",
+          },
+          "2019 October": {
+            qp: "https://edemat.alevelclouds.com/19_10_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/19_10_MS_S2.pdf",
+          },
+          "2019 June": {
+            qp: "https://edemat.alevelclouds.com/19_06_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/19_06_MS_S2.pdf",
           },
           "2019 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/January%202019%20QP.pdf",
@@ -1294,6 +1346,14 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S3: {
         description: "Statistics 3",
         years: {
+          "2025 June": {
+            qp: "https://edemat.alevelclouds.com/25_06_QP_S3.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_S3.pdf",
+          },
+          "2025 January": {
+            qp: "https://edemat.alevelclouds.com/25_01_QP_S3.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_S3.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S3/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Statistics/S3/MS/January%202024%20MS.pdf",
@@ -1504,21 +1564,25 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/October%202021%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/MS/October%202021%20MS.pdf",
           },
-          "2020 January": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/January%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/MS/January%202020%20MS.pdf",
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_M1.pdf",
           },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/MS/June%202020%20MS.pdf",
+          "2020 January": {
+            qp: "https://edemat.alevelclouds.com/20_01_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/20_01_MS_M1.pdf",
+          },
+          "2019 October": {
+            qp: "https://edemat.alevelclouds.com/19_10_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/19_10_MS_M1.pdf",
           },
           "2019 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/January%202019%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/MS/January%202019%20MS.pdf",
           },
           "2019 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/June%202019%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/MS/June%202019%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/19_06_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/19_06_MS_M1.pdf",
           },
           "2018 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/January%202018%20QP.pdf",
@@ -1790,13 +1854,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/QP/October%202021%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/MS/October%202021%20MS.pdf",
           },
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_M2.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_M2.pdf",
+          },
           "2020 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/QP/January%202020%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/MS/January%202020%20MS.pdf",
           },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/MS/June%202020%20MS.pdf",
+          "2019 October": {
+            qp: "https://edemat.alevelclouds.com/19_10_QP_M2.pdf",
+            ms: "https://edemat.alevelclouds.com/19_10_MS_M2.pdf",
+          },
+          "2019 June": {
+            qp: "https://edemat.alevelclouds.com/19_06_QP_M2.pdf",
+            ms: "https://edemat.alevelclouds.com/19_06_MS_M2.pdf",
           },
           "2019 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/QP/January%202019%20QP.pdf",
@@ -2036,21 +2108,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/June%202022%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/MS/June%202022%20MS.pdf",
           },
+          "2021 October": {
+            qp: "https://edemat.alevelclouds.com/21_10_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_10_MS_M3.pdf",
+          },
           "2021 January": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/January%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/MS/January%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_01_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_01_MS_M3.pdf",
           },
           "2021 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/June%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/MS/June%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_06_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_06_MS_M3.pdf",
           },
-          "2021 October": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/October%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/MS/October%202021%20MS.pdf",
-          },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/MS/June%202020%20MS.pdf",
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_M3.pdf",
           },
           "2019 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Mechanics/M3/QP/January%202019%20QP.pdf",
@@ -2222,6 +2294,14 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       D1: {
         description: "Decision Mathematics 1",
         years: {
+          "2025 June": {
+            qp: "https://edemat.alevelclouds.com/25_06_QP_D1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_D1.pdf",
+          },
+          "2025 January": {
+            qp: "https://edemat.alevelclouds.com/25_01_QP_D1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_D1.pdf",
+          },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Decision/D1/QP/January%202024%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Decision/D1/MS/January%202024%20MS.pdf",
@@ -2465,12 +2545,12 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
         description: "Further Pure Mathematics 1",
         years: {
           "2025 June": {
-            qp: "https://drive.google.com/file/d/1eU6ao0JZfUPQXYpFj3K8JXs1N9I7hQbA/view?usp=sharing",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/JUNE-2025-FP1-MS.pdf",
+            qp: "https://edemat.alevelclouds.com/25_06_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_F1.pdf",
           },
           "2025 January": {
-            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-FP1-QP-1.pdf",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-FP1-MS.pdf",
+            qp: "https://edemat.alevelclouds.com/25_01_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_F1.pdf",
           },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/January%202024%20QP.pdf",
@@ -2496,21 +2576,29 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/June%202022%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/June%202022%20MS.pdf",
           },
+          "2021 October": {
+            qp: "https://edemat.alevelclouds.com/21_10_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/21_10_MS_F1.pdf",
+          },
           "2021 January": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/January%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/January%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_01_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/21_01_MS_F1.pdf",
           },
           "2021 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/June%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/June%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_06_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/21_06_MS_F1.pdf",
           },
-          "2021 October": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/October%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/October%202021%20MS.pdf",
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_F1.pdf",
           },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F1/MS/June%202020%20MS.pdf",
+          "2020 January": {
+            qp: "https://edemat.alevelclouds.com/20_01_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/20_01_MS_F1.pdf",
+          },
+          "2019 June": {
+            qp: "https://edemat.alevelclouds.com/19_06_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/19_06_MS_F1.pdf",
           },
           "2018 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL/Further-Pure/F1/QP/January%202018%20QP.pdf",
@@ -2631,12 +2719,12 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
         description: "Further Pure Mathematics 2",
         years: {
           "2025 June": {
-            qp: "https://drive.google.com/file/d/1AvPlEBsgdbhZueiVQjQPei43nDlgIHYm/view?usp=drive_link",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/JUNE-2025-FP2-MS.pdf",
+            qp: "https://edemat.alevelclouds.com/25_06_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_F2.pdf",
           },
           "2025 January": {
-            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-FP2-QP.pdf",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/03/JAN-2025-FP2-MS.pdf",
+            qp: "https://edemat.alevelclouds.com/25_01_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_F2.pdf",
           },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/January%202024%20QP.pdf",
@@ -2662,21 +2750,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/June%202022%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/June%202022%20MS.pdf",
           },
+          "2021 October": {
+            qp: "https://edemat.alevelclouds.com/21_10_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/21_10_MS_F2.pdf",
+          },
           "2021 January": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/January%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/January%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_01_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/21_01_MS_F2.pdf",
           },
           "2021 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/June%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/June%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_06_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/21_06_MS_F2.pdf",
           },
-          "2021 October": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/October%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/October%202021%20MS.pdf",
-          },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/MS/June%202020%20MS.pdf",
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_F2.pdf",
           },
           "2018 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F2/QP/June%202018%20QP.pdf",
@@ -2784,12 +2872,12 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
         description: "Further Pure Mathematics 3",
         years: {
           "2025 June": {
-            qp: "https://dilanmaths.com/wp-content/uploads/2025/09/JUNE-2025-FP3-QP.pdf",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/09/JUNE-2025-FP3-MS.pdf",
+            qp: "https://edemat.alevelclouds.com/25_06_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/25_06_MS_F3.pdf",
           },
           "2025 January": {
-            qp: "https://dilanmaths.com/wp-content/uploads/2025/02/JAN-2025-FP3-QP.pdf",
-            ms: "https://dilanmaths.com/wp-content/uploads/2025/04/2025-JAN-MS-FP3.pdf",
+            qp: "https://edemat.alevelclouds.com/25_01_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/25_01_MS_F3.pdf",
           },
           "2024 January": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/January%202024%20QP.pdf",
@@ -2815,21 +2903,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/June%202022%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/June%202022%20MS.pdf",
           },
+          "2021 October": {
+            qp: "https://edemat.alevelclouds.com/21_10_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_10_MS_F3.pdf",
+          },
           "2021 January": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/January%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/January%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_01_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_01_MS_F3.pdf",
           },
           "2021 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/June%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/June%202021%20MS.pdf",
+            qp: "https://edemat.alevelclouds.com/21_06_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/21_06_MS_F3.pdf",
           },
-          "2021 October": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/October%202021%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/October%202021%20MS.pdf",
-          },
-          "2020 June": {
-            qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/June%202020%20QP.pdf",
-            ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/MS/June%202020%20MS.pdf",
+          "2020 October": {
+            qp: "https://edemat.alevelclouds.com/20_10_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/20_10_MS_F3.pdf",
           },
           "2018 June": {
             qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel-IAL//Further-Pure/F3/QP/June%202018%20QP.pdf",
@@ -2919,6 +3007,176 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Paper 3",
         years: {},
+      },
+    },
+  },
+  comsci: {
+    name: "Computer Science",
+    description: "Cambridge AS & A Level Computer Science 9618 past papers.",
+    papers: {
+      P1: {
+        description: "Paper 1 - Theory Fundamentals (AS)",
+        years: {
+          "2025 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_12.pdf",
+          },
+          "2024 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_12.pdf",
+          },
+          "2024 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_12.pdf",
+          },
+          "2023 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_12.pdf",
+          },
+          "2023 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_12.pdf",
+          },
+          "2022 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_12.pdf",
+          },
+          "2022 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_12.pdf",
+          },
+          "2021 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_12.pdf",
+          },
+          "2021 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_12.pdf",
+          },
+        },
+      },
+      P2: {
+        description: "Paper 2 - Problem-solving and Programming (AS)",
+        years: {
+          "2025 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_22.pdf",
+          },
+          "2024 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_22.pdf",
+          },
+          "2024 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_22.pdf",
+          },
+          "2023 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_22.pdf",
+          },
+          "2023 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_22.pdf",
+          },
+          "2022 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_22.pdf",
+          },
+          "2022 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_22.pdf",
+          },
+          "2021 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_22.pdf",
+          },
+          "2021 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_22.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_22.pdf",
+          },
+        },
+      },
+      P3: {
+        description: "Paper 3 - Advanced Theory (A Level)",
+        years: {
+          "2025 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_32.pdf",
+          },
+          "2024 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_32.pdf",
+          },
+          "2024 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_32.pdf",
+          },
+          "2023 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_32.pdf",
+          },
+          "2023 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_32.pdf",
+          },
+          "2022 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_32.pdf",
+          },
+          "2022 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_32.pdf",
+          },
+          "2021 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_32.pdf",
+          },
+          "2021 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_32.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_32.pdf",
+          },
+        },
+      },
+      P4: {
+        description: "Paper 4 - Further Problem-solving and Programming (A Level)",
+        years: {
+          "2025 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s25_ms_42.pdf",
+          },
+          "2024 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w24_ms_42.pdf",
+          },
+          "2024 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s24_ms_42.pdf",
+          },
+          "2023 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w23_ms_42.pdf",
+          },
+          "2023 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s23_ms_42.pdf",
+          },
+          "2022 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w22_ms_42.pdf",
+          },
+          "2022 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s22_ms_42.pdf",
+          },
+          "2021 November": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w21_ms_42.pdf",
+          },
+          "2021 June": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_qp_42.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s21_ms_42.pdf",
+          },
+        },
       },
     },
   },
