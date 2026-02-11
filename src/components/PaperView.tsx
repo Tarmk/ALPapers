@@ -6,7 +6,7 @@ type Props = {
   paperCode: string;
 };
 
-const PaperTable: React.FC<{ years: Record<string, any> }> = ({ years }) => {
+const PaperTable: React.FC<{ years: Record<string, any>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
   const yearKeys = Object.keys(years).sort().reverse();
 
   return (
@@ -16,6 +16,8 @@ const PaperTable: React.FC<{ years: Record<string, any> }> = ({ years }) => {
           <th>Year</th>
           <th>Question Paper (QP)</th>
           <th>Mark Scheme (MS)</th>
+          {showInsert && <th>Pseudocode Insert</th>}
+          {showResource && <th>Source Files</th>}
         </tr>
       </thead>
       <tbody>
@@ -58,6 +60,45 @@ const PaperTable: React.FC<{ years: Record<string, any> }> = ({ years }) => {
                   "-"
                 )}
               </td>
+              {showInsert && (
+                <td>
+                  {info?.insert ? (
+                    <>
+                      <a
+                        className="paper-link"
+                        href={info.insert}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open
+                      </a>
+                      <span className="pill-in">IN</span>
+                    </>
+                  ) : (
+                    "-"
+                  )}
+                </td>
+              )}
+              {showResource && (
+                <td>
+                  {info?.resource ? (
+                    <>
+                      <a
+                        className="paper-link"
+                        href={info.resource}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                      >
+                        Download
+                      </a>
+                      <span className="pill-res">SF</span>
+                    </>
+                  ) : (
+                    "-"
+                  )}
+                </td>
+              )}
             </tr>
           );
         })}
@@ -89,7 +130,7 @@ const YearJumpButtons: React.FC<{ uniqueYears: string[] }> = ({ uniqueYears }) =
   );
 };
 
-const YearGroupedTable: React.FC<{ years: Record<string, any> }> = ({ years }) => {
+const YearGroupedTable: React.FC<{ years: Record<string, any>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
   // Group by calendar year
   const grouped: Record<string, Record<string, any>> = {};
   
@@ -109,7 +150,7 @@ const YearGroupedTable: React.FC<{ years: Record<string, any> }> = ({ years }) =
       {sortedYears.map((year) => (
         <div key={year} id={`year-${year}`} className="year-group">
           <h3 className="year-group-header">{year}</h3>
-          <PaperTable years={grouped[year]} />
+          <PaperTable years={grouped[year]} showResource={showResource} showInsert={showInsert} />
         </div>
       ))}
     </>
@@ -143,6 +184,9 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
   const uniqueYears = extractUniqueYears(years);
   const uniqueOldYears = hasOldSpec ? extractUniqueYears(paper.oldSpec.years) : [];
 
+  const showResource = paperCode === "P4";
+  const showInsert = paperCode === "P2";
+
   return (
     <div className="paper-sections-container">
       {yearKeys.length > 0 && (
@@ -165,7 +209,7 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
               )}
             </>
           )}
-          <YearGroupedTable years={years} />
+          <YearGroupedTable years={years} showResource={showResource} showInsert={showInsert} />
         </section>
       )}
 
@@ -186,7 +230,7 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
               <YearJumpButtons uniqueYears={uniqueOldYears} />
             </>
           )}
-          <YearGroupedTable years={paper.oldSpec.years} />
+          <YearGroupedTable years={paper.oldSpec.years} showResource={showResource} showInsert={showInsert} />
         </section>
       )}
     </div>

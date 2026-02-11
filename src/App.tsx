@@ -191,6 +191,7 @@ export const App: React.FC = () => {
       <footer className="site-footer">
         <div className="container">
           <p>Personal past paper archive.</p>
+          <p className="footer-credit">Made by Tarm</p>
         </div>
       </footer>
     </>
