@@ -8,7 +8,7 @@ type Props = {
 
 // Define paper groups in the desired order
 const PAPER_GROUPS = [
-  { prefix: "P", label: "Pure Mathematics", codes: ["P1", "P2", "P3", "P4"] },
+  { prefix: "P", label: "Pure Mathematics", codes: ["P1", "P2", "P3", "P4", "P5"] },
   { prefix: "FP", label: "Further Pure", codes: ["FP1", "FP2", "FP3"] },
   { prefix: "M", label: "Mechanics", codes: ["M1", "M2", "M3"] },
   { prefix: "S", label: "Statistics", codes: ["S1", "S2", "S3"] },

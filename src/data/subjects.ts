@@ -3001,6 +3001,42 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Paper 1 - Multiple Choice",
         years: {
+          "November 2025 (v4)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_14.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_14.pdf",
+          },
+          "November 2025 (v3)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_13.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_13.pdf",
+          },
+          "November 2025 (v2)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_12.pdf",
+          },
+          "November 2025 (v1)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_11.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_11.pdf",
+          },
+          "June 2025 (v4)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_14.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_14.pdf",
+          },
+          "June 2025 (v3)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_13.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_13.pdf",
+          },
+          "June 2025 (v2)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_12.pdf",
+          },
+          "June 2025 (v1)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_11.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_11.pdf",
+          },
+          "March 2025 (v2)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_12.pdf",
+          },
           "November 2024 (v3)": {
             qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/QP/November%202024%20(v3)%20QP.pdf",
             ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-1/MS/November%202024%20(v3)%20MS.pdf",
@@ -3426,6 +3462,15 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Paper 2 - AS Level Structured Questions",
         years: {
+          "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_24.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_24.pdf" },
+          "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_23.pdf" },
+          "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_22.pdf" },
+          "November 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_21.pdf" },
+          "June 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_24.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_24.pdf" },
+          "June 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_23.pdf" },
+          "June 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_22.pdf" },
+          "June 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_21.pdf" },
+          "March 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_22.pdf" },
           "November 2024 (v3)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/QP/November%202024%20(v3)%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/MS/November%202024%20(v3)%20MS.pdf" },
           "November 2024 (v2)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/QP/November%202024%20(v2)%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/MS/November%202024%20(v2)%20MS.pdf" },
           "November 2024 (v1)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/QP/November%202024%20(v1)%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/MS/November%202024%20(v1)%20MS.pdf" },
@@ -3538,6 +3583,21 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Paper 3 - AS Level Practical",
         years: {
+          "November 2025 (v8)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_38.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_38.pdf" },
+          "November 2025 (v7)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_37.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_37.pdf" },
+          "November 2025 (v6)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_36.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_36.pdf" },
+          "November 2025 (v5)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_35.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_35.pdf" },
+          "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_34.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_34.pdf" },
+          "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_33.pdf" },
+          "November 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_31.pdf" },
+          "June 2025 (v8)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_38.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_38.pdf" },
+          "June 2025 (v7)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_37.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_37.pdf" },
+          "June 2025 (v5)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_35.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_35.pdf" },
+          "June 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_34.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_34.pdf" },
+          "June 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_33.pdf" },
+          "June 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_32.pdf" },
+          "June 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_31.pdf" },
+          "March 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_33.pdf" },
           "November 2024 (v6)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/QP/November%202024%20%28v6%29%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/MS/November%202024%20%28v6%29%20MS.pdf" },
           "November 2024 (v5)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/QP/November%202024%20%28v5%29%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/MS/November%202024%20%28v5%29%20MS.pdf" },
           "November 2024 (v4)": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/QP/November%202024%20%28v4%29%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/MS/November%202024%20%28v4%29%20MS.pdf" },
@@ -3713,6 +3773,15 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Paper 4 - A Level Structured Questions",
         years: {
+          "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_44.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_44.pdf" },
+          "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_43.pdf" },
+          "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_42.pdf" },
+          "November 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_41.pdf" },
+          "June 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_44.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_44.pdf" },
+          "June 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_43.pdf" },
+          "June 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_42.pdf" },
+          "June 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_41.pdf" },
+          "March 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_42.pdf" },
           "Specimen 2022": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%202022%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%202022%20MS.pdf" },
           "Specimen 2016": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%202016%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%202016%20MS.pdf" },
           "Specimen": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%20MS.pdf" },
@@ -3825,6 +3894,15 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P5: {
         description: "Paper 5 - Planning, Analysis and Evaluation",
         years: {
+          "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_54.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_54.pdf" },
+          "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_53.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_53.pdf" },
+          "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_52.pdf" },
+          "November 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_51.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_51.pdf" },
+          "June 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_54.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_54.pdf" },
+          "June 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_53.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_53.pdf" },
+          "June 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_52.pdf" },
+          "June 2025 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_51.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_51.pdf" },
+          "March 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_52.pdf" },
           "Specimen 2022": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/QP/Specimen%202022%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/MS/Specimen%202022%20MS.pdf" },
           "Specimen 2016": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/QP/Specimen%202016%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/MS/Specimen%202016%20MS.pdf" },
           "Specimen": { qp: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/QP/Specimen%20QP.pdf", ms: "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/MS/Specimen%20MS.pdf" },
