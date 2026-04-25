@@ -2590,6 +2590,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP1: {
         description: "Further Pure Mathematics 1",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_F1.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_F1.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_F1.pdf",
@@ -2764,6 +2768,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP2: {
         description: "Further Pure Mathematics 2",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_F2.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_F2.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_F2.pdf",
@@ -2917,6 +2925,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP3: {
         description: "Further Pure Mathematics 3",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_F3.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_F3.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_F3.pdf",
