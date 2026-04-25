@@ -32,6 +32,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Pure Mathematics 1",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_P1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_P1.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_P1.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_P1.pdf",
@@ -230,6 +234,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Pure Mathematics 2",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_P2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_P2.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_P2.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_P2.pdf",
@@ -428,6 +436,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Pure Mathematics 3",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_P3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_P3.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_P3.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_P3.pdf",
@@ -614,6 +626,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Pure Mathematics 4",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_P4.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_P4.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_P4.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_P4.pdf",
@@ -796,6 +812,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S1: {
         description: "Statistics 1",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_S1.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_S1.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_S1.pdf",
@@ -1086,6 +1106,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S2: {
         description: "Statistics 2",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_S2.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_S2.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_S2.pdf",
@@ -1348,6 +1372,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S3: {
         description: "Statistics 3",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_S3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_S3.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_S3.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_S3.pdf",
@@ -1506,6 +1534,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M1: {
         description: "Mechanics 1",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_M1.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_M1.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_M1.pdf",
@@ -1796,6 +1828,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M2: {
         description: "Mechanics 2",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_M2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_M2.pdf",
+          },
           "2025 October": {
             qp: "https://edemat.alevelclouds.com/25_10_QP_M2.pdf",
             ms: "https://edemat.alevelclouds.com/25_10_MS_M2.pdf",
@@ -2078,6 +2114,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M3: {
         description: "Mechanics 3",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_M3.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_M3.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_M3.pdf",
@@ -2296,6 +2336,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       D1: {
         description: "Decision Mathematics 1",
         years: {
+          "2026 January": {
+            qp: "https://edemat.alevelclouds.com/26_01_QP_D1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_01_MS_D1.pdf",
+          },
           "2025 June": {
             qp: "https://edemat.alevelclouds.com/25_06_QP_D1.pdf",
             ms: "https://edemat.alevelclouds.com/25_06_MS_D1.pdf",
