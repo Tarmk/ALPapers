@@ -34,3 +34,8 @@ lerna-debug.log*
 *.sln
 *.sw?
 .vercel
+
+# Python tooling
+tools/extract-questions/.venv
+**/__pycache__/
+*.pyc

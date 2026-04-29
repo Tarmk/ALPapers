@@ -1,0 +1,126 @@
+{
+  "spec": {
+    "code": "9618",
+    "board": "Cambridge International AS & A Level",
+    "title": "Computer Science Paper 3 — Advanced Theory (A Level)"
+  },
+  "source": "Mirror of SUBJECTS.comsci.papers.P3 in src/data/subjects.ts (not imported by the app).",
+  "years": {
+    "2025 November (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w25_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w25_ms_33.pdf"
+    },
+    "2025 November (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w25_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w25_ms_32.pdf"
+    },
+    "2025 November (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w25_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w25_ms_31.pdf"
+    },
+    "2025 June (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s25_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s25_ms_33.pdf"
+    },
+    "2025 June (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s25_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s25_ms_32.pdf"
+    },
+    "2025 June (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s25_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s25_ms_31.pdf"
+    },
+    "2024 November (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w24_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w24_ms_33.pdf"
+    },
+    "2024 November (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w24_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w24_ms_32.pdf"
+    },
+    "2024 November (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w24_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w24_ms_31.pdf"
+    },
+    "2024 June (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s24_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s24_ms_33.pdf"
+    },
+    "2024 June (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s24_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s24_ms_32.pdf"
+    },
+    "2024 June (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s24_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s24_ms_31.pdf"
+    },
+    "2023 November (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w23_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w23_ms_33.pdf"
+    },
+    "2023 November (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w23_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w23_ms_32.pdf"
+    },
+    "2023 November (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w23_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w23_ms_31.pdf"
+    },
+    "2023 June (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s23_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s23_ms_33.pdf"
+    },
+    "2023 June (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s23_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s23_ms_32.pdf"
+    },
+    "2023 June (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s23_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s23_ms_31.pdf"
+    },
+    "2022 November (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w22_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w22_ms_33.pdf"
+    },
+    "2022 November (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w22_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w22_ms_32.pdf"
+    },
+    "2022 November (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w22_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w22_ms_31.pdf"
+    },
+    "2022 June (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s22_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s22_ms_33.pdf"
+    },
+    "2022 June (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s22_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s22_ms_32.pdf"
+    },
+    "2022 June (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s22_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s22_ms_31.pdf"
+    },
+    "2021 November (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w21_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w21_ms_32.pdf"
+    },
+    "2021 November (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_w21_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_w21_ms_31.pdf"
+    },
+    "2021 June (v3)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s21_qp_33.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s21_ms_33.pdf"
+    },
+    "2021 June (v2)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s21_qp_32.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s21_ms_32.pdf"
+    },
+    "2021 June (v1)": {
+      "qp": "https://pseudocode.pro/past-paper/9618_s21_qp_31.pdf",
+      "ms": "https://pseudocode.pro/past-paper/9618_s21_ms_31.pdf"
+    }
+  }
+}

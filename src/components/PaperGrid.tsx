@@ -3,7 +3,9 @@ import { Subject } from "../data/subjects";
 
 type Props = {
   subject: Subject;
+  subjectKey?: string;
   onOpenPaper: (paperCode: string) => void;
+  onOpenTopicalPaper?: (paperCode: "P3") => void;
 };
 
 // Define paper groups in the desired order
@@ -15,7 +17,7 @@ const PAPER_GROUPS = [
   { prefix: "D", label: "Decision", codes: ["D1"] },
 ];
 
-export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
+export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, onOpenTopicalPaper }) => {
   const paperCodes = Object.keys(subject.papers);
 
   if (paperCodes.length === 0) {
@@ -69,6 +71,23 @@ export const PaperGrid: React.FC<Props> = ({ subject, onOpenPaper }) => {
           </section>
         ))}
       </div>
+
+      {subjectKey === "comsci" && onOpenTopicalPaper && (
+        <section className="paper-group">
+          <h3 className="paper-group-label">Topical papers</h3>
+          <div className="paper-group-grid">
+            <button
+              type="button"
+              className="card card-button"
+              onClick={() => onOpenTopicalPaper("P3")}
+            >
+              <h4>P3</h4>
+              <p>Build printable topical question sheets from extracted Paper 3 questions.</p>
+              <span className="card-pill">Topical</span>
+            </button>
+          </div>
+        </section>
+      )}
     </>
   );
 };
