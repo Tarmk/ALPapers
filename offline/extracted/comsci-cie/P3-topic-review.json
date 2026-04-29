@@ -88,8 +88,8 @@
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -108,8 +108,8 @@
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -181,8 +181,8 @@
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -205,10 +205,12 @@
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -218,6 +220,11 @@
       12
     ],
     "reasons": [
+      "imperative",
+      "procedural",
+      "declarative",
+      "programming paradigm",
+      "object-oriented",
       "class"
     ],
     "preview": "9618/31/M/J/21 © UCLES 2021 Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity. To avoid the issue of disclosure of answer-related information to candidates, all copyr"
@@ -311,8 +318,8 @@
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -331,8 +338,8 @@
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -404,8 +411,8 @@
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -428,10 +435,12 @@
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -441,6 +450,11 @@
       12
     ],
     "reasons": [
+      "imperative",
+      "procedural",
+      "declarative",
+      "programming paradigm",
+      "object-oriented",
       "class"
     ],
     "preview": "9618/32/M/J/21 © UCLES 2021 Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity. To avoid the issue of disclosure of answer-related information to candidates, all copyr"
@@ -534,8 +548,8 @@
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -554,8 +568,8 @@
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -627,8 +641,8 @@
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -651,10 +665,12 @@
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -664,6 +680,11 @@
       12
     ],
     "reasons": [
+      "imperative",
+      "procedural",
+      "declarative",
+      "programming paradigm",
+      "object-oriented",
       "class"
     ],
     "preview": "9618/33/M/J/21 © UCLES 2021 Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the publisher will be pleased to make amends at the earliest possible opportunity. To avoid the issue of disclosure of answer-related information to candidates, all copyr"
@@ -701,8 +722,8 @@
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -749,8 +770,8 @@
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -905,8 +926,8 @@
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Parts (d)",
     "topicParts": [
       "(d)"
@@ -957,8 +978,8 @@
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1005,8 +1026,8 @@
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1161,8 +1182,8 @@
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Parts (d)",
     "topicParts": [
       "(d)"
@@ -1214,8 +1235,8 @@
     "paperCode": "9618_s22_qp_31",
     "session": "2022 June v1",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1286,7 +1307,7 @@
     "session": "2022 June v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1327,8 +1348,8 @@
     "paperCode": "9618_s22_qp_31",
     "session": "2022 June v1",
     "questionNumber": 7,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -1437,8 +1458,8 @@
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1486,8 +1507,8 @@
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1575,8 +1596,8 @@
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1597,8 +1618,8 @@
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 9,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1646,8 +1667,8 @@
     "paperCode": "9618_s22_qp_33",
     "session": "2022 June v3",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1718,7 +1739,7 @@
     "session": "2022 June v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1759,8 +1780,8 @@
     "paperCode": "9618_s22_qp_33",
     "session": "2022 June v3",
     "questionNumber": 7,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -1945,7 +1966,7 @@
     "session": "2022 November v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2088,8 +2109,8 @@
     "paperCode": "9618_w22_qp_31",
     "session": "2022 November v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -2113,8 +2134,8 @@
     "paperCode": "9618_w22_qp_31",
     "session": "2022 November v1",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -2361,8 +2382,8 @@
     "paperCode": "9618_w22_qp_32",
     "session": "2022 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -2386,8 +2407,8 @@
     "paperCode": "9618_w22_qp_32",
     "session": "2022 November v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -2521,7 +2542,7 @@
     "session": "2022 November v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2664,8 +2685,8 @@
     "paperCode": "9618_w22_qp_33",
     "session": "2022 November v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -2689,8 +2710,8 @@
     "paperCode": "9618_w22_qp_33",
     "session": "2022 November v3",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -2832,8 +2853,8 @@
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2946,8 +2967,8 @@
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -2971,8 +2992,8 @@
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3049,8 +3070,8 @@
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 3,
-    "topicId": "14",
-    "subtopicId": "14.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3071,8 +3092,8 @@
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 4,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3248,8 +3269,8 @@
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -3393,8 +3414,8 @@
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3507,8 +3528,8 @@
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3532,8 +3553,8 @@
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3752,8 +3773,8 @@
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3772,8 +3793,8 @@
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -3796,8 +3817,8 @@
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 11,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -3953,8 +3974,8 @@
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4000,8 +4021,8 @@
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4020,8 +4041,8 @@
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)(ii)",
@@ -4066,8 +4087,8 @@
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 11,
-    "topicId": "16",
-    "subtopicId": "16.2",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4088,8 +4109,8 @@
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -4308,8 +4329,8 @@
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4328,8 +4349,8 @@
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -4352,8 +4373,8 @@
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 11,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -4500,7 +4521,7 @@
     "session": "2024 June v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4576,8 +4597,8 @@
     "paperCode": "9618_s24_qp_31",
     "session": "2024 June v1",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4619,8 +4640,8 @@
     "paperCode": "9618_s24_qp_31",
     "session": "2024 June v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4762,7 +4783,7 @@
     "session": "2024 June v2",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4841,8 +4862,8 @@
     "paperCode": "9618_s24_qp_32",
     "session": "2024 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4884,8 +4905,8 @@
     "paperCode": "9618_s24_qp_32",
     "session": "2024 June v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5029,7 +5050,7 @@
     "session": "2024 June v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5105,8 +5126,8 @@
     "paperCode": "9618_s24_qp_33",
     "session": "2024 June v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5148,8 +5169,8 @@
     "paperCode": "9618_s24_qp_33",
     "session": "2024 June v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5391,8 +5412,8 @@
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -5414,8 +5435,8 @@
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5436,8 +5457,8 @@
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -5691,8 +5712,8 @@
     "paperCode": "9618_w24_qp_32",
     "session": "2024 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -5716,8 +5737,8 @@
     "paperCode": "9618_w24_qp_32",
     "session": "2024 November v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -5937,8 +5958,8 @@
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -5960,8 +5981,8 @@
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5982,8 +6003,8 @@
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -6087,8 +6108,8 @@
     "paperCode": "9618_s25_qp_31",
     "session": "2025 June v1",
     "questionNumber": 4,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -6144,8 +6165,8 @@
     "paperCode": "9618_s25_qp_31",
     "session": "2025 June v1",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -6501,8 +6522,8 @@
     "paperCode": "9618_s25_qp_32",
     "session": "2025 June v2",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -6543,8 +6564,8 @@
     "paperCode": "9618_s25_qp_32",
     "session": "2025 June v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -6724,8 +6745,8 @@
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 5,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -6812,8 +6833,8 @@
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -6876,8 +6897,8 @@
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -7124,8 +7145,8 @@
     "paperCode": "9618_w25_qp_31",
     "session": "2025 November v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -7149,8 +7170,8 @@
     "paperCode": "9618_w25_qp_31",
     "session": "2025 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -7429,8 +7450,8 @@
     "paperCode": "9618_w25_qp_32",
     "session": "2025 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -7473,8 +7494,8 @@
     "paperCode": "9618_w25_qp_32",
     "session": "2025 November v2",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -7673,8 +7694,8 @@
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -7715,8 +7736,8 @@
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -7738,8 +7759,8 @@
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 11,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -7758,8 +7779,8 @@
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",

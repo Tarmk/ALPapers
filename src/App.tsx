@@ -5,6 +5,8 @@ import { PaperGrid } from "./components/PaperGrid";
 import { PaperView } from "./components/PaperView";
 import { TopicalPapersView } from "./components/TopicalPapersView";
 
+type TopicalPaperCode = "P3" | "P4";
+
 type ViewState =
   | { type: "subjects" }
   | { type: "papers"; subjectKey: SubjectKey; subject: Subject }
@@ -13,7 +15,7 @@ type ViewState =
       type: "topicalPaper";
       subjectKey: "comsci";
       subject: Subject;
-      paperCode: "P3";
+      paperCode: TopicalPaperCode;
       topicId?: string;
       subtopicId?: string;
     }
@@ -35,7 +37,7 @@ function getInitialView(): ViewState {
     const subject = SUBJECTS[subjectKey];
 
     if (subjectKey === "comsci" && mode === "topical") {
-      if (paperCode === "P3") {
+      if (paperCode === "P3" || paperCode === "P4") {
         return {
           type: "topicalPaper",
           subjectKey,
@@ -155,7 +157,7 @@ export const App: React.FC = () => {
     });
   };
 
-  const handleOpenTopicalPaper = (paperCode: "P3") => {
+  const handleOpenTopicalPaper = (paperCode: TopicalPaperCode) => {
     if (view.type !== "papers" || view.subjectKey !== "comsci") return;
     setView({
       type: "topicalPaper",

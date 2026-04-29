@@ -29,21 +29,21 @@ export const COMSCI_P3_TOPICS: TopicalTopic[] = [
     "subtopics": [
       {
         "id": "13.1",
-        "title": "User-defined data types"
+        "title": "User-Defined Data Types"
       },
       {
         "id": "13.2",
-        "title": "File organisation and access"
+        "title": "File Organisation And Access"
       },
       {
         "id": "13.3",
-        "title": "Floating-point numbers, representation and manipulation"
+        "title": "Floating-Point Numbers, Representation And Manipulation"
       }
     ]
   },
   {
     "id": "14",
-    "title": "Communication and internet technologies",
+    "title": "Communication And Internet Technologies",
     "subtopics": [
       {
         "id": "14.1",
@@ -51,21 +51,21 @@ export const COMSCI_P3_TOPICS: TopicalTopic[] = [
       },
       {
         "id": "14.2",
-        "title": "Circuit switching, packet switching"
+        "title": "Circuit Switching, Packet Switching"
       }
     ]
   },
   {
     "id": "15",
-    "title": "Hardware and Virtual Machines",
+    "title": "Hardware And Virtual Machines",
     "subtopics": [
       {
         "id": "15.1",
-        "title": "Processors, Parallel Processing and Virtual Machines"
+        "title": "Processors, Parallel Processing And Virtual Machines"
       },
       {
         "id": "15.2",
-        "title": "Boolean Algebra and Logic Circuits"
+        "title": "Boolean Algebra And Logic Circuits"
       }
     ]
   },
@@ -89,7 +89,7 @@ export const COMSCI_P3_TOPICS: TopicalTopic[] = [
     "subtopics": [
       {
         "id": "17.1",
-        "title": "Encryption, Encryption Protocols and Digital certificates"
+        "title": "Encryption, Encryption Protocols And Digital Certificates"
       }
     ]
   },
@@ -100,6 +100,34 @@ export const COMSCI_P3_TOPICS: TopicalTopic[] = [
       {
         "id": "18.1",
         "title": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Computational Thinking And Problem-Solving",
+    "subtopics": [
+      {
+        "id": "19.1",
+        "title": "Algorithms"
+      },
+      {
+        "id": "19.2",
+        "title": "Recursion"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Further Programming",
+    "subtopics": [
+      {
+        "id": "20.1",
+        "title": "Programming Paradigms"
+      },
+      {
+        "id": "20.2",
+        "title": "File Processing And Exception Handling"
       }
     ]
   }
@@ -131,10 +159,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -169,10 +199,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -207,10 +239,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
-    "topicFocus": "Parts (c)",
+    "topicId": "20",
+    "subtopicId": "20.1",
+    "topicFocus": "Whole question",
     "topicParts": [
+      "(a)",
+      "(b)",
       "(c)"
     ],
     "images": [
@@ -225,8 +259,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -260,8 +294,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Parts (d)",
     "topicParts": [
       "(d)"
@@ -280,8 +314,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -315,8 +349,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Parts (d)",
     "topicParts": [
       "(d)"
@@ -358,8 +392,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_31",
     "session": "2022 June v1",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -378,8 +412,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_31",
     "session": "2022 June v1",
     "questionNumber": 7,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -420,8 +454,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -463,8 +497,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_33",
     "session": "2022 June v3",
     "questionNumber": 2,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -483,8 +517,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_33",
     "session": "2022 June v3",
     "questionNumber": 7,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -526,8 +560,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_31",
     "session": "2022 November v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -545,8 +579,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_31",
     "session": "2022 November v1",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -585,8 +619,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_32",
     "session": "2022 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -604,8 +638,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_32",
     "session": "2022 November v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -649,8 +683,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_33",
     "session": "2022 November v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -668,8 +702,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w22_qp_33",
     "session": "2022 November v3",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -702,8 +736,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -723,8 +757,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 4,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -758,8 +792,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -794,8 +828,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -849,8 +883,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -885,8 +919,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)(ii)",
@@ -906,8 +940,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -960,8 +994,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (b)",
     "topicParts": [
       "(b)"
@@ -1058,8 +1092,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -1076,8 +1110,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -1116,8 +1150,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_32",
     "session": "2024 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -1135,8 +1169,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_32",
     "session": "2024 November v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -1174,8 +1208,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -1192,8 +1226,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -1232,8 +1266,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_31",
     "session": "2025 June v1",
     "questionNumber": 4,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1307,8 +1341,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_32",
     "session": "2025 June v2",
     "questionNumber": 11,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)"
@@ -1383,8 +1417,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 5,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1435,8 +1469,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_31",
     "session": "2025 November v1",
     "questionNumber": 9,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1475,8 +1509,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_32",
     "session": "2025 November v2",
     "questionNumber": 12,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -1514,8 +1548,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -1752,8 +1786,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_31",
     "session": "2024 June v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1809,8 +1843,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_32",
     "session": "2024 June v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1846,8 +1880,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_33",
     "session": "2024 June v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1883,8 +1917,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_31",
     "session": "2024 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1939,8 +1973,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w24_qp_33",
     "session": "2024 November v3",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1973,8 +2007,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_31",
     "session": "2025 November v1",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -1989,8 +2023,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_32",
     "session": "2025 November v2",
     "questionNumber": 10,
-    "topicId": "13",
-    "subtopicId": "13.2",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2528,8 +2562,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2544,8 +2578,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2560,8 +2594,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2576,8 +2610,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_31",
     "session": "2021 November v1",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2594,8 +2628,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w21_qp_32",
     "session": "2021 November v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -2631,8 +2665,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 4,
-    "topicId": "14",
-    "subtopicId": "14.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3069,8 +3103,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_32",
     "session": "2023 June v2",
     "questionNumber": 3,
-    "topicId": "14",
-    "subtopicId": "14.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3251,8 +3285,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3272,8 +3306,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_31",
     "session": "2021 June v1",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -3292,8 +3326,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3313,8 +3347,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_32",
     "session": "2021 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -3333,8 +3367,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 5,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -3354,8 +3388,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s21_qp_33",
     "session": "2021 June v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [
       "(b)"
@@ -3431,8 +3465,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3611,8 +3645,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 11,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -3631,8 +3665,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3647,8 +3681,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 11,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Parts (a)",
     "topicParts": [
       "(a)"
@@ -3667,8 +3701,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_31",
     "session": "2024 June v1",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3705,8 +3739,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_32",
     "session": "2024 June v2",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3740,8 +3774,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s24_qp_33",
     "session": "2024 June v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -3826,8 +3860,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 8,
-    "topicId": "15",
-    "subtopicId": "15.1",
+    "topicId": "18",
+    "subtopicId": "18.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4028,8 +4062,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4091,8 +4125,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4151,8 +4185,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4374,8 +4408,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_31",
     "session": "2025 June v1",
     "questionNumber": 6,
-    "topicId": "15",
-    "subtopicId": "15.2",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4557,7 +4591,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2022 June v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4590,8 +4624,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s22_qp_32",
     "session": "2022 June v2",
     "questionNumber": 9,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4607,7 +4641,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2022 June v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4625,7 +4659,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2022 November v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4676,7 +4710,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2022 November v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4707,8 +4741,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_31",
     "session": "2023 June v1",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -4728,8 +4762,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s23_qp_33",
     "session": "2023 June v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -4838,7 +4872,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2024 June v1",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4854,7 +4888,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2024 June v2",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4870,7 +4904,7 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "session": "2024 June v3",
     "questionNumber": 5,
     "topicId": "16",
-    "subtopicId": "16.1",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -4998,8 +5032,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5072,8 +5106,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 11,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "19",
+    "subtopicId": "19.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5088,8 +5122,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w25_qp_33",
     "session": "2025 November v3",
     "questionNumber": 12,
-    "topicId": "16",
-    "subtopicId": "16.1",
+    "topicId": "20",
+    "subtopicId": "20.2",
     "topicFocus": "Whole question",
     "topicParts": [
       "(a)",
@@ -5198,8 +5232,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_32",
     "session": "2023 November v2",
     "questionNumber": 11,
-    "topicId": "16",
-    "subtopicId": "16.2",
+    "topicId": "20",
+    "subtopicId": "20.1",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5580,8 +5614,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_31",
     "session": "2023 November v1",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5596,8 +5630,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_w23_qp_33",
     "session": "2023 November v3",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5685,8 +5719,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_32",
     "session": "2025 June v2",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [
@@ -5719,8 +5753,8 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "paperCode": "9618_s25_qp_33",
     "session": "2025 June v3",
     "questionNumber": 9,
-    "topicId": "17",
-    "subtopicId": "17.1",
+    "topicId": "16",
+    "subtopicId": "16.2",
     "topicFocus": "Whole question",
     "topicParts": [],
     "images": [

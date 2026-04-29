@@ -475,9 +475,9 @@ def run_export(
         ocr_used = True
     else:
         markers = find_question_markers(doc)
-        if len(markers) < 2 and use_fallback:
+        if use_fallback:
             cie = find_question_markers_cambridge_cie(doc)
-            if len(cie) >= len(markers):
+            if len(cie) >= 2 and len(cie) >= len(markers):
                 markers = cie
 
         if len(markers) < 2 and use_fallback:

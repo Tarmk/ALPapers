@@ -5,19 +5,21 @@ import {
   TopicalQuestion,
   TopicalTopic,
 } from "../data/comsciP3Topical";
+import {
+  COMSCI_P4_QUESTIONS,
+  COMSCI_P4_TOPICS,
+} from "../data/comsciP4Topical";
 
 type Props = {
-  paperCode: "P3";
+  paperCode: "P3" | "P4";
   topicId?: string;
   subtopicId?: string;
   onSelectTopic: (topicId: string) => void;
   onSelectSubtopic: (topicId: string, subtopicId: string) => void;
 };
 
-const countQuestions = (predicate: (q: TopicalQuestion) => boolean) =>
-  COMSCI_P3_QUESTIONS.filter(predicate).length;
-
 const hasPartialTopicFocus = (question: TopicalQuestion) => question.topicFocus !== "Whole question";
+const ALL_SUBTOPICS_ID = "all";
 
 const shuffleQuestions = (questions: TopicalQuestion[]) => {
   const shuffled = [...questions];
@@ -48,15 +50,25 @@ export const TopicalPapersView: React.FC<Props> = ({
   onSelectTopic,
   onSelectSubtopic,
 }) => {
-  const selectedTopic = COMSCI_P3_TOPICS.find((topic) => topic.id === topicId);
-  const selectedSubtopic =
-    selectedTopic?.subtopics.find((subtopic) => subtopic.id === subtopicId) ??
-    selectedTopic?.subtopics[0];
+  const topicalTopics = paperCode === "P4" ? COMSCI_P4_TOPICS : COMSCI_P3_TOPICS;
+  const topicalQuestions = paperCode === "P4" ? COMSCI_P4_QUESTIONS : COMSCI_P3_QUESTIONS;
+  const countQuestions = (predicate: (q: TopicalQuestion) => boolean) =>
+    topicalQuestions.filter(predicate).length;
+
+  const selectedTopic = topicalTopics.find((topic) => topic.id === topicId);
+  const requestedSubtopic = selectedTopic?.subtopics.find((subtopic) => subtopic.id === subtopicId);
+  const selectedSubtopicId = requestedSubtopic ? requestedSubtopic.id : ALL_SUBTOPICS_ID;
+  const selectedSubtopic = requestedSubtopic;
+  const isAllSubtopicsSelected = selectedSubtopicId === ALL_SUBTOPICS_ID;
 
   const questions = useMemo(() => {
+    if (!selectedTopic) return [];
+    if (isAllSubtopicsSelected) {
+      return topicalQuestions.filter((question) => question.topicId === selectedTopic.id);
+    }
     if (!selectedSubtopic) return [];
-    return COMSCI_P3_QUESTIONS.filter((question) => question.subtopicId === selectedSubtopic.id);
-  }, [selectedSubtopic]);
+    return topicalQuestions.filter((question) => question.subtopicId === selectedSubtopic.id);
+  }, [isAllSubtopicsSelected, selectedSubtopic, selectedTopic, topicalQuestions]);
 
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<"browse" | "random">("random");
@@ -105,18 +117,18 @@ export const TopicalPapersView: React.FC<Props> = ({
           </p>
         </section>
 
-        <section className="topical-grid" aria-label="P3 topical syllabus topics">
-          {COMSCI_P3_TOPICS.map((topic: TopicalTopic) => (
+        <section className="topical-grid" aria-label={`${paperCode} topical syllabus topics`}>
+          {topicalTopics.map((topic: TopicalTopic) => (
             <button
               key={topic.id}
               type="button"
               className="card card-button topical-card"
               onClick={() => onSelectTopic(topic.id)}
             >
-              <h3>{topic.id}</h3>
-              <p>{topic.title}</p>
+              <span className="topical-topic-code">Topic {topic.id}</span>
+              <h3>{topic.title}</h3>
               <span className="card-pill">
-                {countQuestions((question) => question.topicId === topic.id)} questions
+                {countQuestions((question) => question.topicId === topic.id)} Questions
               </span>
             </button>
           ))}
@@ -129,7 +141,8 @@ export const TopicalPapersView: React.FC<Props> = ({
     <>
       <section className="intro topical-controls">
         <div>
-          <h2>{selectedTopic.id} {selectedTopic.title}</h2>
+          <span className="topical-topic-code">Topic {selectedTopic.id}</span>
+          <h2>{selectedTopic.title}</h2>
           <p className="intro-text">
             Choose a subtopic, browse the matching questions or generate a random printable set.
           </p>
@@ -144,13 +157,15 @@ export const TopicalPapersView: React.FC<Props> = ({
           <label className="topical-field">
             <span>Subtopic</span>
             <select
-              value={selectedSubtopic?.id ?? ""}
+              value={selectedSubtopicId}
               onChange={(event) => onSelectSubtopic(selectedTopic.id, event.target.value)}
             >
+              <option value={ALL_SUBTOPICS_ID}>
+                All Subtopics ({countQuestions((question) => question.topicId === selectedTopic.id)})
+              </option>
               {selectedTopic.subtopics.map((subtopic) => (
                 <option key={subtopic.id} value={subtopic.id}>
-                  {subtopic.id} {subtopic.title} (
-                  {countQuestions((question) => question.subtopicId === subtopic.id)})
+                  {subtopic.title} ({countQuestions((question) => question.subtopicId === subtopic.id)})
                 </option>
               ))}
             </select>
@@ -250,8 +265,12 @@ export const TopicalPapersView: React.FC<Props> = ({
         <section className="print-sheet" aria-label="Printable question sheet">
           <div className="print-sheet-header">
             <h2>{paperCode} Topical Questions</h2>
-            <p>{selectedSubtopic?.id} {selectedSubtopic?.title}</p>
-            {mode === "random" && <p>Random set of {randomQuestions.length} question(s)</p>}
+            <p>
+              {isAllSubtopicsSelected
+                ? `${selectedTopic.id} ${selectedTopic.title} - All subtopics`
+                : selectedSubtopic?.title}
+            </p>
+            {mode === "random" && <p>Random Set Of {randomQuestions.length} Question(s)</p>}
           </div>
 
           {printableQuestions.length === 0 ? (

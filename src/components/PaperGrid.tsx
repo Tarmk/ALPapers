@@ -5,17 +5,24 @@ type Props = {
   subject: Subject;
   subjectKey?: string;
   onOpenPaper: (paperCode: string) => void;
-  onOpenTopicalPaper?: (paperCode: "P3") => void;
+  onOpenTopicalPaper?: (paperCode: "P3" | "P4") => void;
 };
 
-// Define paper groups in the desired order
-const PAPER_GROUPS = [
-  { prefix: "P", label: "Pure Mathematics", codes: ["P1", "P2", "P3", "P4", "P5"] },
-  { prefix: "FP", label: "Further Pure", codes: ["FP1", "FP2", "FP3"] },
-  { prefix: "M", label: "Mechanics", codes: ["M1", "M2", "M3"] },
-  { prefix: "S", label: "Statistics", codes: ["S1", "S2", "S3"] },
-  { prefix: "D", label: "Decision", codes: ["D1"] },
-];
+const PAPER_GROUPS_BY_SUBJECT: Record<string, { prefix: string; label: string; codes: string[] }[]> = {
+  maths: [
+    { prefix: "P", label: "Pure Mathematics", codes: ["P1", "P2", "P3", "P4", "P5"] },
+    { prefix: "FP", label: "Further Pure", codes: ["FP1", "FP2", "FP3"] },
+    { prefix: "M", label: "Mechanics", codes: ["M1", "M2", "M3"] },
+    { prefix: "S", label: "Statistics", codes: ["S1", "S2", "S3"] },
+    { prefix: "D", label: "Decision", codes: ["D1"] },
+  ],
+  physics: [
+    { prefix: "P", label: "Physics Papers", codes: ["P1", "P2", "P3", "P4", "P5"] },
+  ],
+  comsci: [
+    { prefix: "P", label: "Cambridge 9618 Papers", codes: ["P1", "P2", "P3", "P4"] },
+  ],
+};
 
 export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, onOpenTopicalPaper }) => {
   const paperCodes = Object.keys(subject.papers);
@@ -29,8 +36,11 @@ export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, o
     );
   }
 
-  // Group papers by type
-  const groupedPapers = PAPER_GROUPS.map((group) => ({
+  const paperGroups = PAPER_GROUPS_BY_SUBJECT[subjectKey || ""] ?? [
+    { prefix: "P", label: "Papers", codes: paperCodes },
+  ];
+
+  const groupedPapers = paperGroups.map((group) => ({
     ...group,
     papers: group.codes
       .filter((code) => subject.papers[code])
@@ -76,15 +86,21 @@ export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, o
         <section className="paper-group">
           <h3 className="paper-group-label">Topical papers</h3>
           <div className="paper-group-grid">
-            <button
-              type="button"
-              className="card card-button"
-              onClick={() => onOpenTopicalPaper("P3")}
-            >
-              <h4>P3</h4>
-              <p>Build printable topical question sheets from extracted Paper 3 questions.</p>
-              <span className="card-pill">Topical</span>
-            </button>
+            {(["P3", "P4"] as const).map((code) => (
+              <button
+                key={code}
+                type="button"
+                className="card card-button"
+                onClick={() => onOpenTopicalPaper(code)}
+              >
+                <h4>{code}</h4>
+                <p>
+                  Build printable topical question sheets from extracted Paper{" "}
+                  {code.slice(1)} questions.
+                </p>
+                <span className="card-pill">Topical</span>
+              </button>
+            ))}
           </div>
         </section>
       )}
