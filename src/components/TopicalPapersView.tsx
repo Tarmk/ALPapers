@@ -138,8 +138,8 @@ export const TopicalPapersView: React.FC<Props> = ({
     () => questions.filter((question) => question.markSchemeImages?.length),
     [questions],
   );
-  const randomPool =
-    supportsMarkScheme && sheetContent === "markScheme" ? questionsWithMarkScheme : questions;
+  // Keep one stable random pool so question paper and mark scheme stay aligned.
+  const randomPool = supportsMarkScheme ? questionsWithMarkScheme : questions;
 
   useEffect(() => {
     setSelectedIds(new Set(questions.map((question) => question.id)));
