@@ -134,12 +134,19 @@ export const TopicalPapersView: React.FC<Props> = ({
   const [sheetContent, setSheetContent] = useState<SheetContent>("questions");
   const [randomCount, setRandomCount] = useState("20");
   const [randomQuestions, setRandomQuestions] = useState<TopicalQuestion[]>([]);
+  const questionsWithMarkScheme = useMemo(
+    () => questions.filter((question) => question.markSchemeImages?.length),
+    [questions],
+  );
+  const randomPool =
+    supportsMarkScheme && sheetContent === "markScheme" ? questionsWithMarkScheme : questions;
 
   useEffect(() => {
     setSelectedIds(new Set(questions.map((question) => question.id)));
-    const count = Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, questions.length));
-    setRandomQuestions(shuffleQuestions(questions).slice(0, count));
-  }, [questions]);
+    const maxCount = randomPool.length;
+    const count = maxCount === 0 ? 0 : Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, maxCount));
+    setRandomQuestions(shuffleQuestions(randomPool).slice(0, count));
+  }, [questions, randomCount, randomPool]);
 
   useEffect(() => {
     if (!supportsMarkScheme) {
@@ -163,8 +170,9 @@ export const TopicalPapersView: React.FC<Props> = ({
   };
 
   const handleGenerateRandom = () => {
-    const count = Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, questions.length));
-    setRandomQuestions(shuffleQuestions(questions).slice(0, count));
+    const maxCount = randomPool.length;
+    const count = maxCount === 0 ? 0 : Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, maxCount));
+    setRandomQuestions(shuffleQuestions(randomPool).slice(0, count));
   };
 
   const handlePrint = async (content: SheetContent) => {
@@ -302,7 +310,7 @@ export const TopicalPapersView: React.FC<Props> = ({
                 <input
                   type="number"
                   min="1"
-                  max={questions.length}
+                  max={Math.max(1, randomPool.length)}
                   value={randomCount}
                   onChange={(event) => setRandomCount(event.target.value)}
                 />
@@ -346,7 +354,11 @@ export const TopicalPapersView: React.FC<Props> = ({
               </label>
             ))
           ) : randomQuestions.length === 0 ? (
-            <p className="random-hint">Enter a number and generate a random set.</p>
+            <p className="random-hint">
+              {sheetContent === "markScheme" && supportsMarkScheme
+                ? "No questions with mark schemes are available for this selection."
+                : "Enter a number and generate a random set."}
+            </p>
           ) : (
             randomQuestions.map((question) => (
               <div key={question.id} className="question-option question-option-static">
