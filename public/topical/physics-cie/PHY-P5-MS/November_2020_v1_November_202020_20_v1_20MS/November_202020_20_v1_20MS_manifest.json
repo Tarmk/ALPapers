@@ -1,0 +1,37 @@
+{
+  "prefix": "November_202020_20_v1_20MS",
+  "dpi": 150,
+  "mode": "mark-scheme",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 2,
+      "start_page": 8,
+      "outputs": [
+        {
+          "file": "November_202020_20_v1_20MS_question_02_Q2_part_01.png",
+          "pdf_page": 8,
+          "part": 1,
+          "width": 1755,
+          "height": 856
+        },
+        {
+          "file": "November_202020_20_v1_20MS_question_02_Q2_part_02.png",
+          "pdf_page": 9,
+          "part": 2,
+          "width": 1755,
+          "height": 728
+        },
+        {
+          "file": "November_202020_20_v1_20MS_question_02_Q2_part_03.png",
+          "pdf_page": 10,
+          "part": 3,
+          "width": 1755,
+          "height": 655
+        }
+      ],
+      "approx_pages_span": 3
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "spec": {
+    "code": "9702",
+    "board": "Cambridge International AS & A Level",
+    "title": "Physics P4"
+  },
+  "source": "Mirror of SUBJECTS.physics in src/data/subjects.ts (generated for topical extraction).",
+  "years": {
+    "November 2025 (v4)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_44.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_44.pdf"
+    },
+    "November 2025 (v3)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_43.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_43.pdf"
+    },
+    "November 2025 (v2)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_42.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_42.pdf"
+    },
+    "November 2025 (v1)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_41.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_41.pdf"
+    },
+    "June 2025 (v4)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_44.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_44.pdf"
+    },
+    "June 2025 (v3)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_43.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_43.pdf"
+    },
+    "June 2025 (v2)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_42.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_42.pdf"
+    },
+    "June 2025 (v1)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_qp_41.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s25_ms_41.pdf"
+    },
+    "March 2025 (v2)": {
+      "qp": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_qp_42.pdf",
+      "ms": "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m25_ms_42.pdf"
+    },
+    "Specimen 2022": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%202022%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%202022%20MS.pdf"
+    },
+    "Specimen 2016": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%202016%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%202016%20MS.pdf"
+    },
+    "Specimen": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/Specimen%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/Specimen%20MS.pdf"
+    },
+    "November 2024 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202024%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202024%20(v3)%20MS.pdf"
+    },
+    "November 2024 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202024%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202024%20(v2)%20MS.pdf"
+    },
+    "November 2024 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202024%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202024%20(v1)%20MS.pdf"
+    },
+    "June 2024 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202024%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202024%20(v3)%20MS.pdf"
+    },
+    "June 2024 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202024%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202024%20(v2)%20MS.pdf"
+    },
+    "June 2024 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202024%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202024%20(v1)%20MS.pdf"
+    },
+    "March 2024 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202024%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202024%20(v2)%20MS.pdf"
+    },
+    "November 2023 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202023%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202023%20(v3)%20MS.pdf"
+    },
+    "November 2023 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202023%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202023%20(v2)%20MS.pdf"
+    },
+    "November 2023 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202023%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202023%20(v1)%20MS.pdf"
+    },
+    "June 2023 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202023%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202023%20(v3)%20MS.pdf"
+    },
+    "June 2023 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202023%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202023%20(v2)%20MS.pdf"
+    },
+    "June 2023 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202023%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202023%20(v1)%20MS.pdf"
+    },
+    "March 2023 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202023%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202023%20(v2)%20MS.pdf"
+    },
+    "November 2022 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202022%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202022%20(v3)%20MS.pdf"
+    },
+    "November 2022 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202022%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202022%20(v2)%20MS.pdf"
+    },
+    "November 2022 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202022%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202022%20(v1)%20MS.pdf"
+    },
+    "June 2022 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202022%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202022%20(v3)%20MS.pdf"
+    },
+    "June 2022 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202022%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202022%20(v2)%20MS.pdf"
+    },
+    "June 2022 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202022%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202022%20(v1)%20MS.pdf"
+    },
+    "March 2022 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202022%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202022%20(v2)%20MS.pdf"
+    },
+    "November 2021 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202021%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202021%20(v3)%20MS.pdf"
+    },
+    "November 2021 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202021%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202021%20(v2)%20MS.pdf"
+    },
+    "November 2021 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202021%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202021%20(v1)%20MS.pdf"
+    },
+    "June 2021 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202021%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202021%20(v3)%20MS.pdf"
+    },
+    "June 2021 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202021%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202021%20(v2)%20MS.pdf"
+    },
+    "June 2021 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202021%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202021%20(v1)%20MS.pdf"
+    },
+    "March 2021 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202021%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202021%20(v2)%20MS.pdf"
+    },
+    "November 2020 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202020%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202020%20(v3)%20MS.pdf"
+    },
+    "November 2020 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202020%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202020%20(v2)%20MS.pdf"
+    },
+    "November 2020 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202020%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202020%20(v1)%20MS.pdf"
+    },
+    "June 2020 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202020%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202020%20(v3)%20MS.pdf"
+    },
+    "June 2020 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202020%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202020%20(v2)%20MS.pdf"
+    },
+    "June 2020 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202020%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202020%20(v1)%20MS.pdf"
+    },
+    "March 2020 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202020%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202020%20(v2)%20MS.pdf"
+    },
+    "November 2019 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202019%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202019%20(v3)%20MS.pdf"
+    },
+    "November 2019 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202019%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202019%20(v2)%20MS.pdf"
+    },
+    "November 2019 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202019%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202019%20(v1)%20MS.pdf"
+    },
+    "June 2019 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202019%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202019%20(v3)%20MS.pdf"
+    },
+    "June 2019 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202019%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202019%20(v2)%20MS.pdf"
+    },
+    "June 2019 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202019%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202019%20(v1)%20MS.pdf"
+    },
+    "March 2019 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202019%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202019%20(v2)%20MS.pdf"
+    },
+    "November 2018 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202018%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202018%20(v3)%20MS.pdf"
+    },
+    "November 2018 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202018%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202018%20(v2)%20MS.pdf"
+    },
+    "November 2018 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202018%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202018%20(v1)%20MS.pdf"
+    },
+    "June 2018 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202018%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202018%20(v3)%20MS.pdf"
+    },
+    "June 2018 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202018%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202018%20(v2)%20MS.pdf"
+    },
+    "June 2018 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202018%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202018%20(v1)%20MS.pdf"
+    },
+    "March 2018 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202018%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202018%20(v2)%20MS.pdf"
+    },
+    "November 2017 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202017%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202017%20(v3)%20MS.pdf"
+    },
+    "November 2017 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202017%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202017%20(v2)%20MS.pdf"
+    },
+    "November 2017 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202017%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202017%20(v1)%20MS.pdf"
+    },
+    "June 2017 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202017%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202017%20(v3)%20MS.pdf"
+    },
+    "June 2017 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202017%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202017%20(v2)%20MS.pdf"
+    },
+    "June 2017 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202017%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202017%20(v1)%20MS.pdf"
+    },
+    "March 2017 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202017%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202017%20(v2)%20MS.pdf"
+    },
+    "November 2016 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202016%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202016%20(v3)%20MS.pdf"
+    },
+    "November 2016 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202016%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202016%20(v2)%20MS.pdf"
+    },
+    "November 2016 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202016%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202016%20(v1)%20MS.pdf"
+    },
+    "June 2016 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202016%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202016%20(v3)%20MS.pdf"
+    },
+    "June 2016 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202016%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202016%20(v2)%20MS.pdf"
+    },
+    "June 2016 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202016%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202016%20(v1)%20MS.pdf"
+    },
+    "March 2016 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/March%202016%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/March%202016%20(v2)%20MS.pdf"
+    },
+    "November 2015 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202015%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202015%20(v3)%20MS.pdf"
+    },
+    "November 2015 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202015%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202015%20(v2)%20MS.pdf"
+    },
+    "November 2015 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202015%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202015%20(v1)%20MS.pdf"
+    },
+    "June 2015 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202015%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202015%20(v3)%20MS.pdf"
+    },
+    "June 2015 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202015%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202015%20(v2)%20MS.pdf"
+    },
+    "June 2015 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202015%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202015%20(v1)%20MS.pdf"
+    },
+    "November 2014 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202014%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202014%20(v3)%20MS.pdf"
+    },
+    "November 2014 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202014%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202014%20(v2)%20MS.pdf"
+    },
+    "November 2014 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202014%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202014%20(v1)%20MS.pdf"
+    },
+    "June 2014 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202014%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202014%20(v3)%20MS.pdf"
+    },
+    "June 2014 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202014%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202014%20(v2)%20MS.pdf"
+    },
+    "June 2014 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202014%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202014%20(v1)%20MS.pdf"
+    },
+    "November 2013 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202013%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202013%20(v3)%20MS.pdf"
+    },
+    "November 2013 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202013%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202013%20(v2)%20MS.pdf"
+    },
+    "November 2013 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202013%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202013%20(v1)%20MS.pdf"
+    },
+    "June 2013 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202013%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202013%20(v3)%20MS.pdf"
+    },
+    "June 2013 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202013%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202013%20(v2)%20MS.pdf"
+    },
+    "June 2013 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202013%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202013%20(v1)%20MS.pdf"
+    },
+    "November 2012 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202012%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202012%20(v3)%20MS.pdf"
+    },
+    "November 2012 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202012%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202012%20(v2)%20MS.pdf"
+    },
+    "November 2012 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202012%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202012%20(v1)%20MS.pdf"
+    },
+    "June 2012 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202012%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202012%20(v3)%20MS.pdf"
+    },
+    "June 2012 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202012%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202012%20(v2)%20MS.pdf"
+    },
+    "June 2012 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202012%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202012%20(v1)%20MS.pdf"
+    },
+    "November 2011 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202011%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202011%20(v3)%20MS.pdf"
+    },
+    "November 2011 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202011%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202011%20(v2)%20MS.pdf"
+    },
+    "November 2011 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202011%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202011%20(v1)%20MS.pdf"
+    },
+    "June 2011 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202011%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202011%20(v3)%20MS.pdf"
+    },
+    "June 2011 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202011%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202011%20(v2)%20MS.pdf"
+    },
+    "June 2011 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202011%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202011%20(v1)%20MS.pdf"
+    },
+    "November 2010 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202010%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202010%20(v3)%20MS.pdf"
+    },
+    "November 2010 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202010%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202010%20(v2)%20MS.pdf"
+    },
+    "November 2010 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202010%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202010%20(v1)%20MS.pdf"
+    },
+    "June 2010 (v3)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202010%20(v3)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202010%20(v3)%20MS.pdf"
+    },
+    "June 2010 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202010%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202010%20(v2)%20MS.pdf"
+    },
+    "June 2010 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202010%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202010%20(v1)%20MS.pdf"
+    },
+    "November 2009 (v2)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202009%20(v2)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202009%20(v2)%20MS.pdf"
+    },
+    "November 2009 (v1)": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202009%20(v1)%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202009%20(v1)%20MS.pdf"
+    },
+    "June 2009": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202009%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202009%20MS.pdf"
+    },
+    "November 2008": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/November%202008%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/November%202008%20MS.pdf"
+    },
+    "June 2008": {
+      "qp": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/QP/June%202008%20QP.pdf",
+      "ms": "https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-4/MS/June%202008%20MS.pdf"
+    }
+  }
+}

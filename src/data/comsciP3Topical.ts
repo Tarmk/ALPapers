@@ -9,6 +9,8 @@ export type TopicalQuestion = {
   topicParts: string[];
   images: string[];
   sourcePages: number[];
+  markSchemeImages?: string[];
+  markSchemeSourcePages?: number[];
 };
 
 export type TopicalSubtopic = {
@@ -152,6 +154,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -172,6 +180,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -191,6 +207,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v2_9618_s21_qp_32/9618_s21_qp_32_question_02_Q2.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -212,6 +234,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -231,6 +261,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v3_9618_s21_qp_33/9618_s21_qp_33_question_02_Q2.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -252,6 +288,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -268,6 +312,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -287,6 +337,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -307,6 +363,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       13,
       14
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -323,6 +385,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -342,6 +410,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -362,6 +436,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       13,
       14
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -385,6 +465,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -405,6 +491,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -425,6 +517,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -447,6 +547,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -467,6 +573,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -490,6 +602,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -510,6 +628,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -530,6 +654,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -553,6 +685,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -572,6 +712,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -590,6 +738,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_12_Q12_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_12_Q12_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      14,
+      15
     ]
   },
   {
@@ -612,6 +768,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -631,6 +795,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14
     ]
   },
   {
@@ -653,6 +825,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      15,
+      16
     ]
   },
   {
@@ -676,6 +856,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -695,6 +883,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -713,6 +909,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_12_Q12_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_12_Q12_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      14,
+      15
     ]
   },
   {
@@ -729,6 +933,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -750,6 +960,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -765,6 +983,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_June_v2_9618_s23_qp_32/9618_s23_qp_32_question_04_Q4.png"
     ],
     "sourcePages": [
+      6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
       6
     ]
   },
@@ -784,6 +1008,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_June_v2_9618_s23_qp_32/9618_s23_qp_32_question_06_Q6.png"
     ],
     "sourcePages": [
+      7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
       7
     ]
   },
@@ -805,6 +1035,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       13,
       14
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -821,6 +1057,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -842,6 +1084,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -858,6 +1108,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -876,6 +1132,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -896,6 +1158,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -911,6 +1179,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v2_9618_w23_qp_32/9618_w23_qp_32_question_02_Q2.png"
     ],
     "sourcePages": [
+      3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
       3
     ]
   },
@@ -933,6 +1207,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -953,6 +1235,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -969,6 +1257,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -987,6 +1281,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1007,6 +1307,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -1028,6 +1334,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       3,
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1046,6 +1358,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -1067,6 +1385,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       3,
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1085,6 +1409,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -1103,6 +1435,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -1124,6 +1462,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_11_Q11_part_02.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_11_Q11_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      15,
+      16,
+      17
     ]
   },
   {
@@ -1143,6 +1491,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -1162,6 +1516,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      11,
+      12
     ]
   },
   {
@@ -1183,6 +1545,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_11_Q11_part_02.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_11_Q11_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14,
+      15
     ]
   },
   {
@@ -1201,6 +1573,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -1219,6 +1599,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -1240,6 +1626,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_11_Q11_part_02.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_11_Q11_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      15,
+      16,
+      17
     ]
   },
   {
@@ -1259,6 +1655,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1279,6 +1681,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       5,
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -1300,6 +1710,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -1316,6 +1732,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      15
     ]
   },
   {
@@ -1334,6 +1756,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1352,6 +1780,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2025_June_v2_9618_s25_qp_32/9618_s25_qp_32_question_11_Q11_part_02.png"
     ],
     "sourcePages": [
+      10,
+      11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
       10,
       11
     ]
@@ -1375,6 +1811,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -1391,6 +1833,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_13_Q13.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -1410,6 +1858,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1426,6 +1880,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -1442,6 +1902,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -1462,6 +1928,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1482,6 +1954,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       9,
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14
     ]
   },
   {
@@ -1502,6 +1982,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1520,6 +2006,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      17
     ]
   },
   {
@@ -1541,6 +2033,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -1559,6 +2057,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -1579,6 +2083,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -1599,6 +2109,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -1618,6 +2134,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1634,6 +2156,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -1653,6 +2181,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1672,6 +2206,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1688,6 +2228,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -1707,6 +2253,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1725,6 +2277,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -1741,6 +2301,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -1759,6 +2325,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v3_9618_w23_qp_33/9618_w23_qp_33_question_04_Q4.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -1779,6 +2351,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -1797,6 +2375,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -1815,6 +2401,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -1836,6 +2428,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -1854,6 +2454,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -1873,6 +2479,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -1891,6 +2503,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -1910,6 +2530,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -1928,6 +2554,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14
     ]
   },
   {
@@ -1947,6 +2581,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -1966,6 +2606,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -1984,6 +2630,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14
     ]
   },
   {
@@ -2000,6 +2654,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -2016,6 +2676,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -2032,6 +2698,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      15
     ]
   },
   {
@@ -2056,6 +2728,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_01_Q1_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_01_Q1_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -2080,6 +2760,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_01_Q1_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_01_Q1_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -2104,6 +2792,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_01_Q1_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_01_Q1_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -2124,6 +2820,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2144,6 +2846,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2168,6 +2876,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2188,6 +2902,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2212,6 +2932,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2232,6 +2958,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2251,6 +2983,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2271,6 +3009,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       2,
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2290,6 +3034,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2308,6 +3058,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2327,6 +3083,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2346,6 +3108,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2365,6 +3133,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2384,6 +3158,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2403,6 +3183,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2422,6 +3208,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -2441,6 +3233,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -2460,6 +3258,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2479,6 +3283,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_02_Q2_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_02_Q2_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      4,
+      5
     ]
   },
   {
@@ -2498,6 +3310,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2517,6 +3335,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_02_Q2_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_02_Q2_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -2536,6 +3362,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2555,6 +3387,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2570,6 +3408,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v1_9618_s21_qp_31/9618_s21_qp_31_question_04_Q4.png"
     ],
     "sourcePages": [
+      6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
       6
     ]
   },
@@ -2587,6 +3433,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -2602,6 +3456,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v3_9618_s21_qp_33/9618_s21_qp_33_question_04_Q4.png"
     ],
     "sourcePages": [
+      6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
       6
     ]
   },
@@ -2621,6 +3483,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2638,6 +3506,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4,
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -2658,6 +3532,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2676,6 +3556,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -2692,6 +3580,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2712,6 +3606,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2728,6 +3628,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2747,6 +3653,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2762,6 +3674,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v2_9618_w23_qp_32/9618_w23_qp_32_question_04_Q4.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -2782,6 +3700,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      3
     ]
   },
   {
@@ -2800,6 +3724,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2818,6 +3748,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2834,6 +3770,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -2853,6 +3795,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2869,6 +3817,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -2887,6 +3841,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -2906,6 +3866,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -2924,6 +3890,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -2943,6 +3915,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -2959,6 +3937,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -2975,6 +3959,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -2991,6 +3981,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3007,6 +4003,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3026,6 +4028,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3045,6 +4053,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3061,6 +4075,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -3077,6 +4097,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -3096,6 +4122,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -3113,6 +4145,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4,
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -3133,6 +4171,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -3151,6 +4197,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_June_v3_9618_s23_qp_33/9618_s23_qp_33_question_05_Q5.png"
     ],
     "sourcePages": [
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -3171,6 +4223,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -3190,6 +4250,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       2
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_01_Q1.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -3209,6 +4275,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -3225,6 +4299,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3243,6 +4323,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_03_Q3_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -3262,6 +4350,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -3278,6 +4374,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3299,6 +4401,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       7,
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -3319,6 +4429,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3340,6 +4458,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       7,
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -3360,6 +4486,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3381,6 +4515,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       7,
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -3401,6 +4543,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3420,6 +4570,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3436,6 +4592,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3458,6 +4620,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -3476,6 +4644,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3495,6 +4671,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3511,6 +4693,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3533,6 +4721,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -3552,6 +4746,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      11,
+      12
     ]
   },
   {
@@ -3568,6 +4770,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3587,6 +4795,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      11,
+      12
     ]
   },
   {
@@ -3603,6 +4819,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3622,6 +4844,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3638,6 +4868,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3658,6 +4894,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3674,6 +4918,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -3694,6 +4944,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       12,
       13
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_11_Q11_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_11_Q11_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -3712,6 +4970,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -3732,6 +4996,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -3748,6 +5018,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -3767,6 +5045,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -3785,6 +5069,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -3805,6 +5095,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -3821,6 +5117,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -3836,6 +5138,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2024_November_v2_9618_w24_qp_32/9618_w24_qp_32_question_08_Q8.png"
     ],
     "sourcePages": [
+      10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
       10
     ]
   },
@@ -3853,6 +5161,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_02_Q2.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -3869,6 +5183,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -3889,6 +5209,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3909,6 +5235,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3929,6 +5261,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -3953,6 +5291,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3977,6 +5321,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -3996,6 +5346,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4016,6 +5372,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4035,6 +5399,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_08_Q8_part_02.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_08_Q8_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11,
+      12
     ]
   },
   {
@@ -4055,6 +5429,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4073,6 +5455,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -4094,6 +5484,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -4118,6 +5516,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4136,6 +5542,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
+      6
     ]
   },
   {
@@ -4157,6 +5571,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      6,
+      7
     ]
   },
   {
@@ -4178,6 +5600,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -4193,6 +5621,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v2_9618_w23_qp_32/9618_w23_qp_32_question_06_Q6.png"
     ],
     "sourcePages": [
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -4213,6 +5647,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v2_9618_w23_qp_32/9618_w23_qp_32_question_07_Q7.png"
     ],
     "sourcePages": [
+      6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
       6
     ]
   },
@@ -4235,6 +5677,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -4259,6 +5707,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4281,6 +5737,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2024_June_v2_9618_s24_qp_32/9618_s24_qp_32_question_06_Q6_part_02.png"
     ],
     "sourcePages": [
+      7,
+      8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
       7,
       8
     ]
@@ -4307,6 +5771,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4331,6 +5803,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_07_Q7_part_02.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_07_Q7_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9,
+      10
     ]
   },
   {
@@ -4354,6 +5836,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -4378,6 +5868,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_07_Q7_part_02.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_07_Q7_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9,
+      10
     ]
   },
   {
@@ -4401,6 +5901,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -4417,6 +5925,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -4439,6 +5953,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -4462,6 +5984,16 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       4,
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_03_Q3_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_03_Q3_part_02.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_03_Q3_part_03.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8,
+      9
     ]
   },
   {
@@ -4485,6 +6017,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -4508,6 +6048,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      11,
+      12
     ]
   },
   {
@@ -4529,6 +6077,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4546,6 +6102,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v1_9618_s21_qp_31/9618_s21_qp_31_question_03_Q3.png"
     ],
     "sourcePages": [
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v1_9618_s21_ms_31/9618_s21_ms_31_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -4565,6 +6127,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v2_9618_s21_ms_32/9618_s21_ms_32_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
+      5
     ]
   },
   {
@@ -4582,6 +6150,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2021_June_v3_9618_s21_qp_33/9618_s21_qp_33_question_03_Q3.png"
     ],
     "sourcePages": [
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_June_v3_9618_s21_ms_33/9618_s21_ms_33_question_03_Q3.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -4601,6 +6175,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4617,6 +6197,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4633,6 +6219,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -4651,6 +6243,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4667,6 +6265,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4683,6 +6287,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -4702,6 +6312,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -4718,6 +6336,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -4734,6 +6358,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -4755,6 +6385,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_12_Q12_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_12_Q12_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4776,6 +6414,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_12_Q12_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_12_Q12_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -4791,6 +6437,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v1_9618_w23_qp_31/9618_w23_qp_31_question_05_Q5.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -4811,6 +6463,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -4829,6 +6487,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      4
     ]
   },
   {
@@ -4844,6 +6508,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2023_November_v3_9618_w23_qp_33/9618_w23_qp_33_question_05_Q5.png"
     ],
     "sourcePages": [
+      4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
       4
     ]
   },
@@ -4864,6 +6534,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -4880,6 +6556,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -4895,6 +6579,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2024_June_v2_9618_s24_qp_32/9618_s24_qp_32_question_05_Q5.png"
     ],
     "sourcePages": [
+      6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      5,
       6
     ]
   },
@@ -4912,6 +6604,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      7,
+      8
     ]
   },
   {
@@ -4930,6 +6630,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v1_9618_w24_ms_31/9618_w24_ms_31_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -4950,6 +6658,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -4968,6 +6682,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v3_9618_w24_ms_33/9618_w24_ms_33_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -4987,6 +6709,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -5006,6 +6734,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -5025,6 +6759,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -5042,6 +6784,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       14,
+      15
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
       15
     ]
   },
@@ -5061,6 +6809,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_04_Q4_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_04_Q4_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -5080,6 +6836,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -5099,6 +6861,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       4
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5115,6 +6883,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -5134,6 +6908,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -5154,6 +6934,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       14,
       15
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v1_9618_s22_ms_31/9618_s22_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5174,6 +6960,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       14,
       15
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v3_9618_s22_ms_33/9618_s22_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5190,6 +6982,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5209,6 +7007,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_02_Q2_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_02_Q2_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      4,
+      5
     ]
   },
   {
@@ -5225,6 +7031,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5243,6 +7055,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v2_9618_w23_ms_32/9618_w23_ms_32_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5261,6 +7079,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2024_November_v2_9618_w24_ms_32/9618_w24_ms_32_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -5279,6 +7105,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -5295,6 +7127,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -5311,6 +7149,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5326,6 +7170,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2025_June_v3_9618_s25_qp_33/9618_s25_qp_33_question_13_Q13.png"
     ],
     "sourcePages": [
+      16
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_13_Q13.png"
+    ],
+    "markSchemeSourcePages": [
       16
     ]
   },
@@ -5345,6 +7195,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      12,
+      13
     ]
   },
   {
@@ -5363,6 +7221,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      15
     ]
   },
   {
@@ -5381,6 +7245,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_08_Q8_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_08_Q8_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      13,
+      14
     ]
   },
   {
@@ -5399,6 +7271,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      16
     ]
   },
   {
@@ -5417,6 +7295,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -5435,6 +7321,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_13_Q13_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_13_Q13_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      15,
+      16
     ]
   },
   {
@@ -5454,6 +7348,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5473,6 +7373,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_08_Q8.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5491,6 +7397,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_June_v2_9618_s22_ms_32/9618_s22_ms_32_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5512,6 +7424,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5531,6 +7449,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_06_Q6_part_01.png",
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_06_Q6_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -5552,6 +7478,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       6,
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      8
     ]
   },
   {
@@ -5570,6 +7502,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5589,6 +7527,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_05_Q5.png"
+    ],
+    "markSchemeSourcePages": [
+      6
     ]
   },
   {
@@ -5607,6 +7551,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5623,6 +7573,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5639,6 +7595,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -5658,6 +7620,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -5673,6 +7641,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
       "/topical/comsci-cie/P3/2024_June_v2_9618_s24_qp_32/9618_s24_qp_32_question_04_Q4.png"
     ],
     "sourcePages": [
+      5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_04_Q4.png"
+    ],
+    "markSchemeSourcePages": [
       5
     ]
   },
@@ -5693,6 +7667,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      10
     ]
   },
   {
@@ -5712,6 +7692,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       10
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -5730,6 +7716,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       8,
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -5746,6 +7740,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5764,6 +7764,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       10,
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -5783,6 +7789,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_05_Q5_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_05_Q5_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      9,
+      10
     ]
   },
   {
@@ -5802,6 +7816,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -5818,6 +7838,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v3_9618_w25_ms_33/9618_w25_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      12
     ]
   },
   {
@@ -5840,6 +7866,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_November_v1_9618_w21_ms_31/9618_w21_ms_31_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -5862,6 +7896,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2021_November_v2_9618_w21_ms_32/9618_w21_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      8,
+      9
     ]
   },
   {
@@ -5881,6 +7923,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v1_9618_w22_ms_31/9618_w22_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5897,6 +7945,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       6
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v2_9618_w22_ms_32/9618_w22_ms_32_question_07_Q7.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -5916,6 +7970,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       8
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2022_November_v3_9618_w22_ms_33/9618_w22_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -5934,6 +7994,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_02_Q2_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v1_9618_s23_ms_31/9618_s23_ms_31_question_02_Q2_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -5954,6 +8022,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     "sourcePages": [
       11,
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_10_Q10_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v2_9618_s23_ms_32/9618_s23_ms_32_question_10_Q10_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      10,
+      11
     ]
   },
   {
@@ -5972,6 +8048,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       3
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_02_Q2_part_01.png",
+      "/topical/comsci-cie/P3-MS/2023_June_v3_9618_s23_ms_33/9618_s23_ms_33_question_02_Q2_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      3,
+      4
     ]
   },
   {
@@ -5988,6 +8072,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       14
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v1_9618_w23_ms_31/9618_w23_ms_31_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -6004,6 +8094,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       14
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2023_November_v3_9618_w23_ms_33/9618_w23_ms_33_question_12_Q12.png"
+    ],
+    "markSchemeSourcePages": [
+      9
     ]
   },
   {
@@ -6020,6 +8116,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v1_9618_s24_ms_31/9618_s24_ms_31_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -6036,6 +8138,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v2_9618_s24_ms_32/9618_s24_ms_32_question_11_Q11.png"
+    ],
+    "markSchemeSourcePages": [
+      14
     ]
   },
   {
@@ -6052,6 +8160,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2024_June_v3_9618_s24_ms_33/9618_s24_ms_33_question_09_Q9.png"
+    ],
+    "markSchemeSourcePages": [
+      11
     ]
   },
   {
@@ -6071,6 +8185,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       11
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v1_9618_s25_ms_31/9618_s25_ms_31_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -6089,6 +8209,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       5
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v2_9618_s25_ms_32/9618_s25_ms_32_question_06_Q6.png"
+    ],
+    "markSchemeSourcePages": [
+      7
     ]
   },
   {
@@ -6107,6 +8233,12 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       12
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_June_v3_9618_s25_ms_33/9618_s25_ms_33_question_10_Q10.png"
+    ],
+    "markSchemeSourcePages": [
+      13
     ]
   },
   {
@@ -6126,6 +8258,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       7
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_07_Q7_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v1_9618_w25_ms_31/9618_w25_ms_31_question_07_Q7_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      11,
+      12
     ]
   },
   {
@@ -6147,6 +8287,14 @@ export const COMSCI_P3_QUESTIONS: TopicalQuestion[] = [
     ],
     "sourcePages": [
       9
+    ],
+    "markSchemeImages": [
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_09_Q9_part_01.png",
+      "/topical/comsci-cie/P3-MS/2025_November_v2_9618_w25_ms_32/9618_w25_ms_32_question_09_Q9_part_02.png"
+    ],
+    "markSchemeSourcePages": [
+      14,
+      15
     ]
   }
 ];

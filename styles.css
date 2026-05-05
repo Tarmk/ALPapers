@@ -653,6 +653,13 @@ body {
   transform: translateY(-2px);
 }
 
+.topical-print-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .topical-workspace {
   display: grid;
   grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);

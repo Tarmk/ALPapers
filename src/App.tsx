@@ -5,15 +5,16 @@ import { PaperGrid } from "./components/PaperGrid";
 import { PaperView } from "./components/PaperView";
 import { TopicalPapersView } from "./components/TopicalPapersView";
 
-type TopicalPaperCode = "P3" | "P4";
+type TopicalPaperCode = "P1" | "P2" | "P3" | "P4" | "P5";
+type TopicalSubjectKey = "comsci" | "physics";
 
 type ViewState =
   | { type: "subjects" }
   | { type: "papers"; subjectKey: SubjectKey; subject: Subject }
-  | { type: "topicalPapers"; subjectKey: "comsci"; subject: Subject }
+  | { type: "topicalPapers"; subjectKey: TopicalSubjectKey; subject: Subject }
   | {
       type: "topicalPaper";
-      subjectKey: "comsci";
+      subjectKey: TopicalSubjectKey;
       subject: Subject;
       paperCode: TopicalPaperCode;
       topicId?: string;
@@ -36,13 +37,15 @@ function getInitialView(): ViewState {
   if (subjectKey && SUBJECTS[subjectKey]) {
     const subject = SUBJECTS[subjectKey];
 
-    if (subjectKey === "comsci" && mode === "topical") {
-      if (paperCode === "P3" || paperCode === "P4") {
+    if ((subjectKey === "comsci" || subjectKey === "physics") && mode === "topical") {
+      const topicalPaperCodes =
+        subjectKey === "physics" ? ["P1", "P2", "P3", "P4", "P5"] : ["P1", "P2", "P3", "P4"];
+      if (paperCode && topicalPaperCodes.includes(paperCode)) {
         return {
           type: "topicalPaper",
           subjectKey,
           subject,
-          paperCode,
+          paperCode: paperCode as TopicalPaperCode,
           topicId: params.get("topic") || undefined,
           subtopicId: params.get("subtopic") || undefined,
         };
@@ -158,10 +161,10 @@ export const App: React.FC = () => {
   };
 
   const handleOpenTopicalPaper = (paperCode: TopicalPaperCode) => {
-    if (view.type !== "papers" || view.subjectKey !== "comsci") return;
+    if (view.type !== "papers" || (view.subjectKey !== "comsci" && view.subjectKey !== "physics")) return;
     setView({
       type: "topicalPaper",
-      subjectKey: "comsci",
+      subjectKey: view.subjectKey,
       subject: view.subject,
       paperCode,
     });
@@ -303,6 +306,7 @@ export const App: React.FC = () => {
           />
         ) : view.type === "topicalPaper" ? (
           <TopicalPapersView
+            subjectKey={view.subjectKey}
             paperCode={view.paperCode}
             topicId={view.topicId}
             subtopicId={view.subtopicId}
@@ -311,22 +315,23 @@ export const App: React.FC = () => {
           />
         ) : view.type === "topicalPapers" ? (
           <TopicalPapersView
-            paperCode="P3"
+            subjectKey={view.subjectKey}
+            paperCode={view.subjectKey === "physics" ? "P1" : "P3"}
             onSelectTopic={(topicId) => {
               setView({
                 type: "topicalPaper",
-                subjectKey: "comsci",
+                subjectKey: view.subjectKey,
                 subject: view.subject,
-                paperCode: "P3",
+                paperCode: view.subjectKey === "physics" ? "P1" : "P3",
                 topicId,
               });
             }}
             onSelectSubtopic={(topicId, subtopicId) => {
               setView({
                 type: "topicalPaper",
-                subjectKey: "comsci",
+                subjectKey: view.subjectKey,
                 subject: view.subject,
-                paperCode: "P3",
+                paperCode: view.subjectKey === "physics" ? "P1" : "P3",
                 topicId,
                 subtopicId,
               });

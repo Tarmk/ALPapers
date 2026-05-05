@@ -1,4 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { flushSync } from "react-dom";
+import {
+  COMSCI_P1_QUESTIONS,
+  COMSCI_P1_TOPICS,
+} from "../data/comsciP1Topical";
+import {
+  COMSCI_P2_QUESTIONS,
+  COMSCI_P2_TOPICS,
+} from "../data/comsciP2Topical";
 import {
   COMSCI_P3_QUESTIONS,
   COMSCI_P3_TOPICS,
@@ -9,9 +18,22 @@ import {
   COMSCI_P4_QUESTIONS,
   COMSCI_P4_TOPICS,
 } from "../data/comsciP4Topical";
+import {
+  PHYSICS_P1_QUESTIONS,
+  PHYSICS_P1_TOPICS,
+  PHYSICS_P2_QUESTIONS,
+  PHYSICS_P2_TOPICS,
+  PHYSICS_P3_QUESTIONS,
+  PHYSICS_P3_TOPICS,
+  PHYSICS_P4_QUESTIONS,
+  PHYSICS_P4_TOPICS,
+  PHYSICS_P5_QUESTIONS,
+  PHYSICS_P5_TOPICS,
+} from "../data/physicsTopical";
 
 type Props = {
-  paperCode: "P3" | "P4";
+  subjectKey: "comsci" | "physics";
+  paperCode: "P1" | "P2" | "P3" | "P4" | "P5";
   topicId?: string;
   subtopicId?: string;
   onSelectTopic: (topicId: string) => void;
@@ -20,6 +42,7 @@ type Props = {
 
 const hasPartialTopicFocus = (question: TopicalQuestion) => question.topicFocus !== "Whole question";
 const ALL_SUBTOPICS_ID = "all";
+type SheetContent = "questions" | "markScheme";
 
 const shuffleQuestions = (questions: TopicalQuestion[]) => {
   const shuffled = [...questions];
@@ -44,18 +67,54 @@ const waitForPrintableImages = async () => {
 };
 
 export const TopicalPapersView: React.FC<Props> = ({
+  subjectKey,
   paperCode,
   topicId,
   subtopicId,
   onSelectTopic,
   onSelectSubtopic,
 }) => {
-  const topicalTopics = paperCode === "P4" ? COMSCI_P4_TOPICS : COMSCI_P3_TOPICS;
-  const topicalQuestions = paperCode === "P4" ? COMSCI_P4_QUESTIONS : COMSCI_P3_QUESTIONS;
+  const topicalTopics: TopicalTopic[] =
+    subjectKey === "physics"
+      ? paperCode === "P1"
+        ? PHYSICS_P1_TOPICS
+        : paperCode === "P2"
+          ? PHYSICS_P2_TOPICS
+          : paperCode === "P3"
+            ? PHYSICS_P3_TOPICS
+            : paperCode === "P4"
+              ? PHYSICS_P4_TOPICS
+              : PHYSICS_P5_TOPICS
+      : paperCode === "P1"
+        ? COMSCI_P1_TOPICS
+        : paperCode === "P2"
+          ? COMSCI_P2_TOPICS
+          : paperCode === "P4"
+            ? COMSCI_P4_TOPICS
+            : COMSCI_P3_TOPICS;
+  const topicalQuestions: TopicalQuestion[] =
+    subjectKey === "physics"
+      ? paperCode === "P1"
+        ? PHYSICS_P1_QUESTIONS
+        : paperCode === "P2"
+          ? PHYSICS_P2_QUESTIONS
+          : paperCode === "P3"
+            ? PHYSICS_P3_QUESTIONS
+            : paperCode === "P4"
+              ? PHYSICS_P4_QUESTIONS
+              : PHYSICS_P5_QUESTIONS
+      : paperCode === "P1"
+        ? COMSCI_P1_QUESTIONS
+        : paperCode === "P2"
+          ? COMSCI_P2_QUESTIONS
+          : paperCode === "P4"
+            ? COMSCI_P4_QUESTIONS
+            : COMSCI_P3_QUESTIONS;
   const countQuestions = (predicate: (q: TopicalQuestion) => boolean) =>
     topicalQuestions.filter(predicate).length;
 
   const selectedTopic = topicalTopics.find((topic) => topic.id === topicId);
+  const supportsMarkScheme = topicalQuestions.some((question) => question.markSchemeImages?.length);
   const requestedSubtopic = selectedTopic?.subtopics.find((subtopic) => subtopic.id === subtopicId);
   const selectedSubtopicId = requestedSubtopic ? requestedSubtopic.id : ALL_SUBTOPICS_ID;
   const selectedSubtopic = requestedSubtopic;
@@ -72,6 +131,7 @@ export const TopicalPapersView: React.FC<Props> = ({
 
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [mode, setMode] = useState<"browse" | "random">("random");
+  const [sheetContent, setSheetContent] = useState<SheetContent>("questions");
   const [randomCount, setRandomCount] = useState("20");
   const [randomQuestions, setRandomQuestions] = useState<TopicalQuestion[]>([]);
 
@@ -80,6 +140,12 @@ export const TopicalPapersView: React.FC<Props> = ({
     const count = Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, questions.length));
     setRandomQuestions(shuffleQuestions(questions).slice(0, count));
   }, [questions]);
+
+  useEffect(() => {
+    if (!supportsMarkScheme) {
+      setSheetContent("questions");
+    }
+  }, [supportsMarkScheme]);
 
   const selectedQuestions = questions.filter((question) => selectedIds.has(question.id));
   const printableQuestions = mode === "random" ? randomQuestions : selectedQuestions;
@@ -101,7 +167,8 @@ export const TopicalPapersView: React.FC<Props> = ({
     setRandomQuestions(shuffleQuestions(questions).slice(0, count));
   };
 
-  const handlePrint = async () => {
+  const handlePrint = async (content: SheetContent) => {
+    flushSync(() => setSheetContent(content));
     await waitForPrintableImages();
     window.print();
   };
@@ -147,9 +214,16 @@ export const TopicalPapersView: React.FC<Props> = ({
             Choose a subtopic, browse the matching questions or generate a random printable set.
           </p>
         </div>
-        <button className="print-button" type="button" onClick={handlePrint}>
-          Print A4 sheet
-        </button>
+        <div className="topical-print-actions">
+          <button className="print-button" type="button" onClick={() => handlePrint("questions")}>
+            Print question paper
+          </button>
+          {supportsMarkScheme && (
+            <button className="print-button" type="button" onClick={() => handlePrint("markScheme")}>
+              Print mark scheme
+            </button>
+          )}
+        </div>
       </section>
 
       <div className="topical-workspace">
@@ -194,6 +268,32 @@ export const TopicalPapersView: React.FC<Props> = ({
               Random printable set
             </label>
           </fieldset>
+
+          {supportsMarkScheme && (
+            <fieldset className="topical-mode">
+              <legend>View</legend>
+              <label>
+                <input
+                  type="radio"
+                  name="sheet-content"
+                  value="questions"
+                  checked={sheetContent === "questions"}
+                  onChange={() => setSheetContent("questions")}
+                />
+                Questions
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="sheet-content"
+                  value="markScheme"
+                  checked={sheetContent === "markScheme"}
+                  onChange={() => setSheetContent("markScheme")}
+                />
+                Mark scheme
+              </label>
+            </fieldset>
+          )}
 
           {mode === "random" && (
             <div className="random-controls">
@@ -262,9 +362,9 @@ export const TopicalPapersView: React.FC<Props> = ({
           )}
         </aside>
 
-        <section className="print-sheet" aria-label="Printable question sheet">
+        <section className="print-sheet" aria-label={sheetContent === "questions" ? "Printable question sheet" : "Printable mark scheme"}>
           <div className="print-sheet-header">
-            <h2>{paperCode} Topical Questions</h2>
+            <h2>{paperCode} {sheetContent === "questions" ? "Topical Questions" : "Mark Scheme"}</h2>
             <p>
               {isAllSubtopicsSelected
                 ? `${selectedTopic.id} ${selectedTopic.title} - All subtopics`
@@ -285,20 +385,36 @@ export const TopicalPapersView: React.FC<Props> = ({
                 <h3>
                   {question.session} · Q{question.questionNumber}
                 </h3>
-                {hasPartialTopicFocus(question) && (
+                {sheetContent === "questions" && hasPartialTopicFocus(question) && (
                   <p className="print-topic-focus">
                     Topic coverage: {question.topicFocus}
                   </p>
                 )}
-                {question.images.map((src, index) => (
-                  <img
-                    key={src}
-                    className="question-image"
-                    src={src}
-                    alt={`${question.session} question ${question.questionNumber} part ${index + 1}`}
-                    loading="eager"
-                  />
-                ))}
+                {sheetContent === "questions" ? (
+                  question.images.map((src, index) => (
+                    <img
+                      key={src}
+                      className="question-image"
+                      src={src}
+                      alt={`${question.session} question ${question.questionNumber} part ${index + 1}`}
+                      loading="eager"
+                    />
+                  ))
+                ) : question.markSchemeImages?.length ? (
+                  question.markSchemeImages.map((src, index) => (
+                    <img
+                      key={src}
+                      className="question-image"
+                      src={src}
+                      alt={`${question.session} question ${question.questionNumber} mark scheme part ${index + 1}`}
+                      loading="eager"
+                    />
+                  ))
+                ) : (
+                  <div className="empty-state">
+                    Missing mark scheme for {question.session} Q{question.questionNumber}.
+                  </div>
+                )}
               </article>
             ))
           )}

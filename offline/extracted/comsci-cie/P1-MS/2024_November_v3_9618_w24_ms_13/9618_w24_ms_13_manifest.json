@@ -1,0 +1,186 @@
+{
+  "prefix": "9618_w24_ms_13",
+  "dpi": 150,
+  "mode": "mark-scheme",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 1,
+      "start_page": 3,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_01_Q1.png",
+          "pdf_page": 3,
+          "part": 1,
+          "width": 1241,
+          "height": 693
+        }
+      ],
+      "next_question": 2,
+      "end_before_page": 3,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 2,
+      "start_page": 3,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_02_Q2.png",
+          "pdf_page": 3,
+          "part": 1,
+          "width": 1241,
+          "height": 508
+        }
+      ],
+      "next_question": 3,
+      "end_before_page": 4,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 3,
+      "start_page": 4,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_03_Q3.png",
+          "pdf_page": 4,
+          "part": 1,
+          "width": 1241,
+          "height": 278
+        }
+      ],
+      "next_question": 4,
+      "end_before_page": 4,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 4,
+      "start_page": 4,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_04_Q4_part_01.png",
+          "pdf_page": 4,
+          "part": 1,
+          "width": 1241,
+          "height": 1060
+        },
+        {
+          "file": "9618_w24_ms_13_question_04_Q4_part_02.png",
+          "pdf_page": 5,
+          "part": 2,
+          "width": 1241,
+          "height": 896
+        }
+      ],
+      "next_question": 5,
+      "end_before_page": 5,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 5,
+      "start_page": 5,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_05_Q5_part_01.png",
+          "pdf_page": 5,
+          "part": 1,
+          "width": 1241,
+          "height": 360
+        },
+        {
+          "file": "9618_w24_ms_13_question_05_Q5_part_02.png",
+          "pdf_page": 6,
+          "part": 2,
+          "width": 1241,
+          "height": 495
+        }
+      ],
+      "next_question": 6,
+      "end_before_page": 6,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 6,
+      "start_page": 6,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_06_Q6_part_01.png",
+          "pdf_page": 6,
+          "part": 1,
+          "width": 1241,
+          "height": 928
+        },
+        {
+          "file": "9618_w24_ms_13_question_06_Q6_part_02.png",
+          "pdf_page": 7,
+          "part": 2,
+          "width": 1241,
+          "height": 489
+        }
+      ],
+      "next_question": 7,
+      "end_before_page": 7,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 7,
+      "start_page": 7,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_07_Q7.png",
+          "pdf_page": 7,
+          "part": 1,
+          "width": 1241,
+          "height": 706
+        }
+      ],
+      "next_question": 8,
+      "end_before_page": 7,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 8,
+      "start_page": 7,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_08_Q8_part_01.png",
+          "pdf_page": 7,
+          "part": 1,
+          "width": 1241,
+          "height": 103
+        },
+        {
+          "file": "9618_w24_ms_13_question_08_Q8_part_02.png",
+          "pdf_page": 8,
+          "part": 2,
+          "width": 1241,
+          "height": 672
+        }
+      ],
+      "next_question": 9,
+      "end_before_page": 8,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 9,
+      "start_page": 8,
+      "outputs": [
+        {
+          "file": "9618_w24_ms_13_question_09_Q9_part_01.png",
+          "pdf_page": 8,
+          "part": 1,
+          "width": 1241,
+          "height": 647
+        },
+        {
+          "file": "9618_w24_ms_13_question_09_Q9_part_02.png",
+          "pdf_page": 9,
+          "part": 2,
+          "width": 1241,
+          "height": 480
+        }
+      ],
+      "approx_pages_span": 2
+    }
+  ]
+}

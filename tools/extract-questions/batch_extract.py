@@ -77,6 +77,12 @@ def main() -> None:
     p.add_argument("--out-root", type=Path, required=True, help="Root for extracted PNG folders")
     p.add_argument("--pdf-root", type=Path, required=True, help="Root for downloaded PDF cache")
     p.add_argument("--qp-field", default="qp", help="JSON field to download, default: qp")
+    p.add_argument(
+        "--mode",
+        choices=("question", "mark-scheme"),
+        default="question",
+        help="Extraction layout to detect, default: question",
+    )
     p.add_argument("--dpi", type=int, default=150)
     p.add_argument("--ocr-auto", action="store_true", help="Try OCR if text-based detection fails")
     p.add_argument("--overwrite", action="store_true", help="Replace existing extracted folders")
@@ -126,22 +132,31 @@ def main() -> None:
 
             doc = load_pdf(pdf_bytes)
             try:
+                if args.mode == "mark-scheme" and paper_code.endswith("P1-MS"):
+                    # Multiple-choice mark schemes have one very short table row per question.
+                    pad_between = 2.0
+                else:
+                    pad_between = 28.0 if args.mode == "mark-scheme" else 10.0
                 run_export(
                     doc=doc,
                     out_dir=out_dir,
                     prefix=prefix,
                     dpi=args.dpi,
                     pad_top=6.0,
-                    pad_between=10.0,
+                    pad_between=pad_between,
                     use_fallback=True,
                     dry_run=False,
                     force_ocr=False,
                     ocr_auto=bool(args.ocr_auto),
                     ocr_dpi=200,
+                    mode=args.mode,
                 )
             finally:
                 doc.close()
             ok += 1
+        except SystemExit as exc:
+            failed.append(f"{label}: {exc}")
+            print(f"[fail] {label}: {exc}", file=sys.stderr)
         except Exception as exc:
             failed.append(f"{label}: {exc}")
             print(f"[fail] {label}: {exc}", file=sys.stderr)

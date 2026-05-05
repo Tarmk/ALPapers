@@ -1,0 +1,279 @@
+{
+  "prefix": "9618_s23_ms_43",
+  "dpi": 150,
+  "mode": "mark-scheme",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 1,
+      "start_page": 4,
+      "outputs": [
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_01.png",
+          "pdf_page": 4,
+          "part": 1,
+          "width": 1755,
+          "height": 395
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_02.png",
+          "pdf_page": 5,
+          "part": 2,
+          "width": 1755,
+          "height": 973
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_03.png",
+          "pdf_page": 6,
+          "part": 3,
+          "width": 1755,
+          "height": 284
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_04.png",
+          "pdf_page": 7,
+          "part": 4,
+          "width": 1755,
+          "height": 863
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_05.png",
+          "pdf_page": 8,
+          "part": 5,
+          "width": 1755,
+          "height": 509
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_06.png",
+          "pdf_page": 9,
+          "part": 6,
+          "width": 1755,
+          "height": 1019
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_07.png",
+          "pdf_page": 10,
+          "part": 7,
+          "width": 1755,
+          "height": 946
+        },
+        {
+          "file": "9618_s23_ms_43_question_01_Q1_part_08.png",
+          "pdf_page": 11,
+          "part": 8,
+          "width": 1755,
+          "height": 204
+        }
+      ],
+      "next_question": 2,
+      "end_before_page": 12,
+      "approx_pages_span": 9
+    },
+    {
+      "question": 2,
+      "start_page": 12,
+      "outputs": [
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_01.png",
+          "pdf_page": 12,
+          "part": 1,
+          "width": 1755,
+          "height": 897
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_02.png",
+          "pdf_page": 13,
+          "part": 2,
+          "width": 1755,
+          "height": 648
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_03.png",
+          "pdf_page": 14,
+          "part": 3,
+          "width": 1755,
+          "height": 967
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_04.png",
+          "pdf_page": 15,
+          "part": 4,
+          "width": 1755,
+          "height": 310
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_05.png",
+          "pdf_page": 16,
+          "part": 5,
+          "width": 1755,
+          "height": 812
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_06.png",
+          "pdf_page": 17,
+          "part": 6,
+          "width": 1755,
+          "height": 896
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_07.png",
+          "pdf_page": 18,
+          "part": 7,
+          "width": 1755,
+          "height": 973
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_08.png",
+          "pdf_page": 19,
+          "part": 8,
+          "width": 1755,
+          "height": 518
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_09.png",
+          "pdf_page": 20,
+          "part": 9,
+          "width": 1755,
+          "height": 943
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_10.png",
+          "pdf_page": 21,
+          "part": 10,
+          "width": 1755,
+          "height": 362
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_11.png",
+          "pdf_page": 22,
+          "part": 11,
+          "width": 1755,
+          "height": 994
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_12.png",
+          "pdf_page": 23,
+          "part": 12,
+          "width": 1755,
+          "height": 180
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_13.png",
+          "pdf_page": 24,
+          "part": 13,
+          "width": 1755,
+          "height": 1031
+        },
+        {
+          "file": "9618_s23_ms_43_question_02_Q2_part_14.png",
+          "pdf_page": 25,
+          "part": 14,
+          "width": 1755,
+          "height": 622
+        }
+      ],
+      "next_question": 3,
+      "end_before_page": 26,
+      "approx_pages_span": 15
+    },
+    {
+      "question": 3,
+      "start_page": 26,
+      "outputs": [
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_01.png",
+          "pdf_page": 26,
+          "part": 1,
+          "width": 1755,
+          "height": 714
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_02.png",
+          "pdf_page": 27,
+          "part": 2,
+          "width": 1755,
+          "height": 1020
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_03.png",
+          "pdf_page": 28,
+          "part": 3,
+          "width": 1755,
+          "height": 1018
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_04.png",
+          "pdf_page": 29,
+          "part": 4,
+          "width": 1755,
+          "height": 336
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_05.png",
+          "pdf_page": 30,
+          "part": 5,
+          "width": 1755,
+          "height": 1025
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_06.png",
+          "pdf_page": 31,
+          "part": 6,
+          "width": 1755,
+          "height": 362
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_07.png",
+          "pdf_page": 32,
+          "part": 7,
+          "width": 1755,
+          "height": 1021
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_08.png",
+          "pdf_page": 33,
+          "part": 8,
+          "width": 1755,
+          "height": 907
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_09.png",
+          "pdf_page": 34,
+          "part": 9,
+          "width": 1755,
+          "height": 1021
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_10.png",
+          "pdf_page": 35,
+          "part": 10,
+          "width": 1755,
+          "height": 856
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_11.png",
+          "pdf_page": 36,
+          "part": 11,
+          "width": 1755,
+          "height": 975
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_12.png",
+          "pdf_page": 37,
+          "part": 12,
+          "width": 1755,
+          "height": 726
+        },
+        {
+          "file": "9618_s23_ms_43_question_03_Q3_part_13.png",
+          "pdf_page": 38,
+          "part": 13,
+          "width": 1755,
+          "height": 1014
+        }
+      ],
+      "approx_pages_span": 13
+    }
+  ]
+}

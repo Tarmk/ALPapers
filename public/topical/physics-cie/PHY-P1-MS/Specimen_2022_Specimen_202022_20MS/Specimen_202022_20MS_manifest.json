@@ -1,0 +1,398 @@
+{
+  "prefix": "Specimen_202022_20MS",
+  "dpi": 150,
+  "mode": "mark-scheme",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 1,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_01_Q1.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 2,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 2,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_02_Q2.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 289
+        }
+      ],
+      "next_question": 9,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 9,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_09_Q9.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 10,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 10,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_10_Q10.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 11,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 11,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_11_Q11.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 12,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 12,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_12_Q12.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 13,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 13,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_13_Q13.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 14,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 14,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_14_Q14.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 15,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 15,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_15_Q15.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 16,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 16,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_16_Q16.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 17,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 17,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_17_Q17.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 18,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 18,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_18_Q18.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 19,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 19,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_19_Q19.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 20,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 20,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_20_Q20.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 21,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 21,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_21_Q21.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 22,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 22,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_22_Q22.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 23,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 23,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_23_Q23.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 24,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 24,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_24_Q24.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 25,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 25,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_25_Q25.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 26,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 26,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_26_Q26.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 27,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 27,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_27_Q27.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 47
+        }
+      ],
+      "next_question": 28,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 28,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_28_Q28.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 48
+        }
+      ],
+      "next_question": 29,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 29,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_29_Q29.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 168
+        }
+      ],
+      "next_question": 3,
+      "end_before_page": 2,
+      "approx_pages_span": 1
+    },
+    {
+      "question": 3,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "Specimen_202022_20MS_question_03_Q3_part_01.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1241,
+          "height": 168
+        },
+        {
+          "file": "Specimen_202022_20MS_question_03_Q3_part_02.png",
+          "pdf_page": 3,
+          "part": 2,
+          "width": 1241,
+          "height": 201
+        }
+      ],
+      "approx_pages_span": 3
+    }
+  ]
+}

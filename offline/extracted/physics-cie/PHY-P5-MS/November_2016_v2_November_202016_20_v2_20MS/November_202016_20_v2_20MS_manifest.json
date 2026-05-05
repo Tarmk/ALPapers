@@ -1,0 +1,53 @@
+{
+  "prefix": "November_202016_20_v2_20MS",
+  "dpi": 150,
+  "mode": "mark-scheme",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 1,
+      "start_page": 2,
+      "outputs": [
+        {
+          "file": "November_202016_20_v2_20MS_question_01_Q1_part_01.png",
+          "pdf_page": 2,
+          "part": 1,
+          "width": 1240,
+          "height": 961
+        },
+        {
+          "file": "November_202016_20_v2_20MS_question_01_Q1_part_02.png",
+          "pdf_page": 3,
+          "part": 2,
+          "width": 1240,
+          "height": 687
+        }
+      ],
+      "next_question": 2,
+      "end_before_page": 4,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 2,
+      "start_page": 4,
+      "outputs": [
+        {
+          "file": "November_202016_20_v2_20MS_question_02_Q2_part_01.png",
+          "pdf_page": 4,
+          "part": 1,
+          "width": 1240,
+          "height": 1322
+        },
+        {
+          "file": "November_202016_20_v2_20MS_question_02_Q2_part_02.png",
+          "pdf_page": 5,
+          "part": 2,
+          "width": 1240,
+          "height": 814
+        }
+      ],
+      "approx_pages_span": 2
+    }
+  ]
+}

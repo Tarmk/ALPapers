@@ -324,6 +324,88 @@ def find_question_markers_ocr(doc: fitz.Document, ocr_dpi: int) -> list[Question
     return sorted(seen.values(), key=lambda m: (m.page, m.y0))
 
 
+def _visual_bbox(page: fitz.Page, bbox: tuple[float, float, float, float]) -> tuple[float, float, float, float]:
+    """Map text coordinates to the rendered page orientation used by get_pixmap()."""
+    x0, y0, x1, y1 = bbox
+    rotation = page.rotation % 360
+    if rotation == 0:
+        return bbox
+    if rotation == 90:
+        return (page.rect.width - y1, x0, page.rect.width - y0, x1)
+    if rotation == 180:
+        return (page.rect.width - x1, page.rect.height - y1, page.rect.width - x0, page.rect.height - y0)
+    if rotation == 270:
+        return (y0, page.rect.height - x1, y1, page.rect.height - x0)
+    return bbox
+
+
+def _visual_rect(page: fitz.Page, rect: fitz.Rect) -> tuple[float, float, float, float]:
+    return _visual_bbox(page, (rect.x0, rect.y0, rect.x1, rect.y1))
+
+
+def _page_text_lines(page: fitz.Page) -> list[tuple[str, tuple[float, float, float, float]]]:
+    blocks = page.get_text("dict", flags=fitz.TEXT_PRESERVE_WHITESPACE).get("blocks", ())
+    lines: list[tuple[str, tuple[float, float, float, float]]] = []
+    for block in blocks:
+        if block.get("type") != 0:
+            continue
+        for line in block.get("lines", ()):
+            text = "".join(span.get("text", "") for span in line.get("spans", ())).strip()
+            if not text:
+                continue
+            lines.append((text, _line_bbox(line)))
+    return lines
+
+
+def find_mark_scheme_markers(doc: fitz.Document) -> list[QuestionMarker]:
+    """
+    Mark schemes use answer tables rather than question stems. Detect the first row
+    for each top-level question, e.g. 1(a), 2, 10(b), in the Question column.
+    Coordinates are stored in rendered-page orientation for image-based cropping.
+    """
+    question_label = re.compile(r"^(\d{1,2})(?:\([a-zivx]+\))*$", re.IGNORECASE)
+    seen: dict[int, QuestionMarker] = {}
+
+    for page_index in range(len(doc)):
+        page = doc[page_index]
+        lines = _page_text_lines(page)
+        has_answer_table_header = any(
+            text.strip().lower() == "question" and 35 <= _visual_bbox(page, bbox)[0] <= 110
+            for text, bbox in lines
+        ) and any(text.strip().lower() in {"answer", "answers"} for text, _ in lines)
+        if not has_answer_table_header:
+            continue
+
+        for raw_text, raw_bbox in lines:
+            text = raw_text.replace("\u2011", "-").replace("\u2212", "-").strip()
+            match = question_label.match(text)
+            if not match:
+                continue
+
+            num = int(match.group(1))
+            if num < 1 or num > 40 or num in seen:
+                continue
+
+            vx0, vy0, vx1, vy1 = _visual_bbox(page, raw_bbox)
+
+            # The answer-table Question column is near the left edge after any
+            # page rotation is applied. This excludes marks-column numerals.
+            left_limit = 90 if re.fullmatch(r"\d{1,2}", text) else 100
+            if not (45 <= vx0 <= left_limit and 45 <= vy0 <= page.rect.height - 35):
+                continue
+
+            seen[num] = QuestionMarker(
+                num=num,
+                page=page_index,
+                y0=float(vy0),
+                y1=float(vy1),
+                x0=float(vx0),
+                x1=float(vx1),
+            )
+
+    return sorted(seen.values(), key=lambda marker: (marker.page, marker.y0))
+
+
 def pixmap_to_image(pix: fitz.Pixmap) -> Image.Image:
     if pix.n == 1:  # grayscale
         return Image.frombytes("L", (pix.width, pix.height), pix.samples)
@@ -343,6 +425,174 @@ def render_clip(page: fitz.Page, clip: fitz.Rect, dpi: int) -> Image.Image:
 
 def page_is_marked_blank(page: fitz.Page) -> bool:
     return "BLANK PAGE" in page.get_text("text").upper()
+
+
+def render_page_image(page: fitz.Page, dpi: int) -> Image.Image:
+    mat = fitz.Matrix(dpi / 72, dpi / 72)
+    pix = page.get_pixmap(matrix=mat, alpha=False)
+    return pixmap_to_image(pix).convert("RGB")
+
+
+def crop_rendered_page(page: fitz.Page, dpi: int, y_top: float, y_bot: float) -> Image.Image:
+    image = render_page_image(page, dpi)
+    scale = dpi / 72
+    top = max(0, min(image.height - 1, int(y_top * scale)))
+    bottom = max(top + 1, min(image.height, int(y_bot * scale)))
+    return image.crop((0, top, image.width, bottom))
+
+
+def crop_rendered_rect(
+    page: fitz.Page,
+    dpi: int,
+    x_left: float,
+    y_top: float,
+    x_right: float,
+    y_bot: float,
+) -> Image.Image:
+    image = render_page_image(page, dpi)
+    scale = dpi / 72
+    left = max(0, min(image.width - 1, int(x_left * scale)))
+    right = max(left + 1, min(image.width, int(x_right * scale)))
+    top = max(0, min(image.height - 1, int(y_top * scale)))
+    bottom = max(top + 1, min(image.height, int(y_bot * scale)))
+    return image.crop((left, top, right, bottom))
+
+
+def _mark_scheme_table_lines(page: fitz.Page) -> list[float]:
+    lines: list[float] = []
+    for drawing in page.get_drawings():
+        rect = drawing.get("rect")
+        if not rect:
+            continue
+        x0, y0, x1, y1 = _visual_rect(page, rect)
+        if abs(y1 - y0) <= 2 and (x1 - x0) >= 250:
+            lines.append((y0 + y1) / 2)
+    return sorted(set(round(line, 2) for line in lines))
+
+
+def _mark_scheme_table_top(page: fitz.Page, y_limit: float) -> float:
+    candidates = [line for line in _mark_scheme_table_lines(page) if line <= y_limit]
+    return candidates[0] if candidates else 0.0
+
+
+def _mark_scheme_table_bottom(page: fitz.Page, y_top: float, y_limit: float) -> float:
+    candidates = [line for line in _mark_scheme_table_lines(page) if y_top + 8 <= line <= y_limit + 3]
+    return candidates[-1] if candidates else y_limit
+
+
+def _append_mark_scheme_crop(
+    parts: list[tuple[int, Image.Image]],
+    page: fitz.Page,
+    page_number: int,
+    dpi: int,
+    y_top: float,
+    y_bot: float,
+) -> None:
+    if y_bot - y_top < 12 or page_is_marked_blank(page):
+        return
+    parts.append((page_number, crop_rendered_page(page, dpi, y_top, y_bot)))
+
+
+def render_mark_scheme_segments(
+    doc: fitz.Document,
+    start: QuestionMarker,
+    end: QuestionMarker | None,
+    dpi: int,
+    pad_top: float,
+    pad_between: float,
+) -> list[tuple[int, Image.Image]]:
+    """Render mark-scheme rows using rendered-page coordinates, including rotated pages."""
+    p0 = start.page
+    y_top = max(0.0, start.y0 - pad_top)
+
+    if end is None:
+        p1 = len(doc) - 1
+        y_bot = doc[p1].rect.height
+    else:
+        p1 = end.page
+        y_bot = max(0.0, end.y0 - pad_between)
+
+    parts: list[tuple[int, Image.Image]] = []
+
+    if p0 == p1:
+        page = doc[p0]
+        y_limit = min(max(y_bot, y_top + 1), page.rect.height)
+        y_bottom = _mark_scheme_table_bottom(page, y_top, y_limit)
+        _append_mark_scheme_crop(parts, page, p0 + 1, dpi, y_top, y_bottom)
+    else:
+        first_page = doc[p0]
+        y_bottom = _mark_scheme_table_bottom(first_page, y_top, first_page.rect.height)
+        _append_mark_scheme_crop(parts, first_page, p0 + 1, dpi, y_top, y_bottom)
+
+        for page_index in range(p0 + 1, p1):
+            page = doc[page_index]
+            y_middle_top = _mark_scheme_table_top(page, page.rect.height)
+            y_middle_bottom = _mark_scheme_table_bottom(page, y_middle_top, page.rect.height)
+            _append_mark_scheme_crop(parts, page, page_index + 1, dpi, y_middle_top, y_middle_bottom)
+
+        last_page = doc[p1]
+        # If the next question starts near the top of the next page, the slice
+        # before it is only the page header, not answer content.
+        if y_bot >= 120:
+            y_last_top = _mark_scheme_table_top(last_page, y_bot)
+            y_limit = min(max(y_bot, 1), last_page.rect.height)
+            y_last_bottom = _mark_scheme_table_bottom(last_page, y_last_top, y_limit)
+            _append_mark_scheme_crop(parts, last_page, p1 + 1, dpi, y_last_top, y_last_bottom)
+
+    return parts
+
+
+def render_legacy_mc_key_segments(doc: fitz.Document, dpi: int) -> dict[int, tuple[int, Image.Image]]:
+    """
+    Older Physics P1 mark schemes use a compact two-column answer key rather than
+    the newer 'Question / Answer / Marks' table. Crop each small number+key row.
+    """
+    rows: dict[int, tuple[int, Image.Image]] = {}
+    number_pattern = re.compile(r"^\d{1,2}$")
+
+    for page_index in range(len(doc)):
+        page = doc[page_index]
+        lines = _page_text_lines(page)
+        lowered = {text.strip().lower() for text, _ in lines}
+        if "key" not in lowered or "question" not in lowered:
+            continue
+
+        candidates: list[tuple[int, float, float, float, float]] = []
+        for raw_text, raw_bbox in lines:
+            text = raw_text.strip()
+            if not number_pattern.match(text):
+                continue
+            num = int(text)
+            if not 1 <= num <= 40 or num in rows:
+                continue
+            x0, y0, x1, y1 = _visual_bbox(page, raw_bbox)
+            if not (120 <= x0 <= 430 and 75 <= y0 <= page.rect.height - 35):
+                continue
+            candidates.append((num, x0, y0, x1, y1))
+
+        for num, x0, y0, _x1, y1 in candidates:
+            same_column = sorted(
+                (
+                    (other_num, other_y0, other_y1)
+                    for other_num, other_x0, other_y0, _other_x1, other_y1 in candidates
+                    if abs(other_x0 - x0) <= 60
+                ),
+                key=lambda item: item[1],
+            )
+            next_row_top = next((other_y0 for other_num, other_y0, _ in same_column if other_y0 > y0), None)
+            y_bot = min(next_row_top - 2, page.rect.height) if next_row_top else min(y1 + 10, page.rect.height)
+
+            if x0 < page.rect.width / 2:
+                x_left, x_right = max(0, x0 - 28), min(page.rect.width, x0 + 105)
+            else:
+                x_left, x_right = max(0, x0 - 28), min(page.rect.width, x0 + 105)
+
+            rows[num] = (
+                page_index + 1,
+                crop_rendered_rect(page, dpi, x_left, max(0, y0 - 5), x_right, y_bot),
+            )
+
+    return rows
 
 
 def render_question_segments(
@@ -461,10 +711,13 @@ def run_export(
     force_ocr: bool,
     ocr_auto: bool,
     ocr_dpi: int,
+    mode: str = "question",
 ) -> list[dict]:
     ocr_used = False
 
-    if force_ocr:
+    if mode == "mark-scheme":
+        markers = find_mark_scheme_markers(doc)
+    elif force_ocr:
         if not HAS_TESSERACT:
             raise SystemExit(
                 "OCR requested but pytesseract is not installed "
@@ -500,6 +753,51 @@ def run_export(
                 ocr_used = True
 
     if not markers:
+        if mode == "mark-scheme":
+            legacy_mc_segments = render_legacy_mc_key_segments(doc, dpi)
+            if legacy_mc_segments:
+                out_dir.mkdir(parents=True, exist_ok=True)
+                manifest: list[dict] = []
+                for num in sorted(legacy_mc_segments):
+                    pdf_page, img = legacy_mc_segments[num]
+                    fname = f"{prefix}_question_{num:02d}_Q{num}.png"
+                    path = out_dir / fname
+                    if not dry_run:
+                        img.save(path, format="PNG", optimize=True)
+                        print(path)
+                    else:
+                        print(f"[dry-run] would write {path} ({img.width}x{img.height})")
+                    manifest.append(
+                        {
+                            "question": num,
+                            "start_page": pdf_page,
+                            "approx_pages_span": 1,
+                            "outputs": [
+                                {
+                                    "file": fname,
+                                    "pdf_page": pdf_page,
+                                    "part": 1,
+                                    "width": img.width,
+                                    "height": img.height,
+                                }
+                            ],
+                        }
+                    )
+
+                manifest_path = out_dir / f"{prefix}_manifest.json"
+                manifest_full = {
+                    "prefix": prefix,
+                    "dpi": dpi,
+                    "mode": mode,
+                    "ocr_used": ocr_used,
+                    "ocr_detection_dpi": ocr_dpi if ocr_used else None,
+                    "questions": manifest,
+                }
+                if not dry_run:
+                    manifest_path.write_text(json.dumps(manifest_full, indent=2), encoding="utf-8")
+                    print(manifest_path)
+                return manifest
+
         raise SystemExit(
             "No question headings found. Typical fixes:\n"
             "  • If the PDF is a scan/image: add --ocr (requires Tesseract on your PATH)\n"
@@ -524,7 +822,10 @@ def run_export(
             region_desc["next_question"] = nxt.num
             region_desc["end_before_page"] = nxt.page + 1
 
-        segments = render_question_segments(doc, cur, nxt, dpi, pad_top, pad_between)
+        if mode == "mark-scheme":
+            segments = render_mark_scheme_segments(doc, cur, nxt, dpi, pad_top, pad_between)
+        else:
+            segments = render_question_segments(doc, cur, nxt, dpi, pad_top, pad_between)
         if not segments:
             print(f"[warn] Q{cur.num}: no non-blank page segments produced", file=sys.stderr)
             continue
@@ -561,6 +862,7 @@ def run_export(
     manifest_full = {
         "prefix": prefix,
         "dpi": dpi,
+        "mode": mode,
         "ocr_used": ocr_used,
         "ocr_detection_dpi": ocr_dpi if ocr_used else None,
         "questions": manifest,
@@ -612,6 +914,12 @@ def main(argv: Iterable[str] | None = None) -> None:
     p.add_argument("--qp-field", default="qp", help="field name for QP URL in JSON year entry")
     p.add_argument("--out", type=Path, required=True, help="Output directory")
     p.add_argument("--prefix", help="Filename prefix for PNGs")
+    p.add_argument(
+        "--mode",
+        choices=("question", "mark-scheme"),
+        default="question",
+        help="Extraction layout to detect (default: question)",
+    )
     p.add_argument("--dpi", type=int, default=150, help="Rasterisation DPI (default 150)")
     p.add_argument("--pad-top", type=float, default=6.0, help="Pdf points above 'Question N' line")
     p.add_argument(
@@ -690,6 +998,7 @@ def main(argv: Iterable[str] | None = None) -> None:
             force_ocr=bool(args.ocr),
             ocr_auto=bool(args.ocr_auto),
             ocr_dpi=od,
+            mode=args.mode,
         )
     finally:
         doc.close()

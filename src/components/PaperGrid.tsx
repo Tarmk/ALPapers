@@ -5,7 +5,7 @@ type Props = {
   subject: Subject;
   subjectKey?: string;
   onOpenPaper: (paperCode: string) => void;
-  onOpenTopicalPaper?: (paperCode: "P3" | "P4") => void;
+  onOpenTopicalPaper?: (paperCode: "P1" | "P2" | "P3" | "P4" | "P5") => void;
 };
 
 const PAPER_GROUPS_BY_SUBJECT: Record<string, { prefix: string; label: string; codes: string[] }[]> = {
@@ -82,11 +82,14 @@ export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, o
         ))}
       </div>
 
-      {subjectKey === "comsci" && onOpenTopicalPaper && (
+      {(subjectKey === "comsci" || subjectKey === "physics") && onOpenTopicalPaper && (
         <section className="paper-group">
           <h3 className="paper-group-label">Topical papers</h3>
           <div className="paper-group-grid">
-            {(["P3", "P4"] as const).map((code) => (
+            {(subjectKey === "physics"
+              ? (["P1", "P2", "P3", "P4", "P5"] as const)
+              : (["P1", "P2", "P3", "P4"] as const)
+            ).map((code) => (
               <button
                 key={code}
                 type="button"

@@ -1,0 +1,521 @@
+{
+  "prefix": "Specimen_20QP",
+  "dpi": 150,
+  "mode": "question",
+  "ocr_used": false,
+  "ocr_detection_dpi": null,
+  "questions": [
+    {
+      "question": 1,
+      "start_page": 3,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_01_Q1_part_01.png",
+          "pdf_page": 3,
+          "part": 1,
+          "width": 1240,
+          "height": 1603
+        },
+        {
+          "file": "Specimen_20QP_question_01_Q1_part_02.png",
+          "pdf_page": 4,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_01_Q1_part_03.png",
+          "pdf_page": 5,
+          "part": 3,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_01_Q1_part_04.png",
+          "pdf_page": 6,
+          "part": 4,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 2,
+      "end_before_page": 7,
+      "approx_pages_span": 5
+    },
+    {
+      "question": 2,
+      "start_page": 7,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_01.png",
+          "pdf_page": 7,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_02.png",
+          "pdf_page": 8,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_03.png",
+          "pdf_page": 9,
+          "part": 3,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_04.png",
+          "pdf_page": 10,
+          "part": 4,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_05.png",
+          "pdf_page": 11,
+          "part": 5,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_06.png",
+          "pdf_page": 14,
+          "part": 6,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_07.png",
+          "pdf_page": 15,
+          "part": 7,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_08.png",
+          "pdf_page": 16,
+          "part": 8,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_09.png",
+          "pdf_page": 19,
+          "part": 9,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_10.png",
+          "pdf_page": 20,
+          "part": 10,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_11.png",
+          "pdf_page": 21,
+          "part": 11,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_12.png",
+          "pdf_page": 22,
+          "part": 12,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_13.png",
+          "pdf_page": 23,
+          "part": 13,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_14.png",
+          "pdf_page": 24,
+          "part": 14,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_15.png",
+          "pdf_page": 25,
+          "part": 15,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_16.png",
+          "pdf_page": 26,
+          "part": 16,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_17.png",
+          "pdf_page": 28,
+          "part": 17,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_18.png",
+          "pdf_page": 29,
+          "part": 18,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_19.png",
+          "pdf_page": 30,
+          "part": 19,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_20.png",
+          "pdf_page": 31,
+          "part": 20,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_21.png",
+          "pdf_page": 32,
+          "part": 21,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_02_Q2_part_22.png",
+          "pdf_page": 33,
+          "part": 22,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 3,
+      "end_before_page": 34,
+      "approx_pages_span": 28
+    },
+    {
+      "question": 3,
+      "start_page": 34,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_03_Q3_part_01.png",
+          "pdf_page": 34,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_03_Q3_part_02.png",
+          "pdf_page": 35,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 4,
+      "end_before_page": 36,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 4,
+      "start_page": 36,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_04_Q4_part_01.png",
+          "pdf_page": 36,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_04_Q4_part_02.png",
+          "pdf_page": 37,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 5,
+      "end_before_page": 38,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 5,
+      "start_page": 38,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_05_Q5_part_01.png",
+          "pdf_page": 38,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_05_Q5_part_02.png",
+          "pdf_page": 39,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 6,
+      "end_before_page": 40,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 6,
+      "start_page": 40,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_06_Q6.png",
+          "pdf_page": 40,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        }
+      ],
+      "next_question": 7,
+      "end_before_page": 41,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 7,
+      "start_page": 41,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_07_Q7_part_01.png",
+          "pdf_page": 41,
+          "part": 1,
+          "width": 1240,
+          "height": 1627
+        },
+        {
+          "file": "Specimen_20QP_question_07_Q7_part_02.png",
+          "pdf_page": 42,
+          "part": 2,
+          "width": 1240,
+          "height": 253
+        }
+      ],
+      "next_question": 8,
+      "end_before_page": 42,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 8,
+      "start_page": 42,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_08_Q8_part_01.png",
+          "pdf_page": 42,
+          "part": 1,
+          "width": 1240,
+          "height": 1495
+        },
+        {
+          "file": "Specimen_20QP_question_08_Q8_part_02.png",
+          "pdf_page": 43,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 9,
+      "end_before_page": 44,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 9,
+      "start_page": 44,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_09_Q9.png",
+          "pdf_page": 44,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        }
+      ],
+      "next_question": 10,
+      "end_before_page": 45,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 10,
+      "start_page": 45,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_10_Q10.png",
+          "pdf_page": 45,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        }
+      ],
+      "next_question": 11,
+      "end_before_page": 46,
+      "approx_pages_span": 2
+    },
+    {
+      "question": 11,
+      "start_page": 46,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_11_Q11_part_01.png",
+          "pdf_page": 46,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_11_Q11_part_02.png",
+          "pdf_page": 47,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "next_question": 12,
+      "end_before_page": 48,
+      "approx_pages_span": 3
+    },
+    {
+      "question": 12,
+      "start_page": 48,
+      "outputs": [
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_01.png",
+          "pdf_page": 48,
+          "part": 1,
+          "width": 1240,
+          "height": 1632
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_02.png",
+          "pdf_page": 51,
+          "part": 2,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_03.png",
+          "pdf_page": 52,
+          "part": 3,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_04.png",
+          "pdf_page": 53,
+          "part": 4,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_05.png",
+          "pdf_page": 54,
+          "part": 5,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_06.png",
+          "pdf_page": 55,
+          "part": 6,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_07.png",
+          "pdf_page": 56,
+          "part": 7,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_08.png",
+          "pdf_page": 58,
+          "part": 8,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_09.png",
+          "pdf_page": 59,
+          "part": 9,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_10.png",
+          "pdf_page": 60,
+          "part": 10,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_11.png",
+          "pdf_page": 62,
+          "part": 11,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_12.png",
+          "pdf_page": 63,
+          "part": 12,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_13.png",
+          "pdf_page": 64,
+          "part": 13,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_14.png",
+          "pdf_page": 65,
+          "part": 14,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_15.png",
+          "pdf_page": 66,
+          "part": 15,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_16.png",
+          "pdf_page": 67,
+          "part": 16,
+          "width": 1240,
+          "height": 1755
+        },
+        {
+          "file": "Specimen_20QP_question_12_Q12_part_17.png",
+          "pdf_page": 68,
+          "part": 17,
+          "width": 1240,
+          "height": 1755
+        }
+      ],
+      "approx_pages_span": 21
+    }
+  ]
+}
