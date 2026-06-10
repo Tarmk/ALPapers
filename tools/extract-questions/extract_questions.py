@@ -88,6 +88,10 @@ def find_question_markers(doc: fitz.Document) -> list[QuestionMarker]:
                 m = pat.search(line_text)
                 if not m:
                     continue
+                if re.search(rf"Question\s+{m.group(1)}\s+continued\b", line_text, re.IGNORECASE):
+                    continue
+                if re.search(rf"Total\s+for\s+Question\s+{m.group(1)}\b", line_text, re.IGNORECASE):
+                    continue
                 n = int(m.group(1))
                 x0, y0, x1, y1 = _line_bbox(line)
                 # Keep first occurrence per question number (reading order)
@@ -214,8 +218,8 @@ def find_question_markers_cambridge_cie(doc: fitz.Document) -> list[QuestionMark
 
 
 def find_question_markers_fallback(doc: fitz.Document) -> list[QuestionMarker]:
-    """If 'Question N' not found, try lines that look like '1.' or '1 ' at line start."""
-    pat = re.compile(r"^\s*(\d{1,2})\s*[\.)]\s+\S")
+    """If 'Question N' not found, try lines that look like '1.', '1:' or '1 Text'."""
+    pat = re.compile(r"^\s*(\d{1,2})(?:\s*[\.):]\s+|\s{1,})\S")
     seen: dict[int, QuestionMarker] = {}
 
     for page_index in range(len(doc)):
@@ -363,16 +367,22 @@ def find_mark_scheme_markers(doc: fitz.Document) -> list[QuestionMarker]:
     for each top-level question, e.g. 1(a), 2, 10(b), in the Question column.
     Coordinates are stored in rendered-page orientation for image-based cropping.
     """
-    question_label = re.compile(r"^(\d{1,2})(?:\([a-zivx]+\))*$", re.IGNORECASE)
+    question_label = re.compile(r"^(\d{1,2})(?:\s*\([a-zivx]+\))*$", re.IGNORECASE)
     seen: dict[int, QuestionMarker] = {}
 
     for page_index in range(len(doc)):
         page = doc[page_index]
         lines = _page_text_lines(page)
         has_answer_table_header = any(
-            text.strip().lower() == "question" and 35 <= _visual_bbox(page, bbox)[0] <= 110
+            text.strip().lower() == "question" and 30 <= _visual_bbox(page, bbox)[0] <= 110
             for text, bbox in lines
-        ) and any(text.strip().lower() in {"answer", "answers"} for text, _ in lines)
+        ) and (
+            any(text.strip().lower() in {"answer", "answers"} for text, _ in lines)
+            or (
+                any(text.strip().lower() == "scheme" for text, _ in lines)
+                and any(text.strip().lower() == "marks" for text, _ in lines)
+            )
+        )
         if not has_answer_table_header:
             continue
 
@@ -382,6 +392,10 @@ def find_mark_scheme_markers(doc: fitz.Document) -> list[QuestionMarker]:
             if not match:
                 continue
 
+            if re.search(rf"Question\s*{match.group(1)}\s+continued\b", text, re.IGNORECASE):
+                continue
+            if re.search(rf"Total\s+for\s+Question\s+{match.group(1)}\b", text, re.IGNORECASE):
+                continue
             num = int(match.group(1))
             if num < 1 or num > 40 or num in seen:
                 continue
@@ -391,7 +405,7 @@ def find_mark_scheme_markers(doc: fitz.Document) -> list[QuestionMarker]:
             # The answer-table Question column is near the left edge after any
             # page rotation is applied. This excludes marks-column numerals.
             left_limit = 90 if re.fullmatch(r"\d{1,2}", text) else 100
-            if not (45 <= vx0 <= left_limit and 45 <= vy0 <= page.rect.height - 35):
+            if not (30 <= vx0 <= left_limit and 45 <= vy0 <= page.rect.height - 35):
                 continue
 
             seen[num] = QuestionMarker(

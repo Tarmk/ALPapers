@@ -1,0 +1,117 @@
+{
+  "totalQuestions": 203,
+  "withMarkScheme": 63,
+  "referencedImages": 647,
+  "missingImages": 0,
+  "shortValidContinuations": [
+    [
+      "/topical/maths-edexcel/MATH-S3-MS/2023_January_January_202023_20MS/January_202023_20MS_question_01_Q1_part_02.png",
+      [
+        1241,
+        92
+      ]
+    ],
+    [
+      "/topical/maths-edexcel/MATH-S3-MS/2023_January_January_202023_20MS/January_202023_20MS_question_02_Q2_part_02.png",
+      [
+        1241,
+        80
+      ]
+    ]
+  ],
+  "includedSessions": 28,
+  "badIncludedSessions": [],
+  "excludedSessions": [
+    "2022 June",
+    "Old spec 2012 June",
+    "Old spec 2011 June",
+    "Old spec 2009 June",
+    "Old spec 2006 June",
+    "Old spec 2006 January",
+    "Old spec 2005 June",
+    "Old spec 2004 June",
+    "Old spec 2003 June",
+    "Old spec 2002 June"
+  ],
+  "zeroVisibleSubtopics": [],
+  "unknownQuestionSubtopics": [],
+  "subtopicCounts": [
+    {
+      "id": "1.1",
+      "topic": "Combinations of Random Variables",
+      "subtopic": "Linear combinations of independent Normal random variables",
+      "questions": 19,
+      "withMarkScheme": 7
+    },
+    {
+      "id": "2.2",
+      "topic": "Sampling",
+      "subtopic": "Sampling methods: simple random, stratified, systematic and quota",
+      "questions": 22,
+      "withMarkScheme": 5
+    },
+    {
+      "id": "3.1",
+      "topic": "Estimation, Confidence Intervals and Tests",
+      "subtopic": "Standard error, estimators and bias",
+      "questions": 42,
+      "withMarkScheme": 10
+    },
+    {
+      "id": "3.2",
+      "topic": "Estimation, Confidence Intervals and Tests",
+      "subtopic": "Distribution of the sample mean",
+      "questions": 3,
+      "withMarkScheme": 2
+    },
+    {
+      "id": "3.3",
+      "topic": "Estimation, Confidence Intervals and Tests",
+      "subtopic": "Confidence intervals and confidence limits",
+      "questions": 25,
+      "withMarkScheme": 8
+    },
+    {
+      "id": "3.5",
+      "topic": "Estimation, Confidence Intervals and Tests",
+      "subtopic": "Hypothesis tests, Central Limit Theorem and large samples",
+      "questions": 20,
+      "withMarkScheme": 6
+    },
+    {
+      "id": "3.6",
+      "topic": "Estimation, Confidence Intervals and Tests",
+      "subtopic": "Two-sample tests for difference of means",
+      "questions": 4,
+      "withMarkScheme": 3
+    },
+    {
+      "id": "4.1",
+      "topic": "Goodness of Fit and Contingency Tables",
+      "subtopic": "Chi-squared goodness of fit tests",
+      "questions": 20,
+      "withMarkScheme": 7
+    },
+    {
+      "id": "4.2",
+      "topic": "Goodness of Fit and Contingency Tables",
+      "subtopic": "Degrees of freedom and contingency tables",
+      "questions": 20,
+      "withMarkScheme": 5
+    },
+    {
+      "id": "5.1",
+      "topic": "Regression and Correlation",
+      "subtopic": "Spearman rank correlation",
+      "questions": 27,
+      "withMarkScheme": 9
+    },
+    {
+      "id": "5.2",
+      "topic": "Regression and Correlation",
+      "subtopic": "Testing whether correlation is zero",
+      "questions": 1,
+      "withMarkScheme": 1
+    }
+  ]
+}

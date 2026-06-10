@@ -732,6 +732,45 @@ body {
   cursor: pointer;
 }
 
+.session-filter-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.45rem;
+}
+
+.session-filter-summary {
+  margin: 0.6rem 0 0.35rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.session-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-height: 11rem;
+  overflow: auto;
+  padding-right: 0.2rem;
+}
+
+.session-filter-list label {
+  align-items: flex-start;
+  margin-top: 0.4rem;
+}
+
+.session-filter-list span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.session-filter-list small {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
 .random-controls {
   padding-bottom: 1rem;
 }

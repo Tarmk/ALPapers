@@ -5,7 +5,7 @@ type Props = {
   subject: Subject;
   subjectKey?: string;
   onOpenPaper: (paperCode: string) => void;
-  onOpenTopicalPaper?: (paperCode: "P1" | "P2" | "P3" | "P4" | "P5") => void;
+  onOpenTopicalPaper?: (paperCode: "P1" | "P2" | "P3" | "P4" | "P5" | "S3") => void;
 };
 
 const PAPER_GROUPS_BY_SUBJECT: Record<string, { prefix: string; label: string; codes: string[] }[]> = {
@@ -82,11 +82,13 @@ export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, o
         ))}
       </div>
 
-      {(subjectKey === "comsci" || subjectKey === "physics") && onOpenTopicalPaper && (
+      {(subjectKey === "comsci" || subjectKey === "physics" || subjectKey === "maths") && onOpenTopicalPaper && (
         <section className="paper-group">
           <h3 className="paper-group-label">Topical papers</h3>
           <div className="paper-group-grid">
-            {(subjectKey === "physics"
+            {(subjectKey === "maths"
+              ? (["S3"] as const)
+              : subjectKey === "physics"
               ? (["P1", "P2", "P3", "P4", "P5"] as const)
               : (["P1", "P2", "P3", "P4"] as const)
             ).map((code) => (
@@ -98,8 +100,7 @@ export const PaperGrid: React.FC<Props> = ({ subject, subjectKey, onOpenPaper, o
               >
                 <h4>{code}</h4>
                 <p>
-                  Build printable topical question sheets from extracted Paper{" "}
-                  {code.slice(1)} questions.
+                  Build printable topical question sheets from extracted {code} questions.
                 </p>
                 <span className="card-pill">Topical</span>
               </button>

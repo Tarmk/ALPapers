@@ -30,10 +30,14 @@ import {
   PHYSICS_P5_QUESTIONS,
   PHYSICS_P5_TOPICS,
 } from "../data/physicsTopical";
+import {
+  MATHS_S3_QUESTIONS,
+  MATHS_S3_TOPICS,
+} from "../data/mathsS3Topical";
 
 type Props = {
-  subjectKey: "comsci" | "physics";
-  paperCode: "P1" | "P2" | "P3" | "P4" | "P5";
+  subjectKey: "comsci" | "physics" | "maths";
+  paperCode: "P1" | "P2" | "P3" | "P4" | "P5" | "S3";
   topicId?: string;
   subtopicId?: string;
   onSelectTopic: (topicId: string) => void;
@@ -43,6 +47,14 @@ type Props = {
 const hasPartialTopicFocus = (question: TopicalQuestion) => question.topicFocus !== "Whole question";
 const ALL_SUBTOPICS_ID = "all";
 type SheetContent = "questions" | "markScheme";
+
+const sessionYear = (session: string) => {
+  const match = session.match(/\b(20\d{2})\b/);
+  return match ? Number.parseInt(match[1], 10) : 0;
+};
+
+const sortSessions = (sessions: string[]) =>
+  [...sessions].sort((a, b) => sessionYear(b) - sessionYear(a) || a.localeCompare(b));
 
 const shuffleQuestions = (questions: TopicalQuestion[]) => {
   const shuffled = [...questions];
@@ -75,7 +87,9 @@ export const TopicalPapersView: React.FC<Props> = ({
   onSelectSubtopic,
 }) => {
   const topicalTopics: TopicalTopic[] =
-    subjectKey === "physics"
+    subjectKey === "maths"
+      ? MATHS_S3_TOPICS
+      : subjectKey === "physics"
       ? paperCode === "P1"
         ? PHYSICS_P1_TOPICS
         : paperCode === "P2"
@@ -93,7 +107,9 @@ export const TopicalPapersView: React.FC<Props> = ({
             ? COMSCI_P4_TOPICS
             : COMSCI_P3_TOPICS;
   const topicalQuestions: TopicalQuestion[] =
-    subjectKey === "physics"
+    subjectKey === "maths"
+      ? MATHS_S3_QUESTIONS
+      : subjectKey === "physics"
       ? paperCode === "P1"
         ? PHYSICS_P1_QUESTIONS
         : paperCode === "P2"
@@ -120,7 +136,7 @@ export const TopicalPapersView: React.FC<Props> = ({
   const selectedSubtopic = requestedSubtopic;
   const isAllSubtopicsSelected = selectedSubtopicId === ALL_SUBTOPICS_ID;
 
-  const questions = useMemo(() => {
+  const topicQuestions = useMemo(() => {
     if (!selectedTopic) return [];
     if (isAllSubtopicsSelected) {
       return topicalQuestions.filter((question) => question.topicId === selectedTopic.id);
@@ -134,12 +150,30 @@ export const TopicalPapersView: React.FC<Props> = ({
   const [sheetContent, setSheetContent] = useState<SheetContent>("questions");
   const [randomCount, setRandomCount] = useState("20");
   const [randomQuestions, setRandomQuestions] = useState<TopicalQuestion[]>([]);
+  const [selectedSessions, setSelectedSessions] = useState<Set<string>>(new Set());
+  const availableSessions = useMemo(
+    () => sortSessions(Array.from(new Set(topicQuestions.map((question) => question.session)))),
+    [topicQuestions],
+  );
+  const recentSessions = useMemo(() => {
+    const years = availableSessions.map(sessionYear).filter(Boolean);
+    const latestYear = years.length ? Math.max(...years) : 0;
+    return new Set(availableSessions.filter((session) => sessionYear(session) >= latestYear - 2));
+  }, [availableSessions]);
+  const questions = useMemo(() => {
+    if (selectedSessions.size === 0) return [];
+    return topicQuestions.filter((question) => selectedSessions.has(question.session));
+  }, [selectedSessions, topicQuestions]);
   const questionsWithMarkScheme = useMemo(
     () => questions.filter((question) => question.markSchemeImages?.length),
     [questions],
   );
   // Keep one stable random pool so question paper and mark scheme stay aligned.
   const randomPool = supportsMarkScheme ? questionsWithMarkScheme : questions;
+
+  useEffect(() => {
+    setSelectedSessions(new Set(availableSessions));
+  }, [availableSessions]);
 
   useEffect(() => {
     setSelectedIds(new Set(questions.map((question) => question.id)));
@@ -173,6 +207,18 @@ export const TopicalPapersView: React.FC<Props> = ({
     const maxCount = randomPool.length;
     const count = maxCount === 0 ? 0 : Math.max(1, Math.min(Number.parseInt(randomCount, 10) || 1, maxCount));
     setRandomQuestions(shuffleQuestions(randomPool).slice(0, count));
+  };
+
+  const handleToggleSession = (session: string) => {
+    setSelectedSessions((current) => {
+      const next = new Set(current);
+      if (next.has(session)) {
+        next.delete(session);
+      } else {
+        next.add(session);
+      }
+      return next;
+    });
   };
 
   const handlePrint = async (content: SheetContent) => {
@@ -252,6 +298,54 @@ export const TopicalPapersView: React.FC<Props> = ({
               ))}
             </select>
           </label>
+
+          <fieldset className="topical-mode session-filter">
+            <legend>Years / Sessions</legend>
+            <div className="session-filter-actions">
+              <button
+                type="button"
+                className="paper-link select-all-button"
+                onClick={() => setSelectedSessions(new Set(availableSessions))}
+              >
+                All
+              </button>
+              <button
+                type="button"
+                className="paper-link select-all-button"
+                onClick={() => setSelectedSessions(new Set(recentSessions))}
+              >
+                Recent
+              </button>
+              <button
+                type="button"
+                className="paper-link select-all-button"
+                onClick={() => setSelectedSessions(new Set())}
+              >
+                None
+              </button>
+            </div>
+            <p className="session-filter-summary">
+              {selectedSessions.size} of {availableSessions.length} session(s) included
+            </p>
+            <div className="session-filter-list">
+              {availableSessions.map((session) => {
+                const matchingCount = topicQuestions.filter((question) => question.session === session).length;
+                return (
+                  <label key={session}>
+                    <input
+                      type="checkbox"
+                      checked={selectedSessions.has(session)}
+                      onChange={() => handleToggleSession(session)}
+                    />
+                    <span>
+                      {session}
+                      <small>{matchingCount} question(s)</small>
+                    </span>
+                  </label>
+                );
+              })}
+            </div>
+          </fieldset>
 
           <fieldset className="topical-mode">
             <legend>Question mode</legend>
