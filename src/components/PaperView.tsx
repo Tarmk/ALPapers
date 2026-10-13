@@ -1,12 +1,12 @@
 import React from "react";
-import { Paper } from "../data/subjects";
+import type { Paper, YearLinks } from "../data/subjects";
 
 type Props = {
   paper: Paper;
   paperCode: string;
 };
 
-const PaperTable: React.FC<{ years: Record<string, any>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
+const PaperTable: React.FC<{ years: Record<string, YearLinks>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
   const yearKeys = Object.keys(years).sort().reverse();
 
   return (
@@ -130,9 +130,9 @@ const YearJumpButtons: React.FC<{ uniqueYears: string[] }> = ({ uniqueYears }) =
   );
 };
 
-const YearGroupedTable: React.FC<{ years: Record<string, any>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
+const YearGroupedTable: React.FC<{ years: Record<string, YearLinks>; showResource?: boolean; showInsert?: boolean }> = ({ years, showResource, showInsert }) => {
   // Group by calendar year
-  const grouped: Record<string, Record<string, any>> = {};
+  const grouped: Record<string, Record<string, YearLinks>> = {};
   
   Object.entries(years).forEach(([key, value]) => {
     const match = key.match(/(\d{4})/);
@@ -160,7 +160,8 @@ const YearGroupedTable: React.FC<{ years: Record<string, any>; showResource?: bo
 export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
   const years = paper.years || {};
   const yearKeys = Object.keys(years);
-  const hasOldSpec = paper.oldSpec && Object.keys(paper.oldSpec.years).length > 0;
+  const oldSpec = paper.oldSpec && Object.keys(paper.oldSpec.years).length > 0 ? paper.oldSpec : undefined;
+  const hasOldSpec = oldSpec !== undefined;
 
   if (yearKeys.length === 0 && !hasOldSpec) {
     return (
@@ -172,7 +173,7 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
   }
 
   // Extract unique calendar years
-  const extractUniqueYears = (yearData: Record<string, any>) => {
+  const extractUniqueYears = (yearData: Record<string, YearLinks>) => {
     const years = new Set<string>();
     Object.keys(yearData).forEach((key) => {
       const match = key.match(/(\d{4})/);
@@ -182,7 +183,7 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
   };
 
   const uniqueYears = extractUniqueYears(years);
-  const uniqueOldYears = hasOldSpec ? extractUniqueYears(paper.oldSpec.years) : [];
+  const uniqueOldYears = oldSpec ? extractUniqueYears(oldSpec.years) : [];
 
   const showResource = paperCode === "P4";
   const showInsert = paperCode === "P2";
@@ -213,12 +214,12 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
         </section>
       )}
 
-      {hasOldSpec && (
+      {oldSpec && (
         <section className="paper-section old-spec-section" id="old-spec-section">
           <h2 className="spec-header old-spec-header">
             Old Specification
-            {paper.oldSpec.specNote && (
-              <span className="spec-note"> ({paper.oldSpec.specNote})</span>
+            {oldSpec.specNote && (
+              <span className="spec-note"> ({oldSpec.specNote})</span>
             )}
           </h2>
           <p className="old-spec-notice">
@@ -230,7 +231,7 @@ export const PaperView: React.FC<Props> = ({ paper, paperCode }) => {
               <YearJumpButtons uniqueYears={uniqueOldYears} />
             </>
           )}
-          <YearGroupedTable years={paper.oldSpec.years} showResource={showResource} showInsert={showInsert} />
+          <YearGroupedTable years={oldSpec.years} showResource={showResource} showInsert={showInsert} />
         </section>
       )}
     </div>

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import { SUBJECTS, SubjectKey, Subject, Paper } from "./data/subjects";
 import { SubjectGrid } from "./components/SubjectGrid";
 import { PaperGrid } from "./components/PaperGrid";
 import { PaperView } from "./components/PaperView";
-import { TopicalPapersView } from "./components/TopicalPapersView";
+// The topical view (and its large data files) is only downloaded when it is opened.
+const TopicalPapersView = lazy(() =>
+  import("./components/TopicalPapersView").then((m) => ({ default: m.TopicalPapersView })),
+);
 
 type TopicalPaperCode = "P1" | "P2" | "P3" | "P4" | "P5" | "S3";
 type TopicalSubjectKey = "comsci" | "physics" | "maths";
@@ -302,51 +305,53 @@ export const App: React.FC = () => {
       </header>
 
       <main className="container">
-        {view.type === "subjects" ? (
-          <SubjectGrid onOpenSubject={handleOpenSubject} />
-        ) : view.type === "papers" ? (
-          <PaperGrid
-            subject={view.subject}
-            subjectKey={view.subjectKey}
-            onOpenPaper={handleOpenPaper}
-            onOpenTopicalPaper={handleOpenTopicalPaper}
-          />
-        ) : view.type === "topicalPaper" ? (
-          <TopicalPapersView
-            subjectKey={view.subjectKey}
-            paperCode={view.paperCode}
-            topicId={view.topicId}
-            subtopicId={view.subtopicId}
-            onSelectTopic={handleSelectTopicalTopic}
-            onSelectSubtopic={handleSelectTopicalSubtopic}
-          />
-        ) : view.type === "topicalPapers" ? (
-          <TopicalPapersView
-            subjectKey={view.subjectKey}
-            paperCode={view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3"}
-            onSelectTopic={(topicId) => {
-              setView({
-                type: "topicalPaper",
-                subjectKey: view.subjectKey,
-                subject: view.subject,
-                paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
-                topicId,
-              });
-            }}
-            onSelectSubtopic={(topicId, subtopicId) => {
-              setView({
-                type: "topicalPaper",
-                subjectKey: view.subjectKey,
-                subject: view.subject,
-                paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
-                topicId,
-                subtopicId,
-              });
-            }}
-          />
-        ) : (
-          <PaperView paper={view.paper} paperCode={view.paperCode} />
-        )}
+        <Suspense fallback={<p className="intro-text">Loading...</p>}>
+          {view.type === "subjects" ? (
+            <SubjectGrid onOpenSubject={handleOpenSubject} />
+          ) : view.type === "papers" ? (
+            <PaperGrid
+              subject={view.subject}
+              subjectKey={view.subjectKey}
+              onOpenPaper={handleOpenPaper}
+              onOpenTopicalPaper={handleOpenTopicalPaper}
+            />
+          ) : view.type === "topicalPaper" ? (
+            <TopicalPapersView
+              subjectKey={view.subjectKey}
+              paperCode={view.paperCode}
+              topicId={view.topicId}
+              subtopicId={view.subtopicId}
+              onSelectTopic={handleSelectTopicalTopic}
+              onSelectSubtopic={handleSelectTopicalSubtopic}
+            />
+          ) : view.type === "topicalPapers" ? (
+            <TopicalPapersView
+              subjectKey={view.subjectKey}
+              paperCode={view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3"}
+              onSelectTopic={(topicId) => {
+                setView({
+                  type: "topicalPaper",
+                  subjectKey: view.subjectKey,
+                  subject: view.subject,
+                  paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
+                  topicId,
+                });
+              }}
+              onSelectSubtopic={(topicId, subtopicId) => {
+                setView({
+                  type: "topicalPaper",
+                  subjectKey: view.subjectKey,
+                  subject: view.subject,
+                  paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
+                  topicId,
+                  subtopicId,
+                });
+              }}
+            />
+          ) : (
+            <PaperView paper={view.paper} paperCode={view.paperCode} />
+          )}
+        </Suspense>
       </main>
 
       <footer className="site-footer">

@@ -1,43 +1,17 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { flushSync } from "react-dom";
 import {
-  COMSCI_P1_QUESTIONS,
-  COMSCI_P1_TOPICS,
-} from "../data/comsciP1Topical";
-import {
-  COMSCI_P2_QUESTIONS,
-  COMSCI_P2_TOPICS,
-} from "../data/comsciP2Topical";
-import {
-  COMSCI_P3_QUESTIONS,
-  COMSCI_P3_TOPICS,
-  TopicalQuestion,
-  TopicalTopic,
-} from "../data/comsciP3Topical";
-import {
-  COMSCI_P4_QUESTIONS,
-  COMSCI_P4_TOPICS,
-} from "../data/comsciP4Topical";
-import {
-  PHYSICS_P1_QUESTIONS,
-  PHYSICS_P1_TOPICS,
-  PHYSICS_P2_QUESTIONS,
-  PHYSICS_P2_TOPICS,
-  PHYSICS_P3_QUESTIONS,
-  PHYSICS_P3_TOPICS,
-  PHYSICS_P4_QUESTIONS,
-  PHYSICS_P4_TOPICS,
-  PHYSICS_P5_QUESTIONS,
-  PHYSICS_P5_TOPICS,
-} from "../data/physicsTopical";
-import {
-  MATHS_S3_QUESTIONS,
-  MATHS_S3_TOPICS,
-} from "../data/mathsS3Topical";
+  loadTopical,
+  type TopicalData,
+  type TopicalPaperCode,
+  type TopicalQuestion,
+  type TopicalSubjectKey,
+  type TopicalTopic,
+} from "../data/topical";
 
 type Props = {
-  subjectKey: "comsci" | "physics" | "maths";
-  paperCode: "P1" | "P2" | "P3" | "P4" | "P5" | "S3";
+  subjectKey: TopicalSubjectKey;
+  paperCode: TopicalPaperCode;
   topicId?: string;
   subtopicId?: string;
   onSelectTopic: (topicId: string) => void;
@@ -78,54 +52,47 @@ const waitForPrintableImages = async () => {
   );
 };
 
-export const TopicalPapersView: React.FC<Props> = ({
-  subjectKey,
+/** Loads the topical index for one paper, then shows it. */
+export const TopicalPapersView: React.FC<Props> = (props) => {
+  const { subjectKey, paperCode } = props;
+  const key = `${subjectKey}:${paperCode}`;
+  const [loaded, setLoaded] = useState<{ key: string; data: TopicalData } | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setFailed(false);
+    loadTopical(subjectKey, paperCode)
+      .then((data) => {
+        if (!cancelled) setLoaded({ key, data });
+      })
+      .catch((error) => {
+        console.error("Could not load the topical questions", error);
+        if (!cancelled) setFailed(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [key, subjectKey, paperCode]);
+
+  if (failed) {
+    return <p className="intro-text">Could not load the questions. Check your connection and refresh the page.</p>;
+  }
+  if (!loaded || loaded.key !== key) {
+    return <p className="intro-text">Loading questions...</p>;
+  }
+  return <TopicalPaper {...props} topics={loaded.data.topics} questions={loaded.data.questions} />;
+};
+
+const TopicalPaper: React.FC<Props & { topics: TopicalTopic[]; questions: TopicalQuestion[] }> = ({
   paperCode,
   topicId,
   subtopicId,
   onSelectTopic,
   onSelectSubtopic,
+  topics: topicalTopics,
+  questions: topicalQuestions,
 }) => {
-  const topicalTopics: TopicalTopic[] =
-    subjectKey === "maths"
-      ? MATHS_S3_TOPICS
-      : subjectKey === "physics"
-      ? paperCode === "P1"
-        ? PHYSICS_P1_TOPICS
-        : paperCode === "P2"
-          ? PHYSICS_P2_TOPICS
-          : paperCode === "P3"
-            ? PHYSICS_P3_TOPICS
-            : paperCode === "P4"
-              ? PHYSICS_P4_TOPICS
-              : PHYSICS_P5_TOPICS
-      : paperCode === "P1"
-        ? COMSCI_P1_TOPICS
-        : paperCode === "P2"
-          ? COMSCI_P2_TOPICS
-          : paperCode === "P4"
-            ? COMSCI_P4_TOPICS
-            : COMSCI_P3_TOPICS;
-  const topicalQuestions: TopicalQuestion[] =
-    subjectKey === "maths"
-      ? MATHS_S3_QUESTIONS
-      : subjectKey === "physics"
-      ? paperCode === "P1"
-        ? PHYSICS_P1_QUESTIONS
-        : paperCode === "P2"
-          ? PHYSICS_P2_QUESTIONS
-          : paperCode === "P3"
-            ? PHYSICS_P3_QUESTIONS
-            : paperCode === "P4"
-              ? PHYSICS_P4_QUESTIONS
-              : PHYSICS_P5_QUESTIONS
-      : paperCode === "P1"
-        ? COMSCI_P1_QUESTIONS
-        : paperCode === "P2"
-          ? COMSCI_P2_QUESTIONS
-          : paperCode === "P4"
-            ? COMSCI_P4_QUESTIONS
-            : COMSCI_P3_QUESTIONS;
   const countQuestions = (predicate: (q: TopicalQuestion) => boolean) =>
     topicalQuestions.filter(predicate).length;
 
