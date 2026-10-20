@@ -1,0 +1,76 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Hyperbolic functions",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Definitions, identities and equations"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Further coordinate systems",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Ellipses and hyperbolas"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Inverse trigonometric and hyperbolic functions"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Standard integrals and substitutions"
+        },
+        {
+          "id": "4.2",
+          "title": "Reduction formulae"
+        },
+        {
+          "id": "4.3",
+          "title": "Arc length and surface area"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Vectors",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Vector product, lines and planes"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Further matrix algebra",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Eigenvalues, eigenvectors and diagonalisation"
+        },
+        {
+          "id": "6.2",
+          "title": "3 × 3 matrices, inverses and transformations"
+        }
+      ]
+    }
+  ]
+}

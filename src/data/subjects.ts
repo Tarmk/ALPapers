@@ -2128,10 +2128,6 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202001%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202001%20MS.pdf",
             },
-            "2014 IAL January": {
-              qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/January%202014%20(IAL)%20QP.pdf",
-              ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/January%202014%20(IAL)%20MS.pdf",
-            },
             "2014 June (R)": {
               qp: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/QP/June%202014%20(R)%20QP.pdf",
               ms: "https://pmt.physicsandmathstutor.com/download/Maths/A-level/M2/Papers-Edexcel/MS/June%202014%20(R)%20MS.pdf",

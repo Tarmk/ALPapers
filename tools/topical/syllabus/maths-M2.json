@@ -1,0 +1,70 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Kinematics",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Projectiles"
+        },
+        {
+          "id": "1.2",
+          "title": "Variable acceleration (calculus and vectors)"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Centres of mass",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Laminas, rods and composite bodies"
+        },
+        {
+          "id": "2.2",
+          "title": "Suspended and toppling bodies"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Work, energy and power",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Work-energy principle"
+        },
+        {
+          "id": "3.2",
+          "title": "Power"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Collisions",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Impulse and Newton's law of restitution"
+        },
+        {
+          "id": "4.2",
+          "title": "Successive collisions and impacts with walls"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Statics of rigid bodies",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Rigid bodies in equilibrium (ladders and rods)"
+        }
+      ]
+    }
+  ]
+}

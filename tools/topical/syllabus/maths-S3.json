@@ -1,0 +1,84 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Combinations of random variables",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Linear combinations of independent Normal variables"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Sampling",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Sampling methods"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Estimation and confidence intervals",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Estimators, bias and standard error"
+        },
+        {
+          "id": "3.2",
+          "title": "Distribution of the sample mean and the Central Limit Theorem"
+        },
+        {
+          "id": "3.3",
+          "title": "Confidence intervals"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hypothesis tests",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Tests for a population mean"
+        },
+        {
+          "id": "4.2",
+          "title": "Tests for the difference of two means"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Goodness of fit",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Goodness of fit tests"
+        },
+        {
+          "id": "5.2",
+          "title": "Contingency tables"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Correlation",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Spearman's rank correlation"
+        },
+        {
+          "id": "6.2",
+          "title": "Testing for correlation"
+        }
+      ]
+    }
+  ]
+}

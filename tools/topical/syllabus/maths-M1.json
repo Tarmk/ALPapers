@@ -1,0 +1,80 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Kinematics in a straight line",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Constant acceleration formulae"
+        },
+        {
+          "id": "1.2",
+          "title": "Velocity-time and speed-time graphs"
+        },
+        {
+          "id": "1.3",
+          "title": "Vertical motion under gravity"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Vectors in mechanics",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Vectors: position, velocity and resultants"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Statics of a particle",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Equilibrium and resolving forces"
+        },
+        {
+          "id": "3.2",
+          "title": "Friction"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Dynamics of a particle",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Newton's laws and inclined planes"
+        },
+        {
+          "id": "4.2",
+          "title": "Connected particles and pulleys"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Momentum and impulse",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Conservation of momentum and impulse"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Moments",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Moments and equilibrium of rods and beams"
+        }
+      ]
+    }
+  ]
+}

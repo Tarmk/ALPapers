@@ -1,0 +1,76 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "The binomial distribution",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Binomial distribution"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "The Poisson distribution",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Poisson distribution"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Approximations",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Poisson approximation to the binomial"
+        },
+        {
+          "id": "3.2",
+          "title": "Normal approximations to the binomial and Poisson"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Continuous random variables",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Probability density and cumulative distribution functions"
+        },
+        {
+          "id": "4.2",
+          "title": "Mean, variance, median, mode and quartiles"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "The continuous uniform distribution",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Continuous uniform (rectangular) distribution"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Hypothesis testing",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Populations, samples and sampling distributions"
+        },
+        {
+          "id": "6.2",
+          "title": "Hypothesis tests and critical regions for binomial and Poisson"
+        }
+      ]
+    }
+  ]
+}

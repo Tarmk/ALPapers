@@ -1,0 +1,96 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Algebra and functions",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Indices and surds"
+        },
+        {
+          "id": "1.2",
+          "title": "Quadratic functions and the discriminant"
+        },
+        {
+          "id": "1.3",
+          "title": "Simultaneous equations"
+        },
+        {
+          "id": "1.4",
+          "title": "Inequalities"
+        },
+        {
+          "id": "1.5",
+          "title": "Curve sketching and transformations"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Coordinate geometry",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Straight lines"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Sine rule, cosine rule and area of a triangle"
+        },
+        {
+          "id": "3.2",
+          "title": "Radians, arc length and sector area"
+        },
+        {
+          "id": "3.3",
+          "title": "Trigonometric graphs"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Differentiating powers of x"
+        },
+        {
+          "id": "4.2",
+          "title": "Tangents and normals"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Indefinite integration"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Sequences and series",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Arithmetic sequences and series"
+        },
+        {
+          "id": "6.2",
+          "title": "Sequences and recurrence relations"
+        }
+      ]
+    }
+  ]
+}

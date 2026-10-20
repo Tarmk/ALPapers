@@ -1,0 +1,108 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Proof",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Proof by deduction, exhaustion and counter-example"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Algebra",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Algebraic division, factor and remainder theorems"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Coordinate geometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Circles"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Sequences and series",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Binomial expansion"
+        },
+        {
+          "id": "4.2",
+          "title": "Arithmetic sequences and series"
+        },
+        {
+          "id": "4.3",
+          "title": "Geometric sequences and series"
+        },
+        {
+          "id": "4.4",
+          "title": "Sequences and recurrence relations"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Exponentials and logarithms",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Laws of logarithms and exponential equations"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Trigonometric identities and equations"
+        },
+        {
+          "id": "6.2",
+          "title": "Sine and cosine rules, radians, arcs and sectors"
+        },
+        {
+          "id": "6.3",
+          "title": "Trigonometric graphs"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Stationary points, increasing functions and optimisation"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Definite integrals and areas"
+        },
+        {
+          "id": "8.2",
+          "title": "The trapezium rule"
+        }
+      ]
+    }
+  ]
+}
