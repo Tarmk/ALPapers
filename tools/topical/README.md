@@ -9,7 +9,7 @@ Run everything from the repository root with the Python environment in
 ```bash
 PY=tools/extract-questions/.venv/Scripts/python.exe   # bin/python on macOS/Linux
 
-node tools/topical/registry.mjs                      # 1. list every paper in subjects.ts
+node tools/topical/registry.mjs                      # 1. list every paper in src/data/papers/
 $PY tools/topical/fetch.py --subject maths           # 2. download PDFs to offline/pdfs/ (cached)
 $PY tools/topical/audit_links.py                     #    optional: check QP/MS links serve the right file
 $PY tools/topical/split_edexcel.py --session-like 2027   # 3a. maths
@@ -17,6 +17,7 @@ $PY tools/topical/split_cie.py --subject physics --session-like 2027   # 3b. phy
 node tools/topical/packets.mjs maths-P1              # 4. questions that still need a topic label
 #    ...label them into tools/topical/labels/maths-P1.json...
 node tools/topical/build.mjs                         # 5. write src/data/topical/*.json
+node tools/topical/sync-media.mjs                    # 6. upload new images to R2 (needs .env.r2)
 ```
 
 ## What each step does
@@ -49,6 +50,11 @@ checks that every image exists and every label is a real subtopic, and writes th
 counts in `summary.json` used by the subject pages. Physics and computer science keep
 their existing reviewed index and only gain new sessions and missing mark schemes.
 Papers without a work folder are left untouched, so the build is safe on a fresh clone.
+
+**Images.** The splitters write to `media/topical/`, which is git-ignored. `sync-media.mjs`
+uploads new or changed files to the R2 bucket that production reads from
+(`VITE_ASSET_BASE` in `.env.production`); `--dry-run` shows what it would do. Upload
+before pushing index changes that refer to new images.
 
 ## Known gaps
 

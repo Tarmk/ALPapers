@@ -9,7 +9,9 @@ ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "offline" / "registry.json"
 PDF_ROOT = ROOT / "offline" / "pdfs"
 WORK_ROOT = ROOT / "offline" / "work"
-PUBLIC_TOPICAL = ROOT / "public" / "topical"
+# Question images. Served from object storage in production (see sync-media.mjs);
+# the dev server serves them from here.
+PUBLIC_TOPICAL = ROOT / "media" / "topical"
 
 
 def load_registry(subject: str | None = None, paper: str | None = None, session_like: str | None = None) -> list[dict]:
