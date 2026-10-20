@@ -19,7 +19,6 @@ jobs:
             /package-lock.json
             /tsconfig.json
             /vite.config.ts
-            /styles.css
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
