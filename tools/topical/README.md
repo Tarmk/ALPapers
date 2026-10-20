@@ -1,6 +1,6 @@
 # Topical pipeline
 
-Turns the papers listed in `src/data/subjects.ts` into the per-question images and
+Turns the papers listed in `src/data/papers/<subject>.json` into the per-question images and
 topic indexes behind the "By topic" view.
 
 Run everything from the repository root with the Python environment in

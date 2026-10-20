@@ -20,7 +20,7 @@ Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, 
 
 ## How the topical data is made
 
-`tools/topical/` builds it from the links in `src/data/subjects.ts` (details in its [README](tools/topical/README.md)):
+`tools/topical/` builds it from the links in `src/data/papers/<subject>.json` (details in its [README](tools/topical/README.md)):
 
 1. **Fetch** every PDF and check each link serves what it says (three mark-scheme links that served question papers, and a misfiled M2 entry that was a C1 paper, were found and fixed this way).
 2. **Clean** mirror watermarks out of the PDF content stream, so the page is exactly as published.
@@ -55,20 +55,23 @@ git checkout main
 |------|------------|
 | `src/App.tsx` | Page shell and routing |
 | `src/components/` | Home, subject, paper and topical views |
-| `src/data/subjects.ts` | Paper links for every subject, paper and session |
+| `src/data/catalog.ts` | Subjects: board, level, code and paper groups |
+| `src/data/papers/<subject>.json` | Paper links for every paper and session, one file per subject (loaded on demand) |
 | `src/data/topical/` | One topical index per paper, plus `summary.json` with the counts |
 | `public/topical/` | Question and mark-scheme images |
 | `tools/topical/` | The pipeline that builds the topical data |
 | `offline/` | Older source PDFs and extraction output (not needed to run the app) |
 
-To add a paper, add its links to `src/data/subjects.ts`, then run the pipeline for that session (see `tools/topical/README.md`):
+To add a session, add its links to the paper in `src/data/papers/<subject>.json`, run `node tools/topical/catalog.mjs` to refresh the counts, then run the pipeline for it (see `tools/topical/README.md`):
 
-```typescript
+```json
 "2026 June": {
-  qp: "https://link-to-question-paper.pdf",
-  ms: "https://link-to-mark-scheme.pdf",
-},
+  "qp": "https://link-to-question-paper.pdf",
+  "ms": "https://link-to-mark-scheme.pdf"
+}
 ```
+
+To add a subject, add it to `SUBJECTS` in `src/data/catalog.ts` and create its `src/data/papers/<key>.json`.
 
 ## Tech
 

@@ -1,0 +1,123 @@
+{
+ "comsci": {
+  "P1": {
+   "title": "Theory Fundamentals (AS)",
+   "sessions": 33,
+   "years": "2021–2026"
+  },
+  "P2": {
+   "title": "Problem-solving and Programming (AS)",
+   "sessions": 33,
+   "years": "2021–2026"
+  },
+  "P3": {
+   "title": "Advanced Theory (A Level)",
+   "sessions": 32,
+   "years": "2021–2026"
+  },
+  "P4": {
+   "title": "Further Problem-solving and Programming (A Level)",
+   "sessions": 32,
+   "years": "2021–2026"
+  }
+ },
+ "maths": {
+  "P1": {
+   "title": "Pure Mathematics 1",
+   "sessions": 49,
+   "years": "2005–2026"
+  },
+  "P2": {
+   "title": "Pure Mathematics 2",
+   "sessions": 49,
+   "years": "2005–2026"
+  },
+  "P3": {
+   "title": "Pure Mathematics 3",
+   "sessions": 46,
+   "years": "2005–2026"
+  },
+  "P4": {
+   "title": "Pure Mathematics 4",
+   "sessions": 45,
+   "years": "2005–2026"
+  },
+  "S1": {
+   "title": "Statistics 1",
+   "sessions": 72,
+   "years": "2001–2026"
+  },
+  "S2": {
+   "title": "Statistics 2",
+   "sessions": 65,
+   "years": "2001–2026"
+  },
+  "S3": {
+   "title": "Statistics 3",
+   "sessions": 39,
+   "years": "2002–2026"
+  },
+  "M1": {
+   "title": "Mechanics 1",
+   "sessions": 72,
+   "years": "2001–2026"
+  },
+  "M2": {
+   "title": "Mechanics 2",
+   "sessions": 69,
+   "years": "2001–2026"
+  },
+  "M3": {
+   "title": "Mechanics 3",
+   "sessions": 54,
+   "years": "2001–2026"
+  },
+  "D1": {
+   "title": "Decision Mathematics 1",
+   "sessions": 62,
+   "years": "2001–2026"
+  },
+  "FP1": {
+   "title": "Further Pure Mathematics 1",
+   "sessions": 43,
+   "years": "2009–2026"
+  },
+  "FP2": {
+   "title": "Further Pure Mathematics 2",
+   "sessions": 38,
+   "years": "2002–2026"
+  },
+  "FP3": {
+   "title": "Further Pure Mathematics 3",
+   "sessions": 30,
+   "years": "2009–2026"
+  }
+ },
+ "physics": {
+  "P1": {
+   "title": "Multiple Choice",
+   "sessions": 119,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "AS Level Structured Questions",
+   "sessions": 121,
+   "years": "2008–2026"
+  },
+  "P3": {
+   "title": "AS Level Practical",
+   "sessions": 193,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "A Level Structured Questions",
+   "sessions": 121,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Planning, Analysis and Evaluation",
+   "sessions": 120,
+   "years": "2008–2026"
+  }
+ }
+}

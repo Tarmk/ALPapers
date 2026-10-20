@@ -45,3 +45,6 @@ tools/extract-questions/.venv
 /offline/work/
 
 /offline/registry.json
+
+# R2 upload credentials (see tools/topical/sync-media.mjs)
+.env.r2

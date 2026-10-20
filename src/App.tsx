@@ -1,6 +1,5 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
-import { SUBJECTS } from "./data/subjects";
-import { SUBJECT_META } from "./lib/catalog";
+import { getSubject, paperSummary } from "./data/catalog";
 import { useRoute, type Route } from "./lib/route";
 import { Link, NavigateContext } from "./components/Link";
 import { Home } from "./components/Home";
@@ -30,7 +29,7 @@ function useTheme(): [Theme, () => void] {
 function crumbs(route: Route): { label: string; to?: Route }[] {
   const out: { label: string; to?: Route }[] = [];
   if (!route.subject) return out;
-  out.push({ label: SUBJECT_META[route.subject].short, to: { subject: route.subject } });
+  out.push({ label: getSubject(route.subject)?.short ?? route.subject, to: { subject: route.subject } });
   if (route.paper) {
     out.push({ label: route.paper, to: { subject: route.subject, paper: route.paper, view: route.view } });
   }
@@ -39,7 +38,7 @@ function crumbs(route: Route): { label: string; to?: Route }[] {
 
 function pageTitle(route: Route): string {
   if (!route.subject) return "Past Papers";
-  const name = SUBJECT_META[route.subject].short;
+  const name = getSubject(route.subject)?.short ?? route.subject;
   if (!route.paper) return `${name} · Past Papers`;
   const what = route.view === "topics" ? "by topic" : "past papers";
   return `${name} ${route.paper} ${what} · Past Papers`;
@@ -54,8 +53,8 @@ export const App: React.FC = () => {
   }, [route]);
 
   const trail = crumbs(route);
-  const subject = route.subject ? SUBJECTS[route.subject] : undefined;
-  const paper = subject && route.paper ? subject.papers[route.paper] : undefined;
+  const subject = getSubject(route.subject);
+  const paper = subject && route.paper ? paperSummary(subject.key, route.paper) : undefined;
 
   return (
     <NavigateContext.Provider value={navigate}>
@@ -88,19 +87,18 @@ export const App: React.FC = () => {
         {!route.subject || !subject ? (
           <Home />
         ) : !route.paper || !paper ? (
-          <SubjectPage subjectKey={route.subject} />
+          <SubjectPage subject={subject} />
         ) : route.view === "topics" ? (
           <Suspense fallback={<p className="status">Loading…</p>}>
             <TopicalView
               subjectKey={route.subject}
               paperCode={route.paper}
-              paper={paper}
               topicId={route.topic}
               subtopicId={route.subtopic}
             />
           </Suspense>
         ) : (
-          <PaperPage subjectKey={route.subject} paperCode={route.paper} paper={paper} />
+          <PaperPage subjectKey={route.subject} paperCode={route.paper} />
         )}
       </main>
 

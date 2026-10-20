@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
-import { SUBJECTS, type SubjectKey } from "../data/subjects";
+import { getSubject, paperSummary } from "../data/catalog";
 
 export type Route = {
-  subject?: SubjectKey;
+  subject?: string;
   paper?: string;
   view?: "sessions" | "topics";
   topic?: string;
@@ -11,10 +11,10 @@ export type Route = {
 
 export function parseRoute(search: string): Route {
   const params = new URLSearchParams(search);
-  const subject = params.get("subject") as SubjectKey | null;
-  if (!subject || !(subject in SUBJECTS)) return {};
+  const subject = getSubject(params.get("subject"))?.key;
+  if (!subject) return {};
   const paper = params.get("paper") ?? undefined;
-  if (!paper || !SUBJECTS[subject].papers[paper]) return { subject };
+  if (!paper || !paperSummary(subject, paper)) return { subject };
   // `mode=topical` is the older spelling of `view=topics`; keep shared links working.
   const topics = params.get("view") === "topics" || params.get("mode") === "topical";
   return {

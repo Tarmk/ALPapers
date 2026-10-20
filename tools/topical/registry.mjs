@@ -1,12 +1,19 @@
-// Writes offline/registry.json: one row per paper/session from src/data/subjects.ts.
+// Writes offline/registry.json: one row per paper/session from src/data/papers/*.json.
 // The Python tools read this instead of parsing TypeScript.
 //
 //   node tools/topical/registry.mjs
 
-import { writeFileSync } from "node:fs";
-import { SUBJECTS } from "../../src/data/subjects.ts";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const BOARD = { maths: "edexcel", physics: "cie", comsci: "cie" };
+const papersDir = new URL("../../src/data/papers/", import.meta.url);
+const SUBJECTS = Object.fromEntries(
+  readdirSync(papersDir)
+    .filter((f) => f.endsWith(".json") && f !== "index.json")
+    .map((f) => [f.replace(".json", ""), JSON.parse(readFileSync(new URL(f, papersDir), "utf8"))]),
+);
+
+// Subjects not listed default to Cambridge; the splitter is chosen from this.
+const BOARD = { maths: "edexcel" };
 
 const slug = (s) =>
   s
@@ -27,7 +34,7 @@ for (const [subject, data] of Object.entries(SUBJECTS)) {
         const session = spec === "old" ? `Old spec ${label}` : label;
         rows.push({
           subject,
-          board: BOARD[subject],
+          board: BOARD[subject] ?? "cie",
           paper,
           spec,
           session,
