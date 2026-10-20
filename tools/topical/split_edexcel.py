@@ -212,9 +212,11 @@ class Marker:
 QP_MARKER = re.compile(r"^(\d{1,2})\s*[.:](?:\s|$)")
 # Some series print a bold "1" and two spaces with no full stop.
 QP_MARKER_BARE = re.compile(r"^(\d{1,2})\s{2,}\S")
-MS_MARKER = re.compile(r"^Q?\s*(\d{1,2})(?:\s*\.|\s*\(|[a-z](?![a-z])|\s*$)", re.IGNORECASE)
+# "1.", "1(a)", "4a", "Q2" or a bare "3". Not "5.991" (a critical value) and not
+# examiner notes like "2A1:" or "8x".
+MS_MARKER = re.compile(r"^[Qq]?\s*(\d{1,2})(?:\s*\.(?!\d)|\s*\(|[a-h](?![a-zA-Z0-9])|\s*$)")
 # On pages without the table header (e.g. notes pages) only accept labels like "3(a)" or "3.".
-MS_MARKER_STRICT = re.compile(r"^Q?\s*(\d{1,2})\s*[.(]")
+MS_MARKER_STRICT = re.compile(r"^Q?\s*(\d{1,2})(?:\s*\.(?!\d)|\s*\(|[a-h](?![a-zA-Z0-9]))")
 
 
 def chain(candidates: list[Marker]) -> list[Marker]:
@@ -237,7 +239,12 @@ def qp_markers(pages: list[PageInfo]) -> list[Marker]:
     cands = []
     for p in pages:
         for it in p.lines:
-            m = QP_MARKER.match(it.text) or (QP_MARKER_BARE.match(it.text) if it.bold else None)
+            text = it.text
+            shifted_number = re.match(r"^([M-V]{1,2})K(?=\s|$)", text) if it.bold else None
+            if shifted_number:
+                # "QK" is "4." with its glyph codes 29 too high, on an otherwise normal line.
+                text = "".join(chr(ord(c) - 29) for c in shifted_number.group(1)) + "." + text[shifted_number.end():]
+            m = QP_MARKER.match(text) or (QP_MARKER_BARE.match(text) if it.bold else None)
             if not m and it.bold and re.fullmatch(r"\d{1,2}", it.text.strip()):
                 # A bold number alone on its line, inside the writing area (not a page number).
                 if p.frame.y0 < it.rect.y0 < p.frame.y1 - 20:
@@ -286,6 +293,13 @@ def ms_markers(pages: list[PageInfo]) -> list[Marker]:
             if not (column[0] <= it.rect.x0 <= column[1] - 8) or it.size < 9:
                 continue
             m = (MS_MARKER if header is not None else MS_MARKER_STRICT).match(it.text)
+            if not m and header is None and it.bold and re.fullmatch(r"\d{1,2}", it.text.strip()):
+                # A bare number on a page without the header counts only if it stands
+                # alone on its line (digits in a fraction or table have neighbours).
+                alone = not any(
+                    o is not it and abs(o.rect.y0 - it.rect.y0) < 4 and 0 <= o.rect.x0 - it.rect.x1 < 45 for o in p.lines
+                )
+                m = re.match(r"(\d{1,2})", it.text.strip()) if alone else None
             if m:
                 cands.append(Marker(int(m.group(1)), p.index, it.rect.y0))
     found = chain(cands)
@@ -301,6 +315,26 @@ def ms_markers(pages: list[PageInfo]) -> list[Marker]:
                 loose.append(Marker(int(re.search(r"\d{1,2}", it.text).group()), p.index, it.rect.y0))
     alt = chain(loose)
     return alt if len(alt) > len(found) else found
+
+
+def snap_to_row(page: PageInfo, marker: Marker) -> Marker:
+    """
+    Scheme tables often centre the question label vertically in a tall row, so the
+    row starts above the label. Move the cut up to the table rule over the label.
+    """
+    rules = [
+        it.rect.y0
+        for it in page.content
+        # A row border crosses the Question column; rules inside a row start further right.
+        if it.kind == "draw"
+        and it.rect.height < 3.5
+        and it.rect.width > 25  # some tables draw each cell border separately
+        and it.rect.x0 < 90
+        and marker.y - 160 < it.rect.y0 <= marker.y + 1
+    ]
+    if not rules:
+        return marker
+    return Marker(marker.num, marker.page, max(rules) + 0.5)
 
 
 def paper_end(pages: list[PageInfo]) -> tuple[int, float] | None:
@@ -452,7 +486,15 @@ def item_text(segments: list[tuple[int, list[Item]]]) -> str:
 def split_document(doc: fitz.Document, mark_scheme: bool) -> tuple[list[Marker], list[PageInfo], tuple[int, float] | None]:
     pages = [read_page(doc[i], mark_scheme) for i in range(len(doc))]
     if mark_scheme:
-        markers = ms_markers(pages)
+        found = ms_markers(pages)
+        markers = []
+        for i, m in enumerate(found):
+            snapped = snap_to_row(pages[m.page], m)
+            prev = found[i - 1] if i else None
+            # Never move a cut above the previous question's label on the same page.
+            if prev is not None and prev.page == m.page and snapped.y <= prev.y + 2:
+                snapped = m
+            markers.append(snapped)
     else:
         # Some Decision downloads are the answer book followed by the question
         # paper; the questions start after the paper's own instructions page.

@@ -1,56 +1,140 @@
 {
  "comsci-P1": {
-  "questions": 247,
+  "questions": 270,
   "topics": 9,
-  "sessions": 30,
-  "withMarkScheme": 247
+  "sessions": 33,
+  "withMarkScheme": 270
  },
  "comsci-P2": {
-  "questions": 228,
+  "questions": 251,
   "topics": 4,
-  "sessions": 30,
-  "withMarkScheme": 228
+  "sessions": 33,
+  "withMarkScheme": 251
  },
  "comsci-P3": {
-  "questions": 320,
+  "questions": 353,
   "topics": 8,
-  "sessions": 29,
-  "withMarkScheme": 320
+  "sessions": 32,
+  "withMarkScheme": 353
  },
  "comsci-P4": {
-  "questions": 87,
+  "questions": 96,
   "topics": 9,
-  "sessions": 29,
-  "withMarkScheme": 87
+  "sessions": 32,
+  "withMarkScheme": 96
  },
  "physics-P1": {
-  "questions": 4560,
+  "questions": 4760,
   "topics": 11,
-  "sessions": 114,
-  "withMarkScheme": 4544
+  "sessions": 119,
+  "withMarkScheme": 4744
  },
  "physics-P2": {
-  "questions": 805,
+  "questions": 835,
   "topics": 11,
-  "sessions": 116,
-  "withMarkScheme": 441
+  "sessions": 121,
+  "withMarkScheme": 818
  },
  "physics-P3": {
-  "questions": 380,
+  "questions": 396,
   "topics": 1,
-  "sessions": 185,
-  "withMarkScheme": 205
+  "sessions": 193,
+  "withMarkScheme": 379
  },
  "physics-P4": {
-  "questions": 1347,
+  "questions": 1397,
   "topics": 14,
-  "sessions": 116,
-  "withMarkScheme": 683
+  "sessions": 121,
+  "withMarkScheme": 1383
  },
  "physics-P5": {
-  "questions": 230,
+  "questions": 240,
   "topics": 1,
-  "sessions": 115,
-  "withMarkScheme": 119
+  "sessions": 120,
+  "withMarkScheme": 230
+ },
+ "maths-P1": {
+  "questions": 494,
+  "topics": 6,
+  "sessions": 49,
+  "withMarkScheme": 479
+ },
+ "maths-P2": {
+  "questions": 443,
+  "topics": 8,
+  "sessions": 47,
+  "withMarkScheme": 430
+ },
+ "maths-P3": {
+  "questions": 387,
+  "topics": 6,
+  "sessions": 45,
+  "withMarkScheme": 387
+ },
+ "maths-P4": {
+  "questions": 372,
+  "topics": 8,
+  "sessions": 44,
+  "withMarkScheme": 372
+ },
+ "maths-S1": {
+  "questions": 428,
+  "topics": 6,
+  "sessions": 63,
+  "withMarkScheme": 421
+ },
+ "maths-S2": {
+  "questions": 396,
+  "topics": 6,
+  "sessions": 58,
+  "withMarkScheme": 388
+ },
+ "maths-S3": {
+  "questions": 255,
+  "topics": 6,
+  "sessions": 36,
+  "withMarkScheme": 240
+ },
+ "maths-M1": {
+  "questions": 513,
+  "topics": 6,
+  "sessions": 68,
+  "withMarkScheme": 491
+ },
+ "maths-M2": {
+  "questions": 466,
+  "topics": 5,
+  "sessions": 63,
+  "withMarkScheme": 439
+ },
+ "maths-M3": {
+  "questions": 339,
+  "topics": 6,
+  "sessions": 49,
+  "withMarkScheme": 323
+ },
+ "maths-D1": {
+  "questions": 423,
+  "topics": 7,
+  "sessions": 58,
+  "withMarkScheme": 345
+ },
+ "maths-FP1": {
+  "questions": 371,
+  "topics": 7,
+  "sessions": 41,
+  "withMarkScheme": 370
+ },
+ "maths-FP2": {
+  "questions": 311,
+  "topics": 7,
+  "sessions": 38,
+  "withMarkScheme": 284
+ },
+ "maths-FP3": {
+  "questions": 241,
+  "topics": 6,
+  "sessions": 30,
+  "withMarkScheme": 241
  }
 }
