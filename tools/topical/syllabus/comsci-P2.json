@@ -1,0 +1,76 @@
+{
+  "topics": [
+    {
+      "id": "9",
+      "title": "Algorithm design and problem-solving",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Computational thinking skills"
+        },
+        {
+          "id": "9.2",
+          "title": "Algorithms"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Data types and structures",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Data types and records"
+        },
+        {
+          "id": "10.2",
+          "title": "Arrays"
+        },
+        {
+          "id": "10.3",
+          "title": "Files"
+        },
+        {
+          "id": "10.4",
+          "title": "Abstract data types (ADTs)"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Programming",
+      "subtopics": [
+        {
+          "id": "11.1",
+          "title": "Programming basics"
+        },
+        {
+          "id": "11.2",
+          "title": "Constructs"
+        },
+        {
+          "id": "11.3",
+          "title": "Structured programming"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Software development",
+      "subtopics": [
+        {
+          "id": "12.1",
+          "title": "Program development life cycle"
+        },
+        {
+          "id": "12.2",
+          "title": "Program design"
+        },
+        {
+          "id": "12.3",
+          "title": "Program testing and maintenance"
+        }
+      ]
+    }
+  ]
+}

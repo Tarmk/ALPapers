@@ -1,4 +1,902 @@
 {
+ "2021 June (v1)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2021 June (v1)|2": [
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (c)"
+  }
+ ],
+ "2021 June (v1)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  }
+ ],
+ "2021 June (v2)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2021 June (v2)|2": [
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (c)"
+  }
+ ],
+ "2021 June (v2)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  }
+ ],
+ "2021 June (v3)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2021 June (v3)|2": [
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (c)"
+  }
+ ],
+ "2021 June (v3)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  }
+ ],
+ "2021 November (v1)|1": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic"
+  }
+ ],
+ "2021 November (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (e), (f)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (g)"
+  }
+ ],
+ "2021 November (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Part (e)"
+  }
+ ],
+ "2021 November (v2)|1": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic"
+  }
+ ],
+ "2021 November (v2)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (e), (f)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (g)"
+  }
+ ],
+ "2021 November (v2)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Part (e)"
+  }
+ ],
+ "2022 June (v1)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (b), (f)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Part (e)(ii)"
+  }
+ ],
+ "2022 June (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2022 June (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2022 June (v2)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks"
+  }
+ ],
+ "2022 June (v2)|2": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (c)"
+  }
+ ],
+ "2022 June (v2)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (c)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.validation",
+   "focus": "Part (d)"
+  }
+ ],
+ "2022 June (v3)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (b), (f)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Part (e)(ii)"
+  }
+ ],
+ "2022 June (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2022 June (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2022 November (v1)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (c)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (e)"
+  }
+ ],
+ "2022 November (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2022 November (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2022 November (v2)|1": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.arrays",
+   "focus": "Parts (a), (b), (c), (d), (f)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Part (e)"
+  }
+ ],
+ "2022 November (v2)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (d)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (e)"
+  }
+ ],
+ "2022 November (v2)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Part (d)"
+  }
+ ],
+ "2022 November (v3)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Part (c)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (e)"
+  }
+ ],
+ "2022 November (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2022 November (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2023 June (v1)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2023 June (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Part (b)"
+  }
+ ],
+ "2023 June (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks"
+  }
+ ],
+ "2023 June (v2)|1": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble"
+  }
+ ],
+ "2023 June (v2)|2": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2023 June (v2)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Part (b)"
+  }
+ ],
+ "2023 June (v3)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2023 June (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Part (b)"
+  }
+ ],
+ "2023 June (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks"
+  }
+ ],
+ "2023 November (v1)|1": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic"
+  }
+ ],
+ "2023 November (v1)|2": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.records",
+   "focus": "Part (c)"
+  }
+ ],
+ "2023 November (v1)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2023 November (v2)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks",
+   "focus": "Parts (a), (b)(i), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)(ii)"
+  }
+ ],
+ "2023 November (v2)|2": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic"
+  }
+ ],
+ "2023 November (v2)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Part (c)"
+  }
+ ],
+ "2023 November (v3)|1": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic"
+  }
+ ],
+ "2023 November (v3)|2": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.records",
+   "focus": "Part (c)"
+  }
+ ],
+ "2023 November (v3)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2024 June (v1)|1": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (d)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (e)"
+  }
+ ],
+ "2024 June (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  }
+ ],
+ "2024 June (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.validation",
+   "focus": "Part (d)"
+  }
+ ],
+ "2024 June (v2)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.loops-selection",
+   "focus": "Part (c)"
+  }
+ ],
+ "2024 June (v2)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Part (b)"
+  }
+ ],
+ "2024 June (v2)|3": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Parts (b), (c)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (d)"
+  }
+ ],
+ "2024 June (v3)|1": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (d)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (e)"
+  }
+ ],
+ "2024 June (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (b)"
+  }
+ ],
+ "2024 June (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.validation",
+   "focus": "Part (d)"
+  }
+ ],
+ "2024 November (v1)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2024 November (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2024 November (v1)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2024 November (v2)|1": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2024 November (v2)|2": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2024 November (v2)|3": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (d)"
+  }
+ ],
+ "2024 November (v3)|1": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2024 November (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2024 November (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2025 June (v1)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2025 June (v1)|2": [
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write"
+  }
+ ],
+ "2025 June (v1)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Part (c)"
+  }
+ ],
+ "2025 June (v2)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks",
+   "focus": "Parts (a), (b), (c), (e)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (d)"
+  }
+ ],
+ "2025 June (v2)|2": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.maps",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (e)"
+  }
+ ],
+ "2025 June (v2)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.inheritance",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "2025 June (v3)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Parts (a), (b), (c), (e)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (d)"
+  }
+ ],
+ "2025 June (v3)|2": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (e)"
+  }
+ ],
+ "2025 June (v3)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Part (b)"
+  }
+ ],
+ "2025 November (v1)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.stacks"
+  }
+ ],
+ "2025 November (v1)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2025 November (v1)|3": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.maps",
+   "focus": "Parts (a), (b), (c), (d), (f)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (e)"
+  }
+ ],
+ "2025 November (v2)|1": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2025 November (v2)|2": [
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Part (c)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.binary",
+   "focus": "Part (e)"
+  }
+ ],
+ "2025 November (v2)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "2025 November (v3)|1": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2025 November (v3)|2": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues",
+   "focus": "Parts (a), (b), (c), (e)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Part (d)"
+  }
+ ],
+ "2025 November (v3)|3": [
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "algorithm-design",
+   "subtopicId": "algorithm.design",
+   "focus": "Part (b)"
+  }
+ ],
  "2026 June (v1)|1": [
   {
    "topicId": "adts",

@@ -1,0 +1,190 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Physical quantities and units",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Physical quantities and SI units"
+        },
+        {
+          "id": "1.2",
+          "title": "Scalars and vectors"
+        },
+        {
+          "id": "1.3",
+          "title": "Errors and uncertainties"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Kinematics",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Equations of motion"
+        },
+        {
+          "id": "2.2",
+          "title": "Graphs of motion"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Dynamics",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Newton's laws of motion"
+        },
+        {
+          "id": "3.2",
+          "title": "Linear momentum and conservation"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Forces, density and pressure",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Types of forces"
+        },
+        {
+          "id": "4.2",
+          "title": "Equilibrium"
+        },
+        {
+          "id": "4.3",
+          "title": "Density and pressure"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Work, energy and power",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Energy, work and power"
+        },
+        {
+          "id": "5.2",
+          "title": "Efficiency"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Deformation of solids",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Stress, strain and the Young modulus"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Waves",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Progressive waves"
+        },
+        {
+          "id": "7.2",
+          "title": "Electromagnetic spectrum"
+        },
+        {
+          "id": "7.3",
+          "title": "Doppler effect"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Superposition",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Stationary waves"
+        },
+        {
+          "id": "8.2",
+          "title": "Diffraction and interference"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Electricity",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Current, p.d. and resistance"
+        },
+        {
+          "id": "9.2",
+          "title": "I–V characteristics"
+        },
+        {
+          "id": "9.3",
+          "title": "Resistivity"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "D.C. circuits",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Circuit rules and potential dividers"
+        },
+        {
+          "id": "10.2",
+          "title": "Internal resistance"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Particle physics",
+      "subtopics": [
+        {
+          "id": "11.1",
+          "title": "Atoms, nuclei and radiation"
+        },
+        {
+          "id": "11.2",
+          "title": "Fundamental particles"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Electric fields (older syllabus)",
+      "subtopics": [
+        {
+          "id": "12.1",
+          "title": "Electric fields and charged particles"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Matter and kinetic theory (older syllabus)",
+      "subtopics": [
+        {
+          "id": "13.1",
+          "title": "States of matter, kinetic theory and gases"
+        }
+      ]
+    }
+  ]
+}

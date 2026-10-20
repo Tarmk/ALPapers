@@ -75,11 +75,19 @@ function buildCie(subject, paper, work) {
   }
   let filled = 0;
   let added = 0;
+  let relabelled = 0;
+  const syllabusFile = `tools/topical/syllabus/${key}.json`;
+  if (existsSync(path(syllabusFile))) data.topics = readJson(syllabusFile).topics;
   for (const record of work) {
     const existing = bySession.get(norm(record.session));
     for (const e of existing ?? []) e.session = record.session;
     for (const q of record.questions) {
-      if (existing) {
+      if (existing && labels[`${record.session}|${q.number}`] && q.images?.length) {
+        // A label in tools/topical/labels replaces the inherited ones for this question.
+        data.questions = data.questions.filter((e) => !(e.session === record.session && e.number === q.number));
+        data.questions.push(...entriesFor(key, record.session, q, labels));
+        relabelled++;
+      } else if (existing) {
         // A re-split session replaces its mark-scheme folder, so its images win.
         for (const e of existing) {
           if (e.number !== q.number) continue;
@@ -98,7 +106,7 @@ function buildCie(subject, paper, work) {
       }
     }
   }
-  console.log(`${key}: +${added} questions, +${filled} mark schemes`);
+  console.log(`${key}: +${added} questions, +${filled} mark schemes, ${relabelled} relabelled`);
   return data;
 }
 

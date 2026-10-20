@@ -1,0 +1,150 @@
+{
+  "topics": [
+    {
+      "id": "searching",
+      "title": "Searching algorithms",
+      "subtopics": [
+        {
+          "id": "searching.linear",
+          "title": "Linear search"
+        },
+        {
+          "id": "searching.binary",
+          "title": "Binary search"
+        }
+      ]
+    },
+    {
+      "id": "sorting",
+      "title": "Sorting algorithms",
+      "subtopics": [
+        {
+          "id": "sorting.bubble",
+          "title": "Bubble sort"
+        },
+        {
+          "id": "sorting.insertion",
+          "title": "Insertion sort"
+        },
+        {
+          "id": "sorting.merge",
+          "title": "Merge Sort"
+        }
+      ]
+    },
+    {
+      "id": "oop",
+      "title": "Object-oriented programming",
+      "subtopics": [
+        {
+          "id": "oop.classes",
+          "title": "Classes and objects"
+        },
+        {
+          "id": "oop.inheritance",
+          "title": "Inheritance"
+        },
+        {
+          "id": "oop.polymorphism",
+          "title": "Polymorphism"
+        },
+        {
+          "id": "oop.encapsulation",
+          "title": "Encapsulation"
+        }
+      ]
+    },
+    {
+      "id": "data-structures",
+      "title": "Data structures",
+      "subtopics": [
+        {
+          "id": "data.arrays",
+          "title": "Arrays"
+        },
+        {
+          "id": "data.records",
+          "title": "Records"
+        },
+        {
+          "id": "data.maps",
+          "title": "Dictionaries and maps"
+        }
+      ]
+    },
+    {
+      "id": "adts",
+      "title": "Abstract data types",
+      "subtopics": [
+        {
+          "id": "adt.stacks",
+          "title": "Stacks"
+        },
+        {
+          "id": "adt.queues",
+          "title": "Queues"
+        },
+        {
+          "id": "adt.linked-lists",
+          "title": "Linked lists"
+        }
+      ]
+    },
+    {
+      "id": "file-handling",
+      "title": "File handling",
+      "subtopics": [
+        {
+          "id": "file.read-write",
+          "title": "Read and write files"
+        },
+        {
+          "id": "file.access",
+          "title": "Serial, Sequential And Random Access"
+        }
+      ]
+    },
+    {
+      "id": "recursion",
+      "title": "Recursion",
+      "subtopics": [
+        {
+          "id": "recursion.basic",
+          "title": "Recursive procedures and functions"
+        }
+      ]
+    },
+    {
+      "id": "algorithm-design",
+      "title": "Algorithm design and trace tables",
+      "subtopics": [
+        {
+          "id": "algorithm.trace",
+          "title": "Trace Tables And Dry Runs"
+        },
+        {
+          "id": "algorithm.design",
+          "title": "Pseudocode design and debugging"
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming constructs",
+      "subtopics": [
+        {
+          "id": "programming.validation",
+          "title": "Validation"
+        },
+        {
+          "id": "programming.loops-selection",
+          "title": "Loops and selection"
+        },
+        {
+          "id": "programming.procedures",
+          "title": "Procedures and functions"
+        }
+      ]
+    }
+  ]
+}
