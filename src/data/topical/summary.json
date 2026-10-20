@@ -25,13 +25,13 @@
  },
  "physics-P1": {
   "questions": 4760,
-  "topics": 11,
+  "topics": 13,
   "sessions": 119,
   "withMarkScheme": 4744
  },
  "physics-P2": {
   "questions": 835,
-  "topics": 11,
+  "topics": 13,
   "sessions": 121,
   "withMarkScheme": 818
  },
@@ -43,7 +43,7 @@
  },
  "physics-P4": {
   "questions": 1397,
-  "topics": 14,
+  "topics": 16,
   "sessions": 121,
   "withMarkScheme": 1383
  },

@@ -4,28 +4,33 @@
 ![React 18](https://img.shields.io/badge/React-18-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff)
 
-A fast way to find A-Level past papers: Edexcel IAL Mathematics and Further Mathematics, CAIE Physics (9702) and CAIE Computer Science (9618), with mark schemes. The topical mode goes further: every past-paper question is cut out, tagged with its syllabus topic, and can be filtered by session and printed as an A4 practice sheet with the matching mark scheme.
+Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, back to the legacy GCE units), CAIE Physics 9702 and CAIE Computer Science 9618, up to the June 2026 series. Every question is also cut out of its paper, filed under its syllabus topic, and can be read, filtered by session, turned into a random practice set and printed with its mark scheme in the same order.
 
 **Live:** https://al-papers.vercel.app
 
-![Topical mode: pick a topic and sessions, then print a random set of real past-paper questions](docs/topical.png)
+![By-topic view: pick a topic and sessions, then read or print the questions](docs/topical.png)
 
 ## Features
 
-- Subjects → papers → years, with direct links to every question paper and mark scheme (plus inserts and source files where they exist), old specifications included
-- **Topical mode** for Physics P1–P5, Computer Science P1–P4 and Maths S3: about 8,900 questions sorted by topic and subtopic
-- Filter by session, browse, or generate a random printable sheet; the mark-scheme sheet prints in the same order
-- Shareable URLs for every view (`?subject=physics&mode=topical&paper=P1&topic=2`)
-- Light and dark mode, remembered per browser
+- Subjects → papers → sessions, with links to every question paper and mark scheme, plus Paper 2 inserts and Paper 4 source files for computer science, and the previous specifications for maths.
+- **By topic** for all 23 papers: about 14,000 questions, 98% with their mark scheme.
+- All questions or a seeded random set; filter by session (grouped by year); show the mark scheme under each question; print the questions or the mark schemes on A4, in the same order.
+- Every view has a shareable URL (`?subject=physics&paper=P4&view=topics&topic=19`), and back/forward work.
+- Light and dark themes; in dark mode the scanned pages are inverted so they don't glare.
+
+## How the topical data is made
+
+`tools/topical/` builds it from the links in `src/data/subjects.ts` (details in its [README](tools/topical/README.md)):
+
+1. **Fetch** every PDF and check each link serves what it says (three mark-scheme links that served question papers, and a misfiled M2 entry that was a C1 paper, were found and fixed this way).
+2. **Clean** mirror watermarks out of the PDF content stream, so the page is exactly as published.
+3. **Split** each paper at its question numbers and keep only the printed question: text, tables and diagrams, without answer lines, margins or page furniture. Mark schemes are split on their question column. The splitter copes with the IAL, legacy and Cambridge layouts, landscape schemes, fonts whose text layer is shifted, and Decision papers bundled after their answer book.
+4. **Label** each question with its syllabus subtopic, from the full question text, following [`LABELLING.md`](tools/topical/LABELLING.md). A question whose parts test different topics is filed under each, with the parts named. Independent audits of random samples are used to check and correct the labels.
+5. **Build** the indexes in `src/data/topical/`, checking that every image exists and every label is a real subtopic.
 
 ## Performance
 
-The topical indexes are big: physics alone is about 4 MB of question data. They used to be bundled into the first page load, so opening the home page downloaded 5.7 MB of JavaScript. Each subject's index is now a separate chunk that is fetched only when its topical view is opened:
-
-| | First load (gzipped) |
-|---|---|
-| Before | 5,706 KB (307 KB) |
-| After | 521 KB (66 KB) |
+Each paper's topical index is its own chunk, fetched only when that paper's "By topic" view opens, so the first page load stays small. The largest index (physics P1, about 4,700 questions) is 80 KB gzipped. Question images are 16-level greyscale PNGs of about 24 KB.
 
 ## Running it locally
 
@@ -35,12 +40,12 @@ npm run dev        # http://localhost:5173
 npm run build      # type-check, then build to dist/
 ```
 
-The repository also stores the PDFs and question images (about 4 GB). To work on the app without downloading them:
+The repository also stores the question images and the older source PDFs (several GB). To work on the app without downloading them:
 
 ```bash
 git clone --filter=blob:none --no-checkout https://github.com/Tarmk/ALPapers.git
 cd ALPapers
-git sparse-checkout set --no-cone '/*' '!/offline/' '!/public/'
+git sparse-checkout set --no-cone '/*' '!/offline/' '!/public/topical/'
 git checkout main
 ```
 
@@ -48,18 +53,18 @@ git checkout main
 
 | Path | What it is |
 |------|------------|
-| `src/App.tsx` | Views and URL handling |
+| `src/App.tsx` | Page shell and routing |
+| `src/components/` | Home, subject, paper and topical views |
 | `src/data/subjects.ts` | Paper links for every subject, paper and session |
-| `src/data/*Topical.ts` | Topical indexes: topics, subtopics and the questions in each |
-| `src/data/topical.ts` | Loads one subject's topical index on demand |
-| `public/topical/` | Question and mark-scheme images used by topical mode |
-| `offline/` | Source PDFs and extraction output used to build the indexes (not needed to run the app) |
-| `tools/extract-questions/` | Python scripts that cut a question paper PDF into one image per question (see its `README.txt`) |
+| `src/data/topical/` | One topical index per paper, plus `summary.json` with the counts |
+| `public/topical/` | Question and mark-scheme images |
+| `tools/topical/` | The pipeline that builds the topical data |
+| `offline/` | Older source PDFs and extraction output (not needed to run the app) |
 
-To add a paper, add its links to `src/data/subjects.ts`:
+To add a paper, add its links to `src/data/subjects.ts`, then run the pipeline for that session (see `tools/topical/README.md`):
 
 ```typescript
-"2024 January": {
+"2026 June": {
   qp: "https://link-to-question-paper.pdf",
   ms: "https://link-to-mark-scheme.pdf",
 },
@@ -67,7 +72,7 @@ To add a paper, add its links to `src/data/subjects.ts`:
 
 ## Tech
 
-React 18, TypeScript (strict), Vite, plain CSS with custom properties for theming. Hosted on Vercel. CI type-checks and builds on every push and reports the bundle sizes.
+React 18, TypeScript (strict), Vite and plain CSS with custom properties for theming, hosted on Vercel. The pipeline is Python (PyMuPDF, Pillow) and Node. CI type-checks and builds on every push and reports the bundle sizes.
 
 ## License
 

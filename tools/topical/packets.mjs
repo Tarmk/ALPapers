@@ -2,7 +2,7 @@
 // topic label, in chunks, together with the syllabus outline.
 //
 //   node tools/topical/packets.mjs maths-S1 [--chunk 140]
-//   node tools/topical/packets.mjs physics-P2 --new-only
+//   node tools/topical/packets.mjs physics-P2 --all   (include sessions already in the index)
 //
 // Output: offline/work/packets/<key>-<n>.md. Labels come back as
 // tools/topical/labels/<key>.json (see build.mjs).
@@ -16,11 +16,12 @@ const [key, ...flags] = process.argv.slice(2);
 const chunkSize = Number(flags[flags.indexOf("--chunk") + 1]) || 140;
 const [subject, paper] = key.split("-");
 
-const topics =
-  subject === "maths" ? read(`tools/topical/syllabus/${key}.json`).topics : read(`src/data/topical/${key}.json`).topics;
+const syllabus = `tools/topical/syllabus/${key}.json`;
+const topics = existsSync(new URL(syllabus, root)) ? read(syllabus).topics : read(`src/data/topical/${key}.json`).topics;
 const labelled = existsSync(new URL(`tools/topical/labels/${key}.json`, root)) ? read(`tools/topical/labels/${key}.json`) : {};
+const all = flags.includes("--all");
 const known =
-  subject === "maths" ? new Set() : new Set(read(`src/data/topical/${key}.json`).questions.map((q) => q.session));
+  subject === "maths" || all ? new Set() : new Set(read(`src/data/topical/${key}.json`).questions.map((q) => q.session));
 
 const dir = `offline/work/${subject}/${paper}/`;
 const items = [];

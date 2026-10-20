@@ -1,0 +1,212 @@
+{
+  "topics": [
+    {
+      "id": "12",
+      "title": "Motion in a circle",
+      "subtopics": [
+        {
+          "id": "12.1",
+          "title": "Radian measure and angular speed"
+        },
+        {
+          "id": "12.2",
+          "title": "Centripetal acceleration and force"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Gravitational fields",
+      "subtopics": [
+        {
+          "id": "13.1",
+          "title": "Gravitational field strength"
+        },
+        {
+          "id": "13.2",
+          "title": "Gravitational potential"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Temperature",
+      "subtopics": [
+        {
+          "id": "14.1",
+          "title": "Thermal equilibrium and temperature scales"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Ideal gases",
+      "subtopics": [
+        {
+          "id": "15.1",
+          "title": "Equation of state"
+        },
+        {
+          "id": "15.2",
+          "title": "Kinetic theory"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Thermodynamics",
+      "subtopics": [
+        {
+          "id": "16.1",
+          "title": "Internal energy and first law"
+        },
+        {
+          "id": "16.2",
+          "title": "Specific heat capacity and latent heat"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Oscillations",
+      "subtopics": [
+        {
+          "id": "17.1",
+          "title": "Simple harmonic motion"
+        },
+        {
+          "id": "17.2",
+          "title": "Damping and resonance"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Electric fields",
+      "subtopics": [
+        {
+          "id": "18.1",
+          "title": "Electric field strength"
+        },
+        {
+          "id": "18.2",
+          "title": "Electric potential"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Capacitance",
+      "subtopics": [
+        {
+          "id": "19.1",
+          "title": "Capacitors and energy"
+        },
+        {
+          "id": "19.2",
+          "title": "Charging and discharging"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Magnetic fields",
+      "subtopics": [
+        {
+          "id": "20.1",
+          "title": "Magnetic force and flux density"
+        },
+        {
+          "id": "20.2",
+          "title": "Electromagnetic induction"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Alternating currents",
+      "subtopics": [
+        {
+          "id": "21.1",
+          "title": "Sinusoidal current and voltage"
+        },
+        {
+          "id": "21.2",
+          "title": "Rectification and smoothing"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Quantum physics",
+      "subtopics": [
+        {
+          "id": "22.1",
+          "title": "Photons and photoelectric effect"
+        },
+        {
+          "id": "22.2",
+          "title": "Wave-particle duality"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Nuclear physics",
+      "subtopics": [
+        {
+          "id": "23.1",
+          "title": "Mass defect and binding energy"
+        },
+        {
+          "id": "23.2",
+          "title": "Radioactive decay"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Medical physics",
+      "subtopics": [
+        {
+          "id": "24.1",
+          "title": "Ultrasound, X-rays and PET"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Astronomy and cosmology",
+      "subtopics": [
+        {
+          "id": "25.1",
+          "title": "Standard candles and Hubble's law"
+        },
+        {
+          "id": "25.2",
+          "title": "The Big Bang"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Electronics (older syllabus)",
+      "subtopics": [
+        {
+          "id": "26.1",
+          "title": "Operational amplifiers, sensors and output devices"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Communication (older syllabus)",
+      "subtopics": [
+        {
+          "id": "27.1",
+          "title": "Communication systems, modulation and signals"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "id": "P3",
+      "title": "Practical skills",
+      "subtopics": [
+        {
+          "id": "P3.1",
+          "title": "Manipulation, measurement and observation"
+        },
+        {
+          "id": "P3.2",
+          "title": "Presentation of data and observations"
+        },
+        {
+          "id": "P3.3",
+          "title": "Analysis, conclusions and evaluation"
+        }
+      ]
+    }
+  ]
+}

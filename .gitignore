@@ -43,3 +43,5 @@ tools/extract-questions/.venv
 # Topical pipeline caches (re-downloadable / regenerated)
 /offline/pdfs/
 /offline/work/
+
+/offline/registry.json

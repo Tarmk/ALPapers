@@ -24,7 +24,7 @@ function sample(items, n, seed) {
 }
 
 mkdirSync(new URL("offline/work/audit/", root), { recursive: true });
-for (const file of readdirSync(new URL("tools/topical/labels/", root))) {
+for (const file of readdirSync(new URL("tools/topical/labels/", root)).filter((f) => f.endsWith(".json"))) {
   const key = file.replace(".json", "");
   const [subject, paper] = key.split("-");
   const labels = read(`tools/topical/labels/${file}`);

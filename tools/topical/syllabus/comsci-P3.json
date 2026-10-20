@@ -1,0 +1,112 @@
+{
+  "topics": [
+    {
+      "id": "13",
+      "title": "Data representation",
+      "subtopics": [
+        {
+          "id": "13.1",
+          "title": "User-defined data types"
+        },
+        {
+          "id": "13.2",
+          "title": "File organisation and access"
+        },
+        {
+          "id": "13.3",
+          "title": "Floating-point numbers"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Communication and internet technologies",
+      "subtopics": [
+        {
+          "id": "14.1",
+          "title": "Protocols"
+        },
+        {
+          "id": "14.2",
+          "title": "Circuit switching, packet switching"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Hardware and virtual machines",
+      "subtopics": [
+        {
+          "id": "15.1",
+          "title": "Processors, parallel processing and virtual machines"
+        },
+        {
+          "id": "15.2",
+          "title": "Boolean algebra and logic circuits"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "System software",
+      "subtopics": [
+        {
+          "id": "16.1",
+          "title": "Purposes of an operating system"
+        },
+        {
+          "id": "16.2",
+          "title": "Translation software"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Security",
+      "subtopics": [
+        {
+          "id": "17.1",
+          "title": "Encryption, encryption protocols and digital certificates"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Artificial intelligence (AI)",
+      "subtopics": [
+        {
+          "id": "18.1",
+          "title": "Artificial intelligence"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Computational thinking and problem-solving",
+      "subtopics": [
+        {
+          "id": "19.1",
+          "title": "Algorithms"
+        },
+        {
+          "id": "19.2",
+          "title": "Recursion"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Further programming",
+      "subtopics": [
+        {
+          "id": "20.1",
+          "title": "Programming paradigms"
+        },
+        {
+          "id": "20.2",
+          "title": "File processing and exception handling"
+        }
+      ]
+    }
+  ]
+}
