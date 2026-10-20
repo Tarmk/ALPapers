@@ -32,6 +32,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Pure Mathematics 1",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_P1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_P1.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_P1.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_P1.pdf",
@@ -234,6 +238,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Pure Mathematics 2",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_P2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_P2.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_P2.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_P2.pdf",
@@ -436,6 +444,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Pure Mathematics 3",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_P3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_P3.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_P3.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_P3.pdf",
@@ -626,6 +638,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Pure Mathematics 4",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_P4.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_P4.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_P4.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_P4.pdf",
@@ -812,6 +828,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S1: {
         description: "Statistics 1",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_S1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_S1.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_S1.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_S1.pdf",
@@ -1106,6 +1126,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S2: {
         description: "Statistics 2",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_S2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_S2.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_S2.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_S2.pdf",
@@ -1372,6 +1396,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       S3: {
         description: "Statistics 3",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_S3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_S3.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_S3.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_S3.pdf",
@@ -1534,6 +1562,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M1: {
         description: "Mechanics 1",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_M1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_M1.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_M1.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_M1.pdf",
@@ -1828,6 +1860,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M2: {
         description: "Mechanics 2",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_M2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_M2.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_M2.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_M2.pdf",
@@ -2114,6 +2150,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       M3: {
         description: "Mechanics 3",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_M3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_M3.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_M3.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_M3.pdf",
@@ -2336,6 +2376,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       D1: {
         description: "Decision Mathematics 1",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_D1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_D1.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_D1.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_D1.pdf",
@@ -2590,6 +2634,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP1: {
         description: "Further Pure Mathematics 1",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_F1.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_F1.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_F1.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_F1.pdf",
@@ -2768,6 +2816,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP2: {
         description: "Further Pure Mathematics 2",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_F2.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_F2.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_F2.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_F2.pdf",
@@ -2925,6 +2977,10 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       FP3: {
         description: "Further Pure Mathematics 3",
         years: {
+          "2026 June": {
+            qp: "https://edemat.alevelclouds.com/26_06_QP_F3.pdf",
+            ms: "https://edemat.alevelclouds.com/26_06_MS_F3.pdf",
+          },
           "2026 January": {
             qp: "https://edemat.alevelclouds.com/26_01_QP_F3.pdf",
             ms: "https://edemat.alevelclouds.com/26_01_MS_F3.pdf",
@@ -3057,6 +3113,26 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Paper 1 - Multiple Choice",
         years: {
+          "June 2026 (v4)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_14.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_14.pdf",
+          },
+          "June 2026 (v3)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_13.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_13.pdf",
+          },
+          "June 2026 (v2)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_12.pdf",
+          },
+          "June 2026 (v1)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_11.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_11.pdf",
+          },
+          "March 2026 (v2)": {
+            qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_qp_12.pdf",
+            ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_ms_12.pdf",
+          },
           "November 2025 (v4)": {
             qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_14.pdf",
             ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_14.pdf",
@@ -3518,6 +3594,11 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Paper 2 - AS Level Structured Questions",
         years: {
+          "June 2026 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_24.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_24.pdf" },
+          "June 2026 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_23.pdf" },
+          "June 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_22.pdf" },
+          "June 2026 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_21.pdf" },
+          "March 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_ms_22.pdf" },
           "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_24.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_24.pdf" },
           "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_23.pdf" },
           "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_22.pdf" },
@@ -3639,6 +3720,14 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Paper 3 - AS Level Practical",
         years: {
+          "June 2026 (v8)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_38.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_38.pdf" },
+          "June 2026 (v7)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_37.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_37.pdf" },
+          "June 2026 (v5)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_35.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_35.pdf" },
+          "June 2026 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_34.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_34.pdf" },
+          "June 2026 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_33.pdf" },
+          "June 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_32.pdf" },
+          "June 2026 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_31.pdf" },
+          "March 2026 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_ms_33.pdf" },
           "November 2025 (v8)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_38.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_38.pdf" },
           "November 2025 (v7)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_37.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_37.pdf" },
           "November 2025 (v6)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_36.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_36.pdf" },
@@ -3829,6 +3918,11 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Paper 4 - A Level Structured Questions",
         years: {
+          "June 2026 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_44.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_44.pdf" },
+          "June 2026 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_43.pdf" },
+          "June 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_42.pdf" },
+          "June 2026 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_41.pdf" },
+          "March 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_ms_42.pdf" },
           "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_44.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_44.pdf" },
           "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_43.pdf" },
           "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_42.pdf" },
@@ -3950,6 +4044,11 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P5: {
         description: "Paper 5 - Planning, Analysis and Evaluation",
         years: {
+          "June 2026 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_54.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_54.pdf" },
+          "June 2026 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_53.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_53.pdf" },
+          "June 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_52.pdf" },
+          "June 2026 (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_qp_51.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_s26_ms_51.pdf" },
+          "March 2026 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_m26_ms_52.pdf" },
           "November 2025 (v4)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_54.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_54.pdf" },
           "November 2025 (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_53.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_53.pdf" },
           "November 2025 (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_qp_52.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9702_w25_ms_52.pdf" },
@@ -4076,6 +4175,9 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P1: {
         description: "Paper 1 - Theory Fundamentals (AS)",
         years: {
+          "2026 June (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_13.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_13.pdf" },
+          "2026 June (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_12.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_12.pdf" },
+          "2026 June (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_11.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_11.pdf" },
           "2025 November (v3)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_13.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_13.pdf" },
           "2025 November (v2)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_12.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_12.pdf" },
           "2025 November (v1)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_11.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_11.pdf" },
@@ -4111,6 +4213,9 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P2: {
         description: "Paper 2 - Problem-solving and Programming (AS)",
         years: {
+          "2026 June (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_23.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_23.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_in_23.pdf" },
+          "2026 June (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_22.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_22.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_in_22.pdf" },
+          "2026 June (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_21.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_21.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_in_21.pdf" },
           "2025 November (v3)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_23.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_23.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_in_23.pdf" },
           "2025 November (v2)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_22.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_22.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_in_22.pdf" },
           "2025 November (v1)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_21.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_21.pdf", insert: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_in_21.pdf" },
@@ -4146,6 +4251,9 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P3: {
         description: "Paper 3 - Advanced Theory (A Level)",
         years: {
+          "2026 June (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_33.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_33.pdf" },
+          "2026 June (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_32.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_32.pdf" },
+          "2026 June (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_31.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_31.pdf" },
           "2025 November (v3)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_33.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_33.pdf" },
           "2025 November (v2)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_32.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_32.pdf" },
           "2025 November (v1)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_31.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_31.pdf" },
@@ -4180,6 +4288,9 @@ export const SUBJECTS: Record<SubjectKey, Subject> = {
       P4: {
         description: "Paper 4 - Further Problem-solving and Programming (A Level)",
         years: {
+          "2026 June (v3)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_43.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_43.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_sf_43.zip" },
+          "2026 June (v2)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_42.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_42.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_sf_42.zip" },
+          "2026 June (v1)": { qp: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_qp_41.pdf", ms: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_ms_41.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_s26_sf_41.zip" },
           "2025 November (v3)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_43.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_43.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_sf_43.zip" },
           "2025 November (v2)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_42.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_42.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_sf_42.zip" },
           "2025 November (v1)": { qp: "https://pseudocode.pro/past-paper/9618_w25_qp_41.pdf", ms: "https://pseudocode.pro/past-paper/9618_w25_ms_41.pdf", resource: "https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/9618_w25_sf_41.zip" },
