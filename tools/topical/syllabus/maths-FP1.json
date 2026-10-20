@@ -1,0 +1,82 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Complex numbers",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Complex arithmetic and solving equations"
+        },
+        {
+          "id": "1.2",
+          "title": "Argand diagrams, modulus and argument"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Roots of equations",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Roots of quadratic equations"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Numerical solution of equations",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Interval bisection, linear interpolation and Newton-Raphson"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Coordinate systems",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Parabolas and rectangular hyperbolas"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Matrix algebra",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Matrix arithmetic, determinants and inverses"
+        },
+        {
+          "id": "5.2",
+          "title": "Linear transformations"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Series",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Sums of powers of natural numbers"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Proof",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Proof by mathematical induction"
+        }
+      ]
+    }
+  ]
+}

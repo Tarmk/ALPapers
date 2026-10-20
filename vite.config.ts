@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
-    // The physics topical index is one ~4 MB chunk (about 180 KB gzipped) that
-    // only loads when someone opens physics topical mode.
-    chunkSizeWarningLimit: 4500,
+    // Each topical index is its own chunk, loaded only when that paper's topical
+    // view opens. The largest (physics P1, 4,700+ questions) is about 1.5 MB raw
+    // and 80 KB gzipped.
+    chunkSizeWarningLimit: 2000,
   },
 });
-

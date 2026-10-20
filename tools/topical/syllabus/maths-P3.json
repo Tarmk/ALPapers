@@ -1,0 +1,88 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Algebra and functions",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Algebraic fractions"
+        },
+        {
+          "id": "1.2",
+          "title": "Functions: domain, range, composite and inverse"
+        },
+        {
+          "id": "1.3",
+          "title": "Modulus functions and transformations of graphs"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Reciprocal and inverse trigonometric functions"
+        },
+        {
+          "id": "2.2",
+          "title": "Compound and double angle formulae"
+        },
+        {
+          "id": "2.3",
+          "title": "Harmonic form R cos(x ± α) and trigonometric equations"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Exponentials and logarithms",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Exponential and natural logarithm functions, modelling"
+        },
+        {
+          "id": "3.2",
+          "title": "Logarithmic graphs: y = axⁿ and y = kbˣ"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Product, quotient and chain rules"
+        },
+        {
+          "id": "4.2",
+          "title": "Applications of differentiation"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Numerical methods",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Locating roots and iteration"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Integrating exponential, reciprocal and trigonometric functions"
+        }
+      ]
+    }
+  ]
+}
