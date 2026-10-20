@@ -48,3 +48,6 @@ tools/extract-questions/.venv
 
 # R2 upload credentials (see tools/topical/sync-media.mjs)
 .env.r2
+
+# Question images: stored in R2 and served from VITE_ASSET_BASE (see tools/topical/sync-media.mjs)
+/media/

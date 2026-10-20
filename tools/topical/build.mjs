@@ -95,7 +95,7 @@ function buildCie(subject, paper, work) {
           if (q.msImages?.length) {
             if (!e.ms?.length) filled++;
             e.ms = q.msImages;
-          } else if (e.ms?.some((img) => !existsSync(path(`public${img}`)))) {
+          } else if (e.ms?.some((img) => !existsSync(path(`media${img}`)))) {
             delete e.ms;
           }
         }
@@ -129,7 +129,7 @@ function check(key, data) {
   for (const q of data.questions) {
     if (subtopics.get(q.subtopicId) !== q.topicId) problems.push(`${key}: ${q.id} has unknown topic ${q.topicId}/${q.subtopicId}`);
     for (const img of [...q.images, ...(q.ms ?? [])]) {
-      if (!existsSync(path(`public${img}`))) problems.push(`${key}: missing image ${img}`);
+      if (!existsSync(path(`media${img}`))) problems.push(`${key}: missing image ${img}`);
     }
   }
   // Only list topics and subtopics that have questions.

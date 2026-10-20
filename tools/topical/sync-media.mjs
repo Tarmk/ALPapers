@@ -9,7 +9,7 @@
 //   R2_SECRET_ACCESS_KEY=...
 //   R2_BUCKET=past-papers
 //
-//   node tools/topical/sync-media.mjs [--dry-run] [--delete] [--dir public/topical]
+//   node tools/topical/sync-media.mjs [--dry-run] [--delete] [--dir media/topical]
 //
 // Objects are stored under "topical/...", matching the /topical/... paths in the
 // indexes, so the site only needs VITE_ASSET_BASE set to the bucket's public URL.
@@ -23,7 +23,7 @@ const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const prune = args.includes("--delete");
 const dirArg = args[args.indexOf("--dir") + 1];
-const localDir = join(root, args.includes("--dir") ? dirArg : "public/topical");
+const localDir = join(root, args.includes("--dir") ? dirArg : "media/topical");
 const prefix = "topical/";
 
 function loadEnv() {
@@ -37,6 +37,10 @@ function loadEnv() {
   for (const k of ["R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY", "R2_BUCKET"]) {
     if (!env[k]) throw new Error(`.env.r2 is missing ${k}`);
   }
+  // Accept the bare 32-character account ID or the whole S3 endpoint URL.
+  const id = env.R2_ACCOUNT_ID.match(/[0-9a-f]{32}/i)?.[0];
+  if (!id) throw new Error("R2_ACCOUNT_ID should contain the 32-character account ID");
+  env.R2_ACCOUNT_ID = id;
   return env;
 }
 

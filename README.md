@@ -40,12 +40,14 @@ npm run dev        # http://localhost:5173
 npm run build      # type-check, then build to dist/
 ```
 
-The repository also stores the question images and the older source PDFs (several GB). To work on the app without downloading them:
+The question images (about 37,000 PNGs, 1.3 GB) are not in the repository. They live in a Cloudflare R2 bucket and production loads them from `VITE_ASSET_BASE` (set in `.env.production`). Locally, the dev server serves them from `media/topical/` if that folder exists; without it the app works but question images don't load. To point a local build at the bucket instead, run `VITE_ASSET_BASE=https://papers-media.jhoi.dev npm run dev`.
+
+The repository still stores the older source PDFs (several GB), and its history holds the images from before they moved. To work on the app without downloading those:
 
 ```bash
 git clone --filter=blob:none --no-checkout https://github.com/Tarmk/ALPapers.git
 cd ALPapers
-git sparse-checkout set --no-cone '/*' '!/offline/' '!/public/topical/'
+git sparse-checkout set --no-cone '/*' '!/offline/'
 git checkout main
 ```
 
@@ -58,7 +60,7 @@ git checkout main
 | `src/data/catalog.ts` | Subjects: board, level, code and paper groups |
 | `src/data/papers/<subject>.json` | Paper links for every paper and session, one file per subject (loaded on demand) |
 | `src/data/topical/` | One topical index per paper, plus `summary.json` with the counts |
-| `public/topical/` | Question and mark-scheme images |
+| `media/topical/` | Question and mark-scheme images (git-ignored; uploaded to R2 with `tools/topical/sync-media.mjs`) |
 | `tools/topical/` | The pipeline that builds the topical data |
 | `offline/` | Older source PDFs and extraction output (not needed to run the app) |
 

@@ -11,7 +11,7 @@ every question renders at the same scale.
 Mark schemes are split on the "Question Number" column of the scheme table.
 
 Writes, per paper:
-  public/topical/maths-edexcel/<PAPER>/<session-slug>/q01-1.png, ms01-1.png, ...
+  media/topical/maths-edexcel/<PAPER>/<session-slug>/q01-1.png, ms01-1.png, ...
   offline/work/maths/<PAPER>/<session-slug>.json   (text + image list per question)
 
   python tools/topical/split_edexcel.py --paper S1
