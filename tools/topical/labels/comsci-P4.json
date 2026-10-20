@@ -1,0 +1,112 @@
+{
+ "2026 June (v1)|1": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.queues"
+  }
+ ],
+ "2026 June (v1)|2": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.records",
+   "focus": "Parts (a), (b)(ii), (b)(iii)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (b)(i), (c)(ii), (c)(iii), (c)(iv)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.validation",
+   "focus": "Parts (c)(i)"
+  }
+ ],
+ "2026 June (v1)|3": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes"
+  }
+ ],
+ "2026 June (v2)|1": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.arrays",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.insertion",
+   "focus": "Parts (c)"
+  }
+ ],
+ "2026 June (v2)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (b)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.validation",
+   "focus": "Parts (c)"
+  }
+ ],
+ "2026 June (v2)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists"
+  }
+ ],
+ "2026 June (v3)|1": [
+  {
+   "topicId": "data-structures",
+   "subtopicId": "data.arrays",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "searching",
+   "subtopicId": "searching.linear",
+   "focus": "Parts (e)"
+  },
+  {
+   "topicId": "sorting",
+   "subtopicId": "sorting.bubble",
+   "focus": "Parts (f)"
+  }
+ ],
+ "2026 June (v3)|2": [
+  {
+   "topicId": "oop",
+   "subtopicId": "oop.classes",
+   "focus": "Parts (a), (c), (d)"
+  },
+  {
+   "topicId": "file-handling",
+   "subtopicId": "file.read-write",
+   "focus": "Parts (b)"
+  },
+  {
+   "topicId": "programming",
+   "subtopicId": "programming.loops-selection",
+   "focus": "Parts (e)"
+  }
+ ],
+ "2026 June (v3)|3": [
+  {
+   "topicId": "adts",
+   "subtopicId": "adt.linked-lists",
+   "focus": "Parts (a), (b), (c), (d)"
+  },
+  {
+   "topicId": "recursion",
+   "subtopicId": "recursion.basic",
+   "focus": "Part (e)"
+  }
+ ]
+}
