@@ -1,0 +1,56 @@
+{
+ "comsci-P1": {
+  "questions": 247,
+  "topics": 9,
+  "sessions": 30,
+  "withMarkScheme": 247
+ },
+ "comsci-P2": {
+  "questions": 228,
+  "topics": 4,
+  "sessions": 30,
+  "withMarkScheme": 228
+ },
+ "comsci-P3": {
+  "questions": 320,
+  "topics": 8,
+  "sessions": 29,
+  "withMarkScheme": 320
+ },
+ "comsci-P4": {
+  "questions": 87,
+  "topics": 9,
+  "sessions": 29,
+  "withMarkScheme": 87
+ },
+ "physics-P1": {
+  "questions": 4560,
+  "topics": 11,
+  "sessions": 114,
+  "withMarkScheme": 4544
+ },
+ "physics-P2": {
+  "questions": 805,
+  "topics": 11,
+  "sessions": 116,
+  "withMarkScheme": 441
+ },
+ "physics-P3": {
+  "questions": 380,
+  "topics": 1,
+  "sessions": 185,
+  "withMarkScheme": 205
+ },
+ "physics-P4": {
+  "questions": 1347,
+  "topics": 14,
+  "sessions": 116,
+  "withMarkScheme": 683
+ },
+ "physics-P5": {
+  "questions": 230,
+  "topics": 1,
+  "sessions": 115,
+  "withMarkScheme": 119
+ }
+}

@@ -39,3 +39,7 @@ lerna-debug.log*
 tools/extract-questions/.venv
 **/__pycache__/
 *.pyc
+
+# Topical pipeline caches (re-downloadable / regenerated)
+/offline/pdfs/
+/offline/work/

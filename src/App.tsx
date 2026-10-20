@@ -1,366 +1,118 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
-import { SUBJECTS, SubjectKey, Subject, Paper } from "./data/subjects";
-import { SubjectGrid } from "./components/SubjectGrid";
-import { PaperGrid } from "./components/PaperGrid";
-import { PaperView } from "./components/PaperView";
-// The topical view (and its large data files) is only downloaded when it is opened.
-const TopicalPapersView = lazy(() =>
-  import("./components/TopicalPapersView").then((m) => ({ default: m.TopicalPapersView })),
-);
+import { SUBJECTS } from "./data/subjects";
+import { SUBJECT_META } from "./lib/catalog";
+import { useRoute, type Route } from "./lib/route";
+import { Link, NavigateContext } from "./components/Link";
+import { Home } from "./components/Home";
+import { SubjectPage } from "./components/SubjectPage";
+import { PaperPage } from "./components/PaperPage";
 
-type TopicalPaperCode = "P1" | "P2" | "P3" | "P4" | "P5" | "S3";
-type TopicalSubjectKey = "comsci" | "physics" | "maths";
+// The topical views and their indexes are only downloaded when opened.
+const TopicalView = lazy(() => import("./components/TopicalView").then((m) => ({ default: m.TopicalView })));
 
-type ViewState =
-  | { type: "subjects" }
-  | { type: "papers"; subjectKey: SubjectKey; subject: Subject }
-  | { type: "topicalPapers"; subjectKey: TopicalSubjectKey; subject: Subject }
-  | {
-      type: "topicalPaper";
-      subjectKey: TopicalSubjectKey;
-      subject: Subject;
-      paperCode: TopicalPaperCode;
-      topicId?: string;
-      subtopicId?: string;
+type Theme = "light" | "dark";
+
+function useTheme(): [Theme, () => void] {
+  const [theme, setTheme] = useState<Theme>(() =>
+    document.documentElement.dataset.theme === "dark" ? "dark" : "light",
+  );
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    try {
+      localStorage.setItem("theme", theme);
+    } catch {
+      // Private browsing: the theme just isn't remembered.
     }
-  | {
-      type: "paper";
-      subjectKey: SubjectKey;
-      subject: Subject;
-      paperCode: string;
-      paper: Paper;
-    };
-
-function getInitialView(): ViewState {
-  const params = new URLSearchParams(window.location.search);
-  const subjectKey = params.get("subject") as SubjectKey | null;
-  const paperCode = params.get("paper");
-  const mode = params.get("mode");
-
-  if (subjectKey && SUBJECTS[subjectKey]) {
-    const subject = SUBJECTS[subjectKey];
-
-    if ((subjectKey === "comsci" || subjectKey === "physics" || subjectKey === "maths") && mode === "topical") {
-      const topicalPaperCodes =
-        subjectKey === "maths"
-          ? ["S3"]
-          : subjectKey === "physics"
-            ? ["P1", "P2", "P3", "P4", "P5"]
-            : ["P1", "P2", "P3", "P4"];
-      if (paperCode && topicalPaperCodes.includes(paperCode)) {
-        return {
-          type: "topicalPaper",
-          subjectKey,
-          subject,
-          paperCode: paperCode as TopicalPaperCode,
-          topicId: params.get("topic") || undefined,
-          subtopicId: params.get("subtopic") || undefined,
-        };
-      }
-
-      return { type: "topicalPapers", subjectKey, subject };
-    }
-
-    if (paperCode && subject.papers[paperCode]) {
-      return {
-        type: "paper",
-        subjectKey,
-        subject,
-        paperCode,
-        paper: subject.papers[paperCode],
-      };
-    }
-
-    return { type: "papers", subjectKey, subject };
-  }
-
-  return { type: "subjects" };
+  }, [theme]);
+  return [theme, () => setTheme((t) => (t === "light" ? "dark" : "light"))];
 }
 
-function getInitialTheme(): "light" | "dark" {
-  const stored = localStorage.getItem("theme");
-  if (stored === "dark" || stored === "light") return stored;
-  
-  // Check system preference
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    return "dark";
+function crumbs(route: Route): { label: string; to?: Route }[] {
+  const out: { label: string; to?: Route }[] = [];
+  if (!route.subject) return out;
+  out.push({ label: SUBJECT_META[route.subject].short, to: { subject: route.subject } });
+  if (route.paper) {
+    out.push({ label: route.paper, to: { subject: route.subject, paper: route.paper, view: route.view } });
   }
-  
-  return "light";
+  return out;
+}
+
+function pageTitle(route: Route): string {
+  if (!route.subject) return "Past Papers";
+  const name = SUBJECT_META[route.subject].short;
+  if (!route.paper) return `${name} · Past Papers`;
+  const what = route.view === "topics" ? "by topic" : "past papers";
+  return `${name} ${route.paper} ${what} · Past Papers`;
 }
 
 export const App: React.FC = () => {
-  const [view, setView] = useState<ViewState>(() => getInitialView());
-  const [theme, setTheme] = useState<"light" | "dark">(() => getInitialTheme());
+  const [route, navigate] = useRoute();
+  const [theme, toggleTheme] = useTheme();
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    document.title = pageTitle(route);
+  }, [route]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-
-  useEffect(() => {
-    const url = new URL(window.location.href);
-
-    if (view.type === "paper") {
-      url.searchParams.set("subject", view.subjectKey);
-      url.searchParams.set("paper", view.paperCode);
-      url.searchParams.delete("mode");
-      url.searchParams.delete("topic");
-      url.searchParams.delete("subtopic");
-    } else if (view.type === "topicalPaper") {
-      url.searchParams.set("subject", view.subjectKey);
-      url.searchParams.set("mode", "topical");
-      url.searchParams.set("paper", view.paperCode);
-      if (view.topicId) {
-        url.searchParams.set("topic", view.topicId);
-      } else {
-        url.searchParams.delete("topic");
-      }
-      if (view.subtopicId) {
-        url.searchParams.set("subtopic", view.subtopicId);
-      } else {
-        url.searchParams.delete("subtopic");
-      }
-    } else if (view.type === "topicalPapers") {
-      url.searchParams.set("subject", view.subjectKey);
-      url.searchParams.set("mode", "topical");
-      url.searchParams.delete("paper");
-      url.searchParams.delete("topic");
-      url.searchParams.delete("subtopic");
-    } else if (view.type === "papers") {
-      url.searchParams.set("subject", view.subjectKey);
-      url.searchParams.delete("paper");
-      url.searchParams.delete("mode");
-      url.searchParams.delete("topic");
-      url.searchParams.delete("subtopic");
-    } else {
-      url.searchParams.delete("subject");
-      url.searchParams.delete("paper");
-      url.searchParams.delete("mode");
-      url.searchParams.delete("topic");
-      url.searchParams.delete("subtopic");
-    }
-
-    window.history.replaceState(null, "", url.toString());
-  }, [view]);
-
-  const handleOpenSubject = (key: SubjectKey) => {
-    const subject = SUBJECTS[key];
-    if (!subject) return;
-    setView({ type: "papers", subjectKey: key, subject });
-  };
-
-  const handleOpenPaper = (paperCode: string) => {
-    if (view.type !== "papers") return;
-    const paper = view.subject.papers[paperCode];
-    if (!paper) return;
-    setView({
-      type: "paper",
-      subjectKey: view.subjectKey,
-      subject: view.subject,
-      paperCode,
-      paper,
-    });
-  };
-
-  const handleOpenTopicalPaper = (paperCode: TopicalPaperCode) => {
-    if (
-      view.type !== "papers" ||
-      (view.subjectKey !== "comsci" && view.subjectKey !== "physics" && view.subjectKey !== "maths")
-    ) return;
-    setView({
-      type: "topicalPaper",
-      subjectKey: view.subjectKey,
-      subject: view.subject,
-      paperCode,
-    });
-  };
-
-  const handleSelectTopicalTopic = (topicId: string) => {
-    if (view.type !== "topicalPaper") return;
-    setView({ ...view, topicId, subtopicId: undefined });
-  };
-
-  const handleSelectTopicalSubtopic = (topicId: string, subtopicId: string) => {
-    if (view.type !== "topicalPaper") return;
-    setView({ ...view, topicId, subtopicId });
-  };
-
-  const handleBackToSubjects = () => {
-    setView({ type: "subjects" });
-  };
-
-  const handleBackToPapers = () => {
-    if (view.type !== "paper") return;
-    setView({ type: "papers", subjectKey: view.subjectKey, subject: view.subject });
-  };
-
-  const handleBackFromTopical = () => {
-    if (view.type !== "topicalPaper" && view.type !== "topicalPapers") return;
-
-    if (view.type === "topicalPaper" && view.subtopicId) {
-      setView({ ...view, subtopicId: undefined });
-      return;
-    }
-
-    if (view.type === "topicalPaper" && view.topicId) {
-      setView({ ...view, topicId: undefined });
-      return;
-    }
-
-    setView({ type: "papers", subjectKey: view.subjectKey, subject: view.subject });
-  };
+  const trail = crumbs(route);
+  const subject = route.subject ? SUBJECTS[route.subject] : undefined;
+  const paper = subject && route.paper ? subject.papers[route.paper] : undefined;
 
   return (
-    <>
-      <header className="site-header">
-        <div className="container header-inner">
-          {view.type === "paper" ? (
-            <>
-              <button className="back-link" onClick={handleBackToPapers}>
-                &larr; {view.subject.name}
-              </button>
-              <div>
-                <h1 className="site-title">
-                  {view.paperCode} - {view.paper.description}
-                  <button
-                    className="theme-toggle"
-                    onClick={toggleTheme}
-                    aria-label="Toggle theme"
-                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                  >
-                    {theme === "light" ? "🌙" : "☀️"}
-                  </button>
-                </h1>
-                <p className="site-tagline">
-                  Select a year to open the question paper (QP) or mark scheme (MS).
-                </p>
-              </div>
-            </>
-          ) : view.type === "topicalPaper" || view.type === "topicalPapers" ? (
-            <>
-              <button className="back-link" onClick={handleBackFromTopical}>
-                &larr; {view.subject.name}
-              </button>
-              <div>
-                <h1 className="site-title">
-                  {view.type === "topicalPaper" ? `${view.paperCode} Topical Papers` : "Topical Papers"}
-                  <button
-                    className="theme-toggle"
-                    onClick={toggleTheme}
-                    aria-label="Toggle theme"
-                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                  >
-                    {theme === "light" ? "🌙" : "☀️"}
-                  </button>
-                </h1>
-                <p className="site-tagline">Choose topics and build a printable A4 sheet.</p>
-              </div>
-            </>
-          ) : view.type === "papers" ? (
-            <>
-              <button className="back-link" onClick={handleBackToSubjects}>
-                &larr; All subjects
-              </button>
-              <div>
-                <h1 className="site-title">
-                  {view.subject.name}
-                  <button
-                    className="theme-toggle"
-                    onClick={toggleTheme}
-                    aria-label="Toggle theme"
-                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                  >
-                    {theme === "light" ? "🌙" : "☀️"}
-                  </button>
-                </h1>
-                <p className="site-tagline">Select a paper to view past years.</p>
-              </div>
-            </>
-          ) : (
-            <>
-              <div>
-                <h1 className="site-title">
-                  Past Papers
-                  <button
-                    className="theme-toggle"
-                    onClick={toggleTheme}
-                    aria-label="Toggle theme"
-                    title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-                  >
-                    {theme === "light" ? "🌙" : "☀️"}
-                  </button>
-                </h1>
-                <p className="site-tagline">
-                  Quickly find exam papers by subject and paper.
-                </p>
-              </div>
-            </>
-          )}
+    <NavigateContext.Provider value={navigate}>
+      <header className="masthead">
+        <div className="wrap masthead-inner">
+          <nav className="trail" aria-label="Breadcrumb">
+            <Link to={{}} className="wordmark">
+              Past Papers
+            </Link>
+            {trail.map((c) => (
+              <React.Fragment key={c.label}>
+                <span className="trail-sep" aria-hidden="true">
+                  /
+                </span>
+                {c.to ? <Link to={c.to}>{c.label}</Link> : <span>{c.label}</span>}
+              </React.Fragment>
+            ))}
+          </nav>
+          <button type="button" className="theme-switch" onClick={toggleTheme} aria-label="Switch colour theme">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor" />
+            </svg>
+            {theme === "light" ? "Dark" : "Light"}
+          </button>
         </div>
       </header>
 
-      <main className="container">
-        <Suspense fallback={<p className="intro-text">Loading...</p>}>
-          {view.type === "subjects" ? (
-            <SubjectGrid onOpenSubject={handleOpenSubject} />
-          ) : view.type === "papers" ? (
-            <PaperGrid
-              subject={view.subject}
-              subjectKey={view.subjectKey}
-              onOpenPaper={handleOpenPaper}
-              onOpenTopicalPaper={handleOpenTopicalPaper}
+      <main className="wrap page">
+        {!route.subject || !subject ? (
+          <Home />
+        ) : !route.paper || !paper ? (
+          <SubjectPage subjectKey={route.subject} />
+        ) : route.view === "topics" ? (
+          <Suspense fallback={<p className="status">Loading…</p>}>
+            <TopicalView
+              subjectKey={route.subject}
+              paperCode={route.paper}
+              paper={paper}
+              topicId={route.topic}
+              subtopicId={route.subtopic}
             />
-          ) : view.type === "topicalPaper" ? (
-            <TopicalPapersView
-              subjectKey={view.subjectKey}
-              paperCode={view.paperCode}
-              topicId={view.topicId}
-              subtopicId={view.subtopicId}
-              onSelectTopic={handleSelectTopicalTopic}
-              onSelectSubtopic={handleSelectTopicalSubtopic}
-            />
-          ) : view.type === "topicalPapers" ? (
-            <TopicalPapersView
-              subjectKey={view.subjectKey}
-              paperCode={view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3"}
-              onSelectTopic={(topicId) => {
-                setView({
-                  type: "topicalPaper",
-                  subjectKey: view.subjectKey,
-                  subject: view.subject,
-                  paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
-                  topicId,
-                });
-              }}
-              onSelectSubtopic={(topicId, subtopicId) => {
-                setView({
-                  type: "topicalPaper",
-                  subjectKey: view.subjectKey,
-                  subject: view.subject,
-                  paperCode: view.subjectKey === "maths" ? "S3" : view.subjectKey === "physics" ? "P1" : "P3",
-                  topicId,
-                  subtopicId,
-                });
-              }}
-            />
-          ) : (
-            <PaperView paper={view.paper} paperCode={view.paperCode} />
-          )}
-        </Suspense>
+          </Suspense>
+        ) : (
+          <PaperPage subjectKey={route.subject} paperCode={route.paper} paper={paper} />
+        )}
       </main>
 
-      <footer className="site-footer">
-        <div className="container">
-          <p>Personal past paper archive.</p>
-          <p className="footer-credit">Made by Tarm</p>
+      <footer className="colophon">
+        <div className="wrap">
+          <p>
+            Question papers and mark schemes are © Pearson Education and Cambridge University Press &amp;
+            Assessment. Links go to the files where they are hosted.
+          </p>
+          <p>Made by Tarm.</p>
         </div>
       </footer>
-    </>
+    </NavigateContext.Provider>
   );
 };
-
