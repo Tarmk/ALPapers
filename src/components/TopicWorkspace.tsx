@@ -1,13 +1,12 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { flushSync } from "react-dom";
-import type { SubjectKey } from "../data/subjects";
 import type { TopicalData, TopicalQuestion, TopicalTopic } from "../data/topical";
-import { SUBJECT_META } from "../lib/catalog";
+import { getSubject } from "../data/catalog";
 import { sessionYear, shortSession, sortSessions, compareSessions } from "../lib/sessions";
 import { Link, useNavigate } from "./Link";
 
 type Props = {
-  subjectKey: SubjectKey;
+  subjectKey: string;
   paperCode: string;
   data: TopicalData;
   topic: TopicalTopic;
@@ -216,7 +215,7 @@ export const TopicWorkspace: React.FC<Props> = ({ subjectKey, paperCode, data, t
     });
 
   const heading = subtopic ? subtopic.title : topic.title;
-  const sheetTitle = `${SUBJECT_META[subjectKey].short} ${paperCode} · ${subtopic ? `${subtopic.id} ` : `${topic.id} `}${heading}`;
+  const sheetTitle = `${getSubject(subjectKey)?.short ?? ""} ${paperCode} · ${subtopic ? `${subtopic.id} ` : `${topic.id} `}${heading}`;
   const view: Printing = printing ?? (showAnswers ? null : "questions");
 
   return (

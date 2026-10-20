@@ -258,6 +258,26 @@ select {
   letter-spacing: -0.005em;
 }
 
+.level + .level {
+  margin-top: 56px;
+}
+
+.level-name {
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+
+.board + .board {
+  margin-top: 36px;
+}
+
+.board .group-label {
+  border-bottom: none;
+  padding-bottom: 6px;
+}
+
 .subjects {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -273,17 +293,17 @@ select {
   border-left: 1px solid var(--rule);
 }
 
-.subject h2 {
+.subject h3 {
   font-family: var(--serif);
   font-size: 1.625rem;
   margin: 6px 0 4px;
 }
 
-.subject h2 a {
+.subject h3 a {
   text-decoration: none;
 }
 
-.subject h2 a:hover {
+.subject h3 a:hover {
   text-decoration: underline;
 }
 

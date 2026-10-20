@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import type { Paper, SubjectKey } from "../data/subjects";
 import { loadTopical, type TopicalData } from "../data/topical";
 import { PaperHeader } from "./PaperPage";
 import { Link } from "./Link";
 import { TopicWorkspace } from "./TopicWorkspace";
 
 type Props = {
-  subjectKey: SubjectKey;
+  subjectKey: string;
   paperCode: string;
-  paper: Paper;
   topicId?: string;
   subtopicId?: string;
 };
@@ -38,7 +36,7 @@ export const TopicalView: React.FC<Props> = (props) => {
 
   return (
     <>
-      <PaperHeader subjectKey={subjectKey} paperCode={paperCode} paper={props.paper} view="topics" />
+      <PaperHeader subjectKey={subjectKey} paperCode={paperCode} view="topics" />
       {failed ? (
         <p className="status">Couldn't load the questions. Check your connection and reload the page.</p>
       ) : !loaded || loaded.key !== key ? (
@@ -67,7 +65,7 @@ const TopicalBody: React.FC<Props & { data: TopicalData }> = ({ subjectKey, pape
   return <Outline subjectKey={subjectKey} paperCode={paperCode} data={data} />;
 };
 
-const Outline: React.FC<{ subjectKey: SubjectKey; paperCode: string; data: TopicalData }> = ({
+const Outline: React.FC<{ subjectKey: string; paperCode: string; data: TopicalData }> = ({
   subjectKey,
   paperCode,
   data,

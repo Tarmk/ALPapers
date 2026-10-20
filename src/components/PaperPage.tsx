@@ -1,21 +1,15 @@
-import React from "react";
-import type { Paper, SubjectKey, YearLinks } from "../data/subjects";
+import React, { useEffect, useState } from "react";
+import { loadPapers, paperSummary, type Paper, type YearLinks } from "../data/catalog";
 import { hasTopical } from "../data/topical";
-import { paperTitle } from "../lib/catalog";
 import { sessionYear, shortSession, sortSessions } from "../lib/sessions";
 import { Link } from "./Link";
 
-type Props = { subjectKey: SubjectKey; paperCode: string; paper: Paper };
+type Props = { subjectKey: string; paperCode: string };
 
-export const PaperHeader: React.FC<Props & { view: "sessions" | "topics" }> = ({
-  subjectKey,
-  paperCode,
-  paper,
-  view,
-}) => (
+export const PaperHeader: React.FC<Props & { view: "sessions" | "topics" }> = ({ subjectKey, paperCode, view }) => (
   <header className="page-head paper-head">
     <h1>
-      <span className="paper-code">{paperCode}</span> {paperTitle(paper)}
+      <span className="paper-code">{paperCode}</span> {paperSummary(subjectKey, paperCode)?.title}
     </h1>
     {hasTopical(subjectKey, paperCode) && (
       <nav className="tabs" aria-label="View">
@@ -117,13 +111,41 @@ const YearIndex: React.FC<{ years: Record<string, YearLinks>; prefix: string }> 
   );
 };
 
+/** Loads the subject's links (a separate chunk per subject), then shows the paper. */
 export const PaperPage: React.FC<Props> = (props) => {
-  const { paper } = props;
-  const old = paper.oldSpec && Object.keys(paper.oldSpec.years).length ? paper.oldSpec : undefined;
+  const { subjectKey, paperCode } = props;
+  const [loaded, setLoaded] = useState<{ key: string; paper?: Paper } | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setFailed(false);
+    loadPapers(subjectKey)
+      .then((data) => !cancelled && setLoaded({ key: subjectKey, paper: data.papers[paperCode] }))
+      .catch(() => !cancelled && setFailed(true));
+    return () => {
+      cancelled = true;
+    };
+  }, [subjectKey, paperCode]);
+
   return (
     <>
       <PaperHeader {...props} view="sessions" />
+      {failed ? (
+        <p className="status">Couldn't load the papers. Check your connection and reload the page.</p>
+      ) : !loaded || loaded.key !== subjectKey || !loaded.paper ? (
+        <p className="status">Loading…</p>
+      ) : (
+        <PaperSessions paper={loaded.paper} />
+      )}
+    </>
+  );
+};
 
+const PaperSessions: React.FC<{ paper: Paper }> = ({ paper }) => {
+  const old = paper.oldSpec && Object.keys(paper.oldSpec.years).length ? paper.oldSpec : undefined;
+  return (
+    <>
       {Object.keys(paper.years).length > 0 ? (
         <section>
           <YearIndex years={paper.years} prefix="new" />

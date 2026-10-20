@@ -4,7 +4,7 @@ Download the question papers and mark schemes listed in offline/registry.json
 into offline/pdfs/<subject>/<paper>/<session-slug>.{qp,ms}.pdf.
 
 Files that are already cached are skipped, so this is safe to re-run after
-adding new sessions to src/data/subjects.ts (run registry.mjs first).
+adding new sessions to src/data/papers/<subject>.json (run registry.mjs first).
 
   python tools/topical/fetch.py --subject maths
   python tools/topical/fetch.py --subject physics --paper P2 --session-like 2026
