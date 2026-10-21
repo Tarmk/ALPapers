@@ -13,7 +13,8 @@ node tools/topical/registry.mjs                      # 1. list every paper in sr
 $PY tools/topical/fetch.py --subject maths           # 2. download PDFs to offline/pdfs/ (cached)
 $PY tools/topical/audit_links.py                     #    optional: check QP/MS links serve the right file
 $PY tools/topical/split_edexcel.py --session-like 2027   # 3a. maths
-$PY tools/topical/split_cie.py --subject physics --session-like 2027   # 3b. physics / computer science
+$PY tools/topical/split_cie.py --subject physics --session-like 2027   # 3b. Cambridge subjects
+node tools/topical/split-report.mjs physics --list   #    sessions whose split looks wrong
 node tools/topical/packets.mjs maths-P1              # 4. questions that still need a topic label
 #    ...label them into tools/topical/labels/maths-P1.json...
 node tools/topical/build.mjs                         # 5. write src/data/topical/*.json
