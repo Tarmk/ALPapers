@@ -4,7 +4,7 @@
 ![React 18](https://img.shields.io/badge/React-18-61dafb)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff)
 
-Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, back to the legacy GCE units), CAIE Physics 9702 and CAIE Computer Science 9618, up to the June 2026 series. Every question is also cut out of its paper, filed under its syllabus topic, and can be read, filtered by session, turned into a random practice set and printed with its mark scheme in the same order.
+Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, back to the legacy GCE units) and Cambridge A Level Mathematics 9709, Physics 9702, Chemistry 9701, Biology 9700 and Computer Science 9618, up to the June 2026 series. Every question is also cut out of its paper, filed under its syllabus topic, and can be read, filtered by session, turned into a random practice set and printed with its mark scheme in the same order.
 
 **Live:** https://al-papers.vercel.app
 
@@ -13,7 +13,7 @@ Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, 
 ## Features
 
 - Subjects → papers → sessions, with links to every question paper and mark scheme, plus Paper 2 inserts and Paper 4 source files for computer science, and the previous specifications for maths.
-- **By topic** for all 23 papers: about 14,000 questions, 98% with their mark scheme.
+- **By topic** for all 40 papers: about 34,000 questions, 99% with their mark scheme.
 - All questions or a seeded random set; filter by session (grouped by year); show the mark scheme under each question; print the questions or the mark schemes on A4, in the same order.
 - Every view has a shareable URL (`?subject=physics&paper=P4&view=topics&topic=19`), and back/forward work.
 - Light and dark themes; in dark mode the scanned pages are inverted so they don't glare.
@@ -22,8 +22,8 @@ Every question paper and mark scheme for Edexcel IAL Mathematics (all 14 units, 
 
 `tools/topical/` builds it from the links in `src/data/papers/<subject>.json` (details in its [README](tools/topical/README.md)):
 
-1. **Fetch** every PDF and check each link serves what it says (three mark-scheme links that served question papers, and a misfiled M2 entry that was a C1 paper, were found and fixed this way).
-2. **Clean** mirror watermarks out of the PDF content stream, so the page is exactly as published.
+1. **Discover and fetch** every PDF (`discover-cie.mjs` finds every Cambridge session automatically) and check each link serves what it says (three mark-scheme links that served question papers, and a misfiled M2 entry that was a C1 paper, were found and fixed this way).
+2. **Clean** mirror watermarks and pasted logos out of the PDF, so the page is exactly as published.
 3. **Split** each paper at its question numbers and keep only the printed question: text, tables and diagrams, without answer lines, margins or page furniture. Mark schemes are split on their question column. The splitter copes with the IAL, legacy and Cambridge layouts, landscape schemes, fonts whose text layer is shifted, and Decision papers bundled after their answer book.
 4. **Label** each question with its syllabus subtopic, from the full question text, following [`LABELLING.md`](tools/topical/LABELLING.md). A question whose parts test different topics is filed under each, with the parts named. Independent audits of random samples are used to check and correct the labels.
 5. **Build** the indexes in `src/data/topical/`, checking that every image exists and every label is a real subtopic.
