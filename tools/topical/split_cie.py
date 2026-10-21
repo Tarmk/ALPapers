@@ -41,9 +41,16 @@ FOLDER = {
     "chemistry": ("chemistry-cie", ""),
     "biology": ("biology-cie", ""),
     "maths-cie": ("maths-cie", ""),
+    "igcse-maths": ("igcse-maths", ""),
+    "igcse-physics": ("igcse-physics", ""),
+    "igcse-chemistry": ("igcse-chemistry", ""),
+    "igcse-biology": ("igcse-biology", ""),
+    "igcse-comsci": ("igcse-comsci", ""),
 }
 # Paper 1 of the sciences is multiple choice: its mark scheme is one answer table.
-MULTIPLE_CHOICE = {("physics", "P1"), ("chemistry", "P1"), ("biology", "P1")}
+MULTIPLE_CHOICE = {("physics", "P1"), ("chemistry", "P1"), ("biology", "P1")} | {
+    (s, p) for s in ("igcse-physics", "igcse-chemistry", "igcse-biology") for p in ("P1", "P2")
+}
 
 
 def out_dirs(row: dict, kind: str) -> tuple[Path, str, str]:
@@ -90,7 +97,9 @@ def region_text(doc: fitz.Document, markers: list, i: int) -> str:
 # Reference pages printed after the last question (chemistry and biology): their
 # numbered tables would otherwise be read as extra questions.
 APPENDIX = re.compile(
-    r"^(Qualitative analysis notes|Important values, constants and standards|The Periodic Table of Elements)\s*$",
+    # A second cover page means the file bundles another paper after this one.
+    r"^(Qualitative analysis notes|Important values, constants and standards|The Periodic Table of Elements"
+    r"|READ THESE INSTRUCTIONS FIRST)\s*$",
     re.IGNORECASE,
 )
 
@@ -167,8 +176,16 @@ def line_at(doc: fitz.Document, m) -> str:
 
 def not_table_row(doc: fitz.Document, markers: list) -> list:
     """A numbered row of a results table ("3  10.10  35.10") looks like an inline
-    question start; real questions continue with words or a part label."""
-    return [m for m in markers if not re.match(r"^\d{1,2}(?: [±–-]?[0-9][0-9.,]*){2}", line_at(doc, m))]
+    question start. Question numbers are bold and table cells are not, so only plain
+    numbers are dropped (maths questions often begin with numbers: "5  2.6 × 3.1")."""
+    # Numbered rows of a dichotomous key ("3 (b) leaflets are not present ... go to 5")
+    # are bold too, but a question never starts at part (b).
+    return [
+        m
+        for m in markers
+        if not re.match(r"^\d{1,2}\s*\([b-h]\)", line_at(doc, m))
+        and (is_bold(doc, m) or not re.match(r"^\d{1,2}(?: [±–-]?[0-9][0-9.,]*){2}", line_at(doc, m)))
+    ]
 
 
 def prefer_bold(doc: fitz.Document, markers: list) -> list:
@@ -346,6 +363,19 @@ def strip_running_header(pages: list[ed.PageInfo]) -> None:
             # The second header line (session, syllabus code, paper number) follows directly.
             second = [it for it in p.lines if cut < it.rect.y0 < cut + 16 and it.rect.x0 > 150]
             cut = max([cut] + [it.rect.y1 for it in second])
+        # Since 2017 the header is '0580/22 | Cambridge IGCSE – Mark Scheme | May/June
+        # 2024' (with 'PUBLISHED' under it) and each page repeats the column headings.
+        modern = [
+            it
+            for it in p.lines
+            if it.rect.y0 < 60 and re.search(r"Mark Scheme|^PUBLISHED$|^\d{4}/\d{2}$|^(\w+/\w+|\w+) \d{4}$", it.text)
+        ]
+        if modern:
+            cut = max([cut] + [it.rect.y1 for it in modern])
+            heading = [it for it in p.lines if cut < it.rect.y0 < cut + 40 and TABLE_HEAD.match(it.text)]
+            if heading:
+                row = [it for it in p.lines if abs(it.rect.y0 - heading[0].rect.y0) < 4]
+                cut = max(it.rect.y1 for it in row) + 4
         footer = p.rect.height - 48
         p.content = [it for it in p.content if it.rect.y0 > cut + 1 and it.rect.y1 < footer]
 

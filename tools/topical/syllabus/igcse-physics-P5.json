@@ -1,0 +1,140 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Motion, forces and energy",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Physical quantities and measurement"
+        },
+        {
+          "id": "1.2",
+          "title": "Motion"
+        },
+        {
+          "id": "1.3",
+          "title": "Mass and weight"
+        },
+        {
+          "id": "1.4",
+          "title": "Density"
+        },
+        {
+          "id": "1.5",
+          "title": "Forces, moments and centre of gravity"
+        },
+        {
+          "id": "1.6",
+          "title": "Momentum"
+        },
+        {
+          "id": "1.7",
+          "title": "Energy, work and power"
+        },
+        {
+          "id": "1.8",
+          "title": "Pressure"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Thermal physics",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Kinetic particle model of matter"
+        },
+        {
+          "id": "2.2",
+          "title": "Thermal properties and temperature"
+        },
+        {
+          "id": "2.3",
+          "title": "Transfer of thermal energy"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Waves",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "General properties of waves"
+        },
+        {
+          "id": "3.2",
+          "title": "Light"
+        },
+        {
+          "id": "3.3",
+          "title": "Electromagnetic spectrum"
+        },
+        {
+          "id": "3.4",
+          "title": "Sound"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Electricity and magnetism",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Simple phenomena of magnetism"
+        },
+        {
+          "id": "4.2",
+          "title": "Electrical quantities"
+        },
+        {
+          "id": "4.3",
+          "title": "Electric circuits"
+        },
+        {
+          "id": "4.4",
+          "title": "Electrical safety"
+        },
+        {
+          "id": "4.5",
+          "title": "Electromagnetic effects"
+        },
+        {
+          "id": "4.6",
+          "title": "Electronics and logic gates (older syllabus)"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Nuclear physics",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "The nuclear model of the atom"
+        },
+        {
+          "id": "5.2",
+          "title": "Radioactivity"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Space physics",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Earth and the Solar System"
+        },
+        {
+          "id": "6.2",
+          "title": "Stars and the Universe"
+        }
+      ]
+    }
+  ]
+}

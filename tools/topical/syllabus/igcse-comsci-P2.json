@@ -1,0 +1,72 @@
+{
+  "topics": [
+    {
+      "id": "7",
+      "title": "Algorithm design and problem-solving",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Development life cycle and decomposition"
+        },
+        {
+          "id": "7.2",
+          "title": "Flowcharts and pseudocode algorithms"
+        },
+        {
+          "id": "7.3",
+          "title": "Standard methods: searching, sorting, counting and totalling"
+        },
+        {
+          "id": "7.4",
+          "title": "Validation, verification and test data"
+        },
+        {
+          "id": "7.5",
+          "title": "Trace tables and finding errors"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Programming",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Programming concepts"
+        },
+        {
+          "id": "8.2",
+          "title": "Arrays"
+        },
+        {
+          "id": "8.3",
+          "title": "File handling"
+        },
+        {
+          "id": "8.4",
+          "title": "Pre-release programming task (older syllabus)"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Databases",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Databases and SQL"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Boolean logic",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Logic gates, circuits and truth tables"
+        }
+      ]
+    }
+  ]
+}

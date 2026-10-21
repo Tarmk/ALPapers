@@ -1,0 +1,1842 @@
+{
+ "June 2008|1": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "June 2008|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.1"
+  }
+ ],
+ "June 2008|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.1"
+  }
+ ],
+ "June 2008|4": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2009|1": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.1",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "June 2009|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.1"
+  }
+ ],
+ "June 2010 (v1)|1": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.2"
+  }
+ ],
+ "June 2010 (v1)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2010 (v2)|1": [
+  {
+   "topicId": "7",
+   "subtopicId": "7.3"
+  }
+ ],
+ "June 2010 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2"
+  }
+ ],
+ "June 2010 (v3)|1": [
+  {
+   "topicId": "7",
+   "subtopicId": "7.3"
+  }
+ ],
+ "June 2010 (v3)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2"
+  }
+ ],
+ "June 2011 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2011 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2011 (v2)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2011 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2012 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2012 (v1)|2": [
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2012 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2012 (v2)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2012 (v2)|3": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "June 2012 (v3)|1": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "June 2012 (v3)|2": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "June 2013 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2013 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "19",
+   "subtopicId": "19.3",
+   "focus": "Part (d)"
+  }
+ ],
+ "June 2013 (v1)|3": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.5"
+  }
+ ],
+ "June 2013 (v2)|1": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "June 2013 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.1",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "June 2013 (v2)|3": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "June 2013 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2013 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2013 (v3)|3": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2014 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2014 (v1)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.1",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Part (d)"
+  }
+ ],
+ "June 2014 (v2)|1": [
+  {
+   "topicId": "7",
+   "subtopicId": "7.3"
+  }
+ ],
+ "June 2014 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2",
+   "focus": "Parts (a), (b), (c), (e)"
+  },
+  {
+   "topicId": "8",
+   "subtopicId": "8.2",
+   "focus": "Part (d)"
+  }
+ ],
+ "June 2014 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2014 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "June 2015 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2015 (v1)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.2"
+  }
+ ],
+ "June 2015 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2015 (v2)|2": [
+  {
+   "topicId": "17",
+   "subtopicId": "17.2"
+  }
+ ],
+ "June 2015 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2015 (v3)|2": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "June 2016 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2016 (v1)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.1"
+  }
+ ],
+ "June 2016 (v2)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2016 (v2)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "June 2016 (v3)|1": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "June 2016 (v3)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.1"
+  }
+ ],
+ "June 2016 (v3)|3": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.1"
+  }
+ ],
+ "June 2017 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2017 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "12",
+   "subtopicId": "12.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2017 (v2)|1": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "June 2017 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2"
+  }
+ ],
+ "June 2017 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2017 (v3)|2": [
+  {
+   "topicId": "7",
+   "subtopicId": "7.4",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "5",
+   "subtopicId": "5.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2018 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2018 (v1)|2": [
+  {
+   "topicId": "19",
+   "subtopicId": "19.3",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2018 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "June 2018 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "6",
+   "subtopicId": "6.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2018 (v3)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2018 (v3)|2": [
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (d)"
+  }
+ ],
+ "June 2019 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2019 (v1)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2019 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "June 2019 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "June 2019 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "5",
+   "subtopicId": "5.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2019 (v3)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "9",
+   "subtopicId": "9.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2020 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2020 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.3",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2020 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2020 (v2)|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2020 (v3)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2020 (v3)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2021 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2021 (v1)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.1",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "9",
+   "subtopicId": "9.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2021 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2021 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2021 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2021 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "6",
+   "subtopicId": "6.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2022 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2022 (v1)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.2",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "June 2022 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2022 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2022 (v3)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2022 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "5",
+   "subtopicId": "5.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2023 (v1)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "June 2023 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "3",
+   "subtopicId": "3.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2023 (v2)|1": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "June 2023 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2"
+  }
+ ],
+ "June 2023 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2023 (v3)|2": [
+  {
+   "topicId": "7",
+   "subtopicId": "7.1",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2024 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2024 (v1)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "June 2024 (v1)|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "5",
+   "subtopicId": "5.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2024 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2024 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (b)"
+  },
+  {
+   "topicId": "14",
+   "subtopicId": "14.5",
+   "focus": "Part (c)"
+  }
+ ],
+ "June 2024 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2024 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "12",
+   "subtopicId": "12.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2025 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2025 (v1)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2025 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2025 (v2)|2": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2025 (v2)|3": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "June 2025 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "June 2025 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "June 2026 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "June 2026 (v1)|2": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "June 2026 (v1)|3": [
+  {
+   "topicId": "20",
+   "subtopicId": "20.1"
+  }
+ ],
+ "June 2026 (v2)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "June 2026 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "June 2026 (v3)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "June 2026 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "5",
+   "subtopicId": "5.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "June 2026 (v3)|3": [
+  {
+   "topicId": "19",
+   "subtopicId": "19.3"
+  }
+ ],
+ "March 2016 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "March 2016 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "March 2017 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "March 2017 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Parts (c), (d)"
+  }
+ ],
+ "March 2018 (v2)|1": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "March 2018 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "11",
+   "subtopicId": "11.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "March 2019 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "March 2019 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "11",
+   "subtopicId": "11.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "March 2020 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "March 2020 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "12",
+   "subtopicId": "12.1",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "March 2021 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "March 2021 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a)(i), (b)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (a)(ii)"
+  }
+ ],
+ "March 2022 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "March 2022 (v2)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "March 2023 (v2)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "March 2023 (v2)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "March 2024 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "March 2024 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "3",
+   "subtopicId": "3.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "March 2025 (v2)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "March 2025 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "March 2026 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "March 2026 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "March 2026 (v2)|3": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "November 2008|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2008|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2009|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2009|2": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "November 2010 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2010 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2010 (v2)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2010 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "12",
+   "subtopicId": "12.1",
+   "focus": "Part (d)"
+  }
+ ],
+ "November 2010 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2010 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b), (c)"
+  },
+  {
+   "topicId": "12",
+   "subtopicId": "12.1",
+   "focus": "Part (d)"
+  }
+ ],
+ "November 2011 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2011 (v1)|2": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "November 2011 (v2)|1": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Parts (a), (b), (d)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2011 (v2)|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2011 (v3)|1": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Parts (a), (b), (d)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2011 (v3)|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2012 (v1)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2012 (v1)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.2"
+  }
+ ],
+ "November 2012 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2012 (v2)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2012 (v2)|3": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2012 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2012 (v3)|2": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2012 (v3)|3": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2013 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2013 (v1)|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2013 (v1)|3": [
+  {
+   "topicId": "1",
+   "subtopicId": "1.3"
+  }
+ ],
+ "November 2013 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2013 (v2)|2": [
+  {
+   "topicId": "18",
+   "subtopicId": "18.1"
+  }
+ ],
+ "November 2013 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2013 (v3)|2": [
+  {
+   "topicId": "18",
+   "subtopicId": "18.1"
+  }
+ ],
+ "November 2014 (v1)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2014 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "8",
+   "subtopicId": "8.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2014 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2014 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (c)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2014 (v2)|3": [
+  {
+   "topicId": "1",
+   "subtopicId": "1.3"
+  }
+ ],
+ "November 2014 (v3)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2014 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2014 (v3)|3": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "November 2015 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2015 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "4",
+   "subtopicId": "4.1",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2015 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2015 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2015 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2015 (v3)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "November 2015 (v3)|3": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.3"
+  }
+ ],
+ "November 2016 (v1)|1": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.4"
+  }
+ ],
+ "November 2016 (v1)|2": [
+  {
+   "topicId": "1",
+   "subtopicId": "1.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2016 (v2)|1": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2016 (v2)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.1"
+  }
+ ],
+ "November 2016 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2016 (v3)|2": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2017 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2017 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2017 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2017 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "8",
+   "subtopicId": "8.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2017 (v3)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2017 (v3)|2": [
+  {
+   "topicId": "14",
+   "subtopicId": "14.5"
+  }
+ ],
+ "November 2018 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2018 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "11",
+   "subtopicId": "11.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2018 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2018 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "18",
+   "subtopicId": "18.1",
+   "focus": "Parts (b), (c)"
+  }
+ ],
+ "November 2018 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2018 (v3)|2": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2019 (v1)|1": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2019 (v1)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.3"
+  }
+ ],
+ "November 2019 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2019 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2019 (v3)|1": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2019 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "6",
+   "subtopicId": "6.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2020 (v1)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2020 (v1)|2": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "November 2020 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2020 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "6",
+   "subtopicId": "6.1",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2020 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2020 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Parts (a), (b)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Part (c)"
+  }
+ ],
+ "November 2021 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.1"
+  }
+ ],
+ "November 2021 (v1)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2021 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2021 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "16",
+   "subtopicId": "16.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2022 (v1)|1": [
+  {
+   "topicId": "4",
+   "subtopicId": "4.1"
+  }
+ ],
+ "November 2022 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2022 (v1)|3": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2022 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2022 (v2)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "8",
+   "subtopicId": "8.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2022 (v3)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2022 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2022 (v3)|3": [
+  {
+   "topicId": "16",
+   "subtopicId": "16.2"
+  }
+ ],
+ "November 2023 (v1)|1": [
+  {
+   "topicId": "18",
+   "subtopicId": "18.2"
+  }
+ ],
+ "November 2023 (v1)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2023 (v2)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2023 (v2)|2": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2023 (v2)|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2023 (v3)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2023 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2",
+   "focus": "Part (a)"
+  },
+  {
+   "topicId": "8",
+   "subtopicId": "8.2",
+   "focus": "Part (b)"
+  }
+ ],
+ "November 2024 (v1)|1": [
+  {
+   "topicId": "3",
+   "subtopicId": "3.2"
+  }
+ ],
+ "November 2024 (v1)|2": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "November 2024 (v1)|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2024 (v2)|1": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2024 (v2)|2": [
+  {
+   "topicId": "6",
+   "subtopicId": "6.1"
+  }
+ ],
+ "November 2024 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2024 (v3)|2": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2025 (v1)|1": [
+  {
+   "topicId": "8",
+   "subtopicId": "8.2"
+  }
+ ],
+ "November 2025 (v1)|2": [
+  {
+   "topicId": "11",
+   "subtopicId": "11.1"
+  }
+ ],
+ "November 2025 (v1)|3": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2025 (v2)|1": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2025 (v2)|2": [
+  {
+   "topicId": "9",
+   "subtopicId": "9.1"
+  }
+ ],
+ "November 2025 (v2)|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ],
+ "November 2025 (v3)|1": [
+  {
+   "topicId": "5",
+   "subtopicId": "5.1"
+  }
+ ],
+ "November 2025 (v3)|2": [
+  {
+   "topicId": "12",
+   "subtopicId": "12.1"
+  }
+ ],
+ "November 2025 (v3)|3": [
+  {
+   "topicId": "2",
+   "subtopicId": "2.2"
+  }
+ ]
+}
