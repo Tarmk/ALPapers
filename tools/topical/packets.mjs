@@ -1,7 +1,7 @@
 // Writes classification packets: the text of every question that still needs a
 // topic label, in chunks, together with the syllabus outline.
 //
-//   node tools/topical/packets.mjs maths-S1 [--chunk 140]
+//   node tools/topical/packets.mjs maths-S1 [--chunk 140] [--chars 1400]
 //   node tools/topical/packets.mjs physics-P2 --all   (include sessions already in the index)
 //
 // Output: offline/work/packets/<key>-<n>.md. Labels come back as
@@ -14,6 +14,8 @@ const read = (p) => JSON.parse(readFileSync(new URL(p, root), "utf8"));
 
 const [key, ...flags] = process.argv.slice(2);
 const chunkSize = Number(flags[flags.indexOf("--chunk") + 1]) || 140;
+// CAIE structured questions run long and later parts are often on other topics.
+const maxChars = Number(flags[flags.indexOf("--chars") + 1]) || (key.startsWith("maths") ? 1400 : 4000);
 const [subject, paper] = [key.slice(0, key.lastIndexOf("-")), key.slice(key.lastIndexOf("-") + 1)];
 
 const syllabus = `tools/topical/syllabus/${key}.json`;
@@ -33,8 +35,7 @@ for (const f of readdirSync(new URL(dir, root))) {
   for (const q of rec.questions) {
     const id = `${rec.session}|${q.number}`;
     if (labelled[id] || !q.images?.length) continue;
-    // CAIE structured questions run long and later parts are often on other topics.
-    const text = (q.text || "").slice(0, subject.startsWith("maths") ? 1400 : 4000);
+    const text = (q.text || "").replace(/\s+/g, " ").slice(0, maxChars);
     const ms = (q.msText || "").slice(0, 220);
     items.push(`### ${id}\n${text}${ms ? `\nMS: ${ms}` : ""}\n`);
   }

@@ -153,6 +153,24 @@ def is_bold(doc: fitz.Document, m) -> bool:
     return False
 
 
+def line_at(doc: fitz.Document, m) -> str:
+    """The text of the marker's row, left to right (table cells are separate lines)."""
+    row = []
+    for block in doc[m.page].get_text("dict")["blocks"]:
+        for line in block.get("lines", []):
+            x0, y0 = line["bbox"][:2]
+            if abs(y0 - m.y0) < 3 and x0 >= m.x0 - 2:
+                row.append((x0, "".join(s["text"] for s in line["spans"])))
+    text = " ".join(t for _, t in sorted(row))
+    return re.sub(r"\s+", " ", text.replace(chr(7), "").replace(chr(0xFFFD), "")).strip()
+
+
+def not_table_row(doc: fitz.Document, markers: list) -> list:
+    """A numbered row of a results table ("3  10.10  35.10") looks like an inline
+    question start; real questions continue with words or a part label."""
+    return [m for m in markers if not re.match(r"^\d{1,2}(?: [±–-]?[0-9][0-9.,]*){2}", line_at(doc, m))]
+
+
 def prefer_bold(doc: fitz.Document, markers: list) -> list:
     """Question numbers are bold; numbered list items inside a question are not.
     When most candidates are bold, drop the plain ones."""
@@ -189,7 +207,7 @@ def qp_markers(doc: fitz.Document) -> list:
     # their own; in_sequence keeps them only where they continue the run.
     have = {(m.page, round(m.y0)) for m in markers}
     weak = [m for m in lone_numbers(doc) if (m.page, round(m.y0)) not in have]
-    markers = in_sequence(prefer_bold(doc, sorted(markers + weak, key=lambda m: (m.page, m.y0))))
+    markers = in_sequence(prefer_bold(doc, not_table_row(doc, sorted(markers + weak, key=lambda m: (m.page, m.y0)))))
     if markers:
         end = appendix_start(doc, markers[0].page)
         if end:
@@ -334,8 +352,10 @@ def strip_running_header(pages: list[ed.PageInfo]) -> None:
 
 def marker_export(doc: fitz.Document, out_dir: Path, prefix: str, url_base: str, old_layout: bool) -> dict[int, dict]:
     pages = [ed.read_page(doc[i], True) for i in range(len(doc))]
+    # Schemes before 2017 repeat a 'Page N | Mark Scheme | Syllabus | Paper' box on
+    # every page, whichever way their questions are labelled.
+    strip_running_header(pages)
     if old_layout:
-        strip_running_header(pages)
         markers = old_ms_markers(pages)
     else:
         markers = table_markers(pages)
@@ -450,6 +470,14 @@ def process(row: dict, ms_only: bool, force: bool) -> dict:
                 f.unlink()
         out_dir.mkdir(parents=True, exist_ok=True)
         qp_images = compact_qp_export(doc, out_dir, url_base)
+    else:
+        # Keep the question images already on disk (q01-1.png, q01-2.png, ...).
+        out_dir, url_base, _ = out_dirs(row, "qp")
+        previous = {q["number"]: q for q in json.loads(work.read_text(encoding="utf-8"))["questions"]} if work.exists() else {}
+        for n in numbers:
+            files = sorted(out_dir.glob(f"q{n:02d}-*.png"), key=lambda f: int(f.stem.split("-")[1])) if out_dir.exists() else []
+            if files:
+                qp_images[n] = {"images": [f"{url_base}/{f.name}" for f in files], "pages": previous.get(n, {}).get("pages", [])}
 
     ms, method = split_ms(row, set(numbers))
     record["msMethod"] = method
