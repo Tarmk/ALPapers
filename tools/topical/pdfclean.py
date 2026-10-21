@@ -75,6 +75,37 @@ def strip_stamps(stream: bytes) -> bytes:
     return bytes(out)
 
 
+MIRROR_LINK = re.compile(r"^https?://(www\.)?(studentbounty|papacambridge|mymathscloud)\.com", re.IGNORECASE)
+
+
+def strip_logo_images(page: fitz.Page) -> bool:
+    """Older mirror copies (StudentBounty, PapaCambridge) paste raster logos onto
+    each page: a corner logo at the top right and banners along the bottom, with a
+    link over some of them. On a page carrying such a link, remove images inside a
+    link, in the top-right corner, or in the footer band; the exam's own figures
+    never sit there."""
+    links = [fitz.Rect(l["from"]) for l in page.get_links() if MIRROR_LINK.match(l.get("uri") or "")]
+    if not links:
+        return False
+    h, w = page.rect.height, page.rect.width
+    removed = set()
+    for info in page.get_image_info(xrefs=True):
+        box = fitz.Rect(info["bbox"])
+        xref = info["xref"]
+        if not xref or xref in removed:
+            continue
+        in_link = any(link.contains(box) or (box & link).get_area() > 0.8 * box.get_area() for link in links)
+        corner = box.x0 >= w - 220 and box.y0 <= 5 and box.y1 <= 210
+        footer = box.y0 >= h - 70
+        if in_link or corner or footer:
+            page.delete_image(xref)
+            removed.add(xref)
+    for link in page.get_links():
+        if MIRROR_LINK.match(link.get("uri") or ""):
+            page.delete_link(link)
+    return bool(removed)
+
+
 def clean_document(doc: fitz.Document) -> int:
     """Strip mirror stamps and boilerplate. Returns the number of pages changed."""
     changed = 0
@@ -88,6 +119,8 @@ def clean_document(doc: fitz.Document) -> int:
             if cleaned != stream:
                 doc.update_stream(xref, cleaned)
                 touched = True
+
+        touched |= strip_logo_images(page)
 
         lines = [
             ("".join(s["text"] for s in line["spans"]).strip(), fitz.Rect(line["bbox"]))

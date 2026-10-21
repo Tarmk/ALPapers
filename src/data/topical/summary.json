@@ -136,5 +136,107 @@
   "topics": 6,
   "sessions": 30,
   "withMarkScheme": 241
+ },
+ "chemistry-P1": {
+  "questions": 4560,
+  "topics": 22,
+  "sessions": 114,
+  "withMarkScheme": 4560
+ },
+ "chemistry-P2": {
+  "questions": 518,
+  "topics": 22,
+  "sessions": 114,
+  "withMarkScheme": 517
+ },
+ "chemistry-P3": {
+  "questions": 519,
+  "topics": 2,
+  "sessions": 185,
+  "withMarkScheme": 509
+ },
+ "chemistry-P4": {
+  "questions": 977,
+  "topics": 38,
+  "sessions": 115,
+  "withMarkScheme": 968
+ },
+ "chemistry-P5": {
+  "questions": 239,
+  "topics": 2,
+  "sessions": 115,
+  "withMarkScheme": 237
+ },
+ "biology-P1": {
+  "questions": 4560,
+  "topics": 12,
+  "sessions": 114,
+  "withMarkScheme": 4560
+ },
+ "biology-P2": {
+  "questions": 680,
+  "topics": 12,
+  "sessions": 114,
+  "withMarkScheme": 678
+ },
+ "biology-P3": {
+  "questions": 371,
+  "topics": 2,
+  "sessions": 183,
+  "withMarkScheme": 366
+ },
+ "biology-P4": {
+  "questions": 1138,
+  "topics": 19,
+  "sessions": 113,
+  "withMarkScheme": 1138
+ },
+ "biology-P5": {
+  "questions": 242,
+  "topics": 2,
+  "sessions": 113,
+  "withMarkScheme": 237
+ },
+ "maths-cie-P1": {
+  "questions": 1223,
+  "topics": 9,
+  "sessions": 114,
+  "withMarkScheme": 1202
+ },
+ "maths-cie-P2": {
+  "questions": 847,
+  "topics": 6,
+  "sessions": 115,
+  "withMarkScheme": 847
+ },
+ "maths-cie-P3": {
+  "questions": 1176,
+  "topics": 9,
+  "sessions": 115,
+  "withMarkScheme": 1172
+ },
+ "maths-cie-M1": {
+  "questions": 800,
+  "topics": 5,
+  "sessions": 115,
+  "withMarkScheme": 798
+ },
+ "maths-cie-M2": {
+  "questions": 477,
+  "topics": 5,
+  "sessions": 69,
+  "withMarkScheme": 461
+ },
+ "maths-cie-S1": {
+  "questions": 784,
+  "topics": 5,
+  "sessions": 115,
+  "withMarkScheme": 781
+ },
+ "maths-cie-S2": {
+  "questions": 784,
+  "topics": 5,
+  "sessions": 114,
+  "withMarkScheme": 784
  }
 }
