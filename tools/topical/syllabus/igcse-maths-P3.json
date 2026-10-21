@@ -1,0 +1,176 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Number",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Types of number and sets"
+        },
+        {
+          "id": "1.2",
+          "title": "Powers, roots, indices and standard form"
+        },
+        {
+          "id": "1.3",
+          "title": "Fractions, decimals and percentages"
+        },
+        {
+          "id": "1.4",
+          "title": "Ratio, proportion and rates"
+        },
+        {
+          "id": "1.5",
+          "title": "Estimation, rounding and bounds"
+        },
+        {
+          "id": "1.6",
+          "title": "Money, interest, growth and decay"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Algebra and graphs",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Algebraic manipulation and factorising"
+        },
+        {
+          "id": "2.2",
+          "title": "Equations and inequalities"
+        },
+        {
+          "id": "2.3",
+          "title": "Sequences"
+        },
+        {
+          "id": "2.4",
+          "title": "Direct and inverse proportion"
+        },
+        {
+          "id": "2.5",
+          "title": "Graphs of functions"
+        },
+        {
+          "id": "2.6",
+          "title": "Functions: composite and inverse"
+        },
+        {
+          "id": "2.7",
+          "title": "Differentiation"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Coordinate geometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Coordinates and straight-line graphs"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Geometry",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Geometrical terms, constructions and similarity"
+        },
+        {
+          "id": "4.2",
+          "title": "Angle properties and circle theorems"
+        },
+        {
+          "id": "4.3",
+          "title": "Symmetry"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Mensuration",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Perimeter, area and volume"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Pythagoras' theorem, right-angled trigonometry and bearings"
+        },
+        {
+          "id": "6.2",
+          "title": "Sine and cosine rules, area of a triangle and 3D problems"
+        },
+        {
+          "id": "6.3",
+          "title": "Trigonometric graphs and equations"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Transformations and vectors",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Transformations"
+        },
+        {
+          "id": "7.2",
+          "title": "Vectors"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Probability",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Probability"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Statistics",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Averages, charts and diagrams"
+        },
+        {
+          "id": "9.2",
+          "title": "Cumulative frequency, histograms and scatter diagrams"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Older syllabus topics",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Matrices (older syllabus)"
+        },
+        {
+          "id": "10.2",
+          "title": "Linear programming (older syllabus)"
+        }
+      ]
+    }
+  ]
+}

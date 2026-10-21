@@ -24,11 +24,16 @@ const PAPERS = {
   "maths-cie": ["P1", "P2", "P3", "M1", "M2", "S1", "S2"],
   chemistry: ["P1", "P2", "P3", "P4", "P5"],
   biology: ["P1", "P2", "P3", "P4", "P5"],
+  "igcse-maths": ["P1", "P2", "P3", "P4"],
+  "igcse-physics": ["P1", "P2", "P3", "P4", "P5", "P6"],
+  "igcse-chemistry": ["P1", "P2", "P3", "P4", "P5", "P6"],
+  "igcse-biology": ["P1", "P2", "P3", "P4", "P5", "P6"],
+  "igcse-comsci": ["P1", "P2"],
 };
 
 // Built from scratch: every question comes from the split output and is labelled in
 // tools/topical/labels. Physics and computer science extend an older reviewed index.
-const FRESH = new Set(["maths", "maths-cie", "chemistry", "biology"]);
+const FRESH = new Set(["maths", "maths-cie", "chemistry", "biology", "igcse-maths", "igcse-physics", "igcse-chemistry", "igcse-biology", "igcse-comsci"]);
 
 const slug = (s) =>
   s.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

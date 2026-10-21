@@ -238,5 +238,149 @@
   "topics": 5,
   "sessions": 114,
   "withMarkScheme": 784
+ },
+ "igcse-maths-P1": {
+  "questions": 2579,
+  "topics": 9,
+  "sessions": 114,
+  "withMarkScheme": 2525
+ },
+ "igcse-maths-P2": {
+  "questions": 2604,
+  "topics": 10,
+  "sessions": 113,
+  "withMarkScheme": 2549
+ },
+ "igcse-maths-P3": {
+  "questions": 1253,
+  "topics": 9,
+  "sessions": 114,
+  "withMarkScheme": 1253
+ },
+ "igcse-maths-P4": {
+  "questions": 1296,
+  "topics": 10,
+  "sessions": 111,
+  "withMarkScheme": 1294
+ },
+ "igcse-physics-P1": {
+  "questions": 4557,
+  "topics": 6,
+  "sessions": 114,
+  "withMarkScheme": 4517
+ },
+ "igcse-physics-P2": {
+  "questions": 2959,
+  "topics": 6,
+  "sessions": 74,
+  "withMarkScheme": 2959
+ },
+ "igcse-physics-P3": {
+  "questions": 1303,
+  "topics": 6,
+  "sessions": 112,
+  "withMarkScheme": 1291
+ },
+ "igcse-physics-P4": {
+  "questions": 1211,
+  "topics": 6,
+  "sessions": 114,
+  "withMarkScheme": 1200
+ },
+ "igcse-physics-P5": {
+  "questions": 452,
+  "topics": 4,
+  "sessions": 113,
+  "withMarkScheme": 447
+ },
+ "igcse-physics-P6": {
+  "questions": 498,
+  "topics": 4,
+  "sessions": 113,
+  "withMarkScheme": 497
+ },
+ "igcse-chemistry-P1": {
+  "questions": 4560,
+  "topics": 12,
+  "sessions": 114,
+  "withMarkScheme": 4440
+ },
+ "igcse-chemistry-P2": {
+  "questions": 2960,
+  "topics": 12,
+  "sessions": 74,
+  "withMarkScheme": 2960
+ },
+ "igcse-chemistry-P3": {
+  "questions": 854,
+  "topics": 12,
+  "sessions": 112,
+  "withMarkScheme": 824
+ },
+ "igcse-chemistry-P4": {
+  "questions": 749,
+  "topics": 12,
+  "sessions": 114,
+  "withMarkScheme": 725
+ },
+ "igcse-chemistry-P5": {
+  "questions": 291,
+  "topics": 8,
+  "sessions": 110,
+  "withMarkScheme": 289
+ },
+ "igcse-chemistry-P6": {
+  "questions": 543,
+  "topics": 11,
+  "sessions": 113,
+  "withMarkScheme": 539
+ },
+ "igcse-biology-P1": {
+  "questions": 4560,
+  "topics": 21,
+  "sessions": 114,
+  "withMarkScheme": 4560
+ },
+ "igcse-biology-P2": {
+  "questions": 2960,
+  "topics": 21,
+  "sessions": 74,
+  "withMarkScheme": 2960
+ },
+ "igcse-biology-P3": {
+  "questions": 962,
+  "topics": 21,
+  "sessions": 112,
+  "withMarkScheme": 953
+ },
+ "igcse-biology-P4": {
+  "questions": 687,
+  "topics": 21,
+  "sessions": 114,
+  "withMarkScheme": 682
+ },
+ "igcse-biology-P5": {
+  "questions": 249,
+  "topics": 17,
+  "sessions": 112,
+  "withMarkScheme": 245
+ },
+ "igcse-biology-P6": {
+  "questions": 269,
+  "topics": 19,
+  "sessions": 113,
+  "withMarkScheme": 269
+ },
+ "igcse-comsci-P1": {
+  "questions": 725,
+  "topics": 8,
+  "sessions": 76,
+  "withMarkScheme": 723
+ },
+ "igcse-comsci-P2": {
+  "questions": 556,
+  "topics": 4,
+  "sessions": 75,
+  "withMarkScheme": 556
  }
 }

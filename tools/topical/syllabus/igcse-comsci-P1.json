@@ -1,0 +1,132 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Data representation",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Number systems"
+        },
+        {
+          "id": "1.2",
+          "title": "Text, sound and images"
+        },
+        {
+          "id": "1.3",
+          "title": "Data storage and compression"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Data transmission",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Types and methods of data transmission"
+        },
+        {
+          "id": "2.2",
+          "title": "Error detection"
+        },
+        {
+          "id": "2.3",
+          "title": "Encryption"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Hardware",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Computer architecture"
+        },
+        {
+          "id": "3.2",
+          "title": "Input and output devices"
+        },
+        {
+          "id": "3.3",
+          "title": "Data storage"
+        },
+        {
+          "id": "3.4",
+          "title": "Network hardware"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Software",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Types of software and interrupts"
+        },
+        {
+          "id": "4.2",
+          "title": "Programming languages, translators and IDEs"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "The internet and its uses",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "The internet and the World Wide Web"
+        },
+        {
+          "id": "5.2",
+          "title": "Digital currency"
+        },
+        {
+          "id": "5.3",
+          "title": "Cyber security"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Automated and emerging technologies",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Automated systems"
+        },
+        {
+          "id": "6.2",
+          "title": "Robotics"
+        },
+        {
+          "id": "6.3",
+          "title": "Artificial intelligence"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Boolean logic",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Logic gates, circuits and truth tables"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Older syllabus topics",
+      "subtopics": [
+        {
+          "id": "11.1",
+          "title": "Ethics, copyright and computer ethics (older syllabus)"
+        }
+      ]
+    }
+  ]
+}
