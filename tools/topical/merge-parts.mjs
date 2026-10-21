@@ -12,7 +12,7 @@ if (!existsSync(dir)) process.exit(0);
 
 const byKey = new Map();
 for (const file of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
-  const key = file.match(/^([a-z]+-[A-Z0-9]+)-/)?.[1];
+  const key = file.match(/^([a-z-]+?-[A-Z][A-Z0-9]*)-/)?.[1];
   if (!key) continue;
   if (!byKey.has(key)) byKey.set(key, []);
   byKey.get(key).push(file);

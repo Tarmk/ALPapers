@@ -1,0 +1,70 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "The Poisson distribution",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "The Poisson distribution"
+        },
+        {
+          "id": "1.2",
+          "title": "Approximations to the binomial and Poisson"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Linear combinations of random variables",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Linear combinations of random variables"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Continuous random variables",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Probability density functions, mean, variance and median"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Sampling and estimation",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Sampling and the distribution of the sample mean"
+        },
+        {
+          "id": "4.2",
+          "title": "Unbiased estimates and confidence intervals"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Hypothesis tests",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Tests for binomial and Poisson"
+        },
+        {
+          "id": "5.2",
+          "title": "Tests for a normal mean"
+        },
+        {
+          "id": "5.3",
+          "title": "Type I and Type II errors"
+        }
+      ]
+    }
+  ]
+}

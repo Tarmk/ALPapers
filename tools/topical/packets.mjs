@@ -14,14 +14,16 @@ const read = (p) => JSON.parse(readFileSync(new URL(p, root), "utf8"));
 
 const [key, ...flags] = process.argv.slice(2);
 const chunkSize = Number(flags[flags.indexOf("--chunk") + 1]) || 140;
-const [subject, paper] = key.split("-");
+const [subject, paper] = [key.slice(0, key.lastIndexOf("-")), key.slice(key.lastIndexOf("-") + 1)];
 
 const syllabus = `tools/topical/syllabus/${key}.json`;
 const topics = existsSync(new URL(syllabus, root)) ? read(syllabus).topics : read(`src/data/topical/${key}.json`).topics;
 const labelled = existsSync(new URL(`tools/topical/labels/${key}.json`, root)) ? read(`tools/topical/labels/${key}.json`) : {};
 const all = flags.includes("--all");
 const known =
-  subject === "maths" || all ? new Set() : new Set(read(`src/data/topical/${key}.json`).questions.map((q) => q.session));
+  all || !existsSync(new URL(`src/data/topical/${key}.json`, root))
+    ? new Set()
+    : new Set(read(`src/data/topical/${key}.json`).questions.map((q) => q.session));
 
 const dir = `offline/work/${subject}/${paper}/`;
 const items = [];
@@ -32,7 +34,7 @@ for (const f of readdirSync(new URL(dir, root))) {
     const id = `${rec.session}|${q.number}`;
     if (labelled[id] || !q.images?.length) continue;
     // CAIE structured questions run long and later parts are often on other topics.
-    const text = (q.text || "").slice(0, subject === "maths" ? 1400 : 4000);
+    const text = (q.text || "").slice(0, subject.startsWith("maths") ? 1400 : 4000);
     const ms = (q.msText || "").slice(0, 220);
     items.push(`### ${id}\n${text}${ms ? `\nMS: ${ms}` : ""}\n`);
   }

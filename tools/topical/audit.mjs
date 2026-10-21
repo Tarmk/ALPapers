@@ -26,10 +26,10 @@ function sample(items, n, seed) {
 mkdirSync(new URL("offline/work/audit/", root), { recursive: true });
 for (const file of readdirSync(new URL("tools/topical/labels/", root)).filter((f) => f.endsWith(".json"))) {
   const key = file.replace(".json", "");
-  const [subject, paper] = key.split("-");
+  const [subject, paper] = [key.slice(0, key.lastIndexOf("-")), key.slice(key.lastIndexOf("-") + 1)];
   const labels = read(`tools/topical/labels/${file}`);
   const topics =
-    subject === "maths" ? read(`tools/topical/syllabus/${key}.json`).topics : read(`src/data/topical/${key}.json`).topics;
+    existsSync(new URL(`tools/topical/syllabus/${key}.json`, root)) ? read(`tools/topical/syllabus/${key}.json`).topics : read(`src/data/topical/${key}.json`).topics;
   const titles = new Map(topics.flatMap((t) => t.subtopics.map((s) => [s.id, s.title])));
   const dir = `offline/work/${subject}/${paper}/`;
   if (!existsSync(new URL(dir, root))) continue;

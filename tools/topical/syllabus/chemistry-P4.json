@@ -1,0 +1,560 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Atomic structure",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Particles in the atom and atomic radius"
+        },
+        {
+          "id": "1.2",
+          "title": "Isotopes"
+        },
+        {
+          "id": "1.3",
+          "title": "Electrons, energy levels and atomic orbitals"
+        },
+        {
+          "id": "1.4",
+          "title": "Ionisation energy"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Atoms, molecules and stoichiometry",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Relative masses of atoms and molecules"
+        },
+        {
+          "id": "2.2",
+          "title": "The mole and the Avogadro constant"
+        },
+        {
+          "id": "2.3",
+          "title": "Formulae and equations"
+        },
+        {
+          "id": "2.4",
+          "title": "Reacting masses, volumes and titration calculations"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Chemical bonding",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Electronegativity and bonding"
+        },
+        {
+          "id": "3.2",
+          "title": "Ionic and metallic bonding"
+        },
+        {
+          "id": "3.3",
+          "title": "Covalent and coordinate bonding"
+        },
+        {
+          "id": "3.4",
+          "title": "Shapes of molecules"
+        },
+        {
+          "id": "3.5",
+          "title": "Intermolecular forces"
+        },
+        {
+          "id": "3.6",
+          "title": "Dot-and-cross diagrams"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "States of matter",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "The gaseous state and the ideal gas equation"
+        },
+        {
+          "id": "4.2",
+          "title": "Bonding and structure (giant and simple lattices)"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Chemical energetics",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Enthalpy change and calorimetry"
+        },
+        {
+          "id": "5.2",
+          "title": "Hess's law and bond energies"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Electrochemistry",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Redox processes and oxidation numbers"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Equilibria",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Chemical equilibria, Kc and Kp"
+        },
+        {
+          "id": "7.2",
+          "title": "Brønsted–Lowry acids and bases"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Reaction kinetics",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Rate of reaction and the Boltzmann distribution"
+        },
+        {
+          "id": "8.2",
+          "title": "Catalysts"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "The Periodic Table: chemical periodicity",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Periodicity of physical properties"
+        },
+        {
+          "id": "9.2",
+          "title": "Periodicity of chemical properties (oxides and chlorides)"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Group 2",
+      "subtopics": [
+        {
+          "id": "10.1",
+          "title": "Similarities and trends in Group 2"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Group 17",
+      "subtopics": [
+        {
+          "id": "11.1",
+          "title": "Physical and chemical properties of the halogens"
+        },
+        {
+          "id": "11.2",
+          "title": "Hydrogen halides and halide ions"
+        },
+        {
+          "id": "11.3",
+          "title": "Reactions of chlorine"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Nitrogen and sulfur",
+      "subtopics": [
+        {
+          "id": "12.1",
+          "title": "Nitrogen, ammonia and nitrogen oxides"
+        },
+        {
+          "id": "12.2",
+          "title": "Sulfur and sulfur dioxide"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Introduction to organic chemistry",
+      "subtopics": [
+        {
+          "id": "13.1",
+          "title": "Formulae, functional groups and naming"
+        },
+        {
+          "id": "13.2",
+          "title": "Characteristic organic reactions and mechanisms"
+        },
+        {
+          "id": "13.3",
+          "title": "Isomerism (structural and stereoisomerism)"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Hydrocarbons",
+      "subtopics": [
+        {
+          "id": "14.1",
+          "title": "Alkanes"
+        },
+        {
+          "id": "14.2",
+          "title": "Alkenes"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Halogen compounds",
+      "subtopics": [
+        {
+          "id": "15.1",
+          "title": "Halogenoalkanes"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Hydroxy compounds",
+      "subtopics": [
+        {
+          "id": "16.1",
+          "title": "Alcohols"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Carbonyl compounds",
+      "subtopics": [
+        {
+          "id": "17.1",
+          "title": "Aldehydes and ketones"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Carboxylic acids and derivatives",
+      "subtopics": [
+        {
+          "id": "18.1",
+          "title": "Carboxylic acids"
+        },
+        {
+          "id": "18.2",
+          "title": "Esters"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Nitrogen compounds",
+      "subtopics": [
+        {
+          "id": "19.1",
+          "title": "Amines"
+        },
+        {
+          "id": "19.2",
+          "title": "Nitriles and hydroxynitriles"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Polymerisation",
+      "subtopics": [
+        {
+          "id": "20.1",
+          "title": "Addition polymerisation"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Organic synthesis",
+      "subtopics": [
+        {
+          "id": "21.1",
+          "title": "Multi-step synthesis routes"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Analytical techniques",
+      "subtopics": [
+        {
+          "id": "22.1",
+          "title": "Infrared spectroscopy"
+        },
+        {
+          "id": "22.2",
+          "title": "Mass spectrometry"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Chemical energetics (A Level)",
+      "subtopics": [
+        {
+          "id": "23.1",
+          "title": "Lattice energy and Born–Haber cycles"
+        },
+        {
+          "id": "23.2",
+          "title": "Enthalpies of solution and hydration"
+        },
+        {
+          "id": "23.3",
+          "title": "Entropy change"
+        },
+        {
+          "id": "23.4",
+          "title": "Gibbs free energy change"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Electrochemistry (A Level)",
+      "subtopics": [
+        {
+          "id": "24.1",
+          "title": "Electrolysis and the Faraday constant"
+        },
+        {
+          "id": "24.2",
+          "title": "Electrode potentials, cell potentials and the Nernst equation"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Equilibria (A Level)",
+      "subtopics": [
+        {
+          "id": "25.1",
+          "title": "pH, Ka and buffer solutions"
+        },
+        {
+          "id": "25.2",
+          "title": "Solubility product"
+        },
+        {
+          "id": "25.3",
+          "title": "Partition coefficients"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Reaction kinetics (A Level)",
+      "subtopics": [
+        {
+          "id": "26.1",
+          "title": "Rate equations, orders and rate constants"
+        },
+        {
+          "id": "26.2",
+          "title": "Mechanisms and catalysis"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Group 2 (A Level)",
+      "subtopics": [
+        {
+          "id": "27.1",
+          "title": "Thermal stability and solubility of Group 2 compounds"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Transition elements",
+      "subtopics": [
+        {
+          "id": "28.1",
+          "title": "Properties and electronic configurations"
+        },
+        {
+          "id": "28.2",
+          "title": "Ligands, complexes and ligand exchange"
+        },
+        {
+          "id": "28.3",
+          "title": "Colour of complexes and d-orbital splitting"
+        },
+        {
+          "id": "28.4",
+          "title": "Stereoisomerism in complexes"
+        },
+        {
+          "id": "28.5",
+          "title": "Redox reactions and stability constants"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Organic chemistry (A Level)",
+      "subtopics": [
+        {
+          "id": "29.1",
+          "title": "Naming, functional groups and optical isomerism"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Arenes",
+      "subtopics": [
+        {
+          "id": "30.1",
+          "title": "Benzene and methylbenzene: electrophilic substitution"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Halogenoarenes",
+      "subtopics": [
+        {
+          "id": "31.1",
+          "title": "Halogenoarenes"
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Hydroxy compounds (A Level)",
+      "subtopics": [
+        {
+          "id": "32.1",
+          "title": "Phenol and its reactions"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Carboxylic acids and derivatives (A Level)",
+      "subtopics": [
+        {
+          "id": "33.1",
+          "title": "Acidity of carboxylic acids"
+        },
+        {
+          "id": "33.2",
+          "title": "Acyl chlorides"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Nitrogen compounds (A Level)",
+      "subtopics": [
+        {
+          "id": "34.1",
+          "title": "Amines, phenylamine and azo dyes"
+        },
+        {
+          "id": "34.2",
+          "title": "Amides"
+        },
+        {
+          "id": "34.3",
+          "title": "Amino acids, peptides and electrophoresis"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "Polymerisation (A Level)",
+      "subtopics": [
+        {
+          "id": "35.1",
+          "title": "Condensation polymers"
+        },
+        {
+          "id": "35.2",
+          "title": "Predicting polymer type and degradable polymers"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Organic synthesis (A Level)",
+      "subtopics": [
+        {
+          "id": "36.1",
+          "title": "Synthetic routes and chiral drugs"
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "title": "Analytical techniques (A Level)",
+      "subtopics": [
+        {
+          "id": "37.1",
+          "title": "Chromatography (TLC and GLC)"
+        },
+        {
+          "id": "37.2",
+          "title": "Carbon-13 NMR spectroscopy"
+        },
+        {
+          "id": "37.3",
+          "title": "Proton NMR spectroscopy"
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "title": "Applications of chemistry (older syllabus)",
+      "subtopics": [
+        {
+          "id": "38.1",
+          "title": "Chemistry of life: proteins, enzymes and DNA"
+        },
+        {
+          "id": "38.2",
+          "title": "Applications of analytical chemistry"
+        },
+        {
+          "id": "38.3",
+          "title": "Design and materials"
+        }
+      ]
+    }
+  ]
+}

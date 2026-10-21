@@ -1,0 +1,142 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Algebra",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "The modulus function"
+        },
+        {
+          "id": "1.2",
+          "title": "Polynomials, factor and remainder theorems"
+        },
+        {
+          "id": "1.3",
+          "title": "Partial fractions"
+        },
+        {
+          "id": "1.4",
+          "title": "Binomial expansion for rational n"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Logarithmic and exponential functions",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Logarithms and exponential equations"
+        },
+        {
+          "id": "2.2",
+          "title": "Reducing to linear form"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Reciprocal functions and identities"
+        },
+        {
+          "id": "3.2",
+          "title": "Addition formulae, double angles and R cos(θ ± α)"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Product, quotient and chain rules"
+        },
+        {
+          "id": "4.2",
+          "title": "Parametric and implicit differentiation"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Standard integrals"
+        },
+        {
+          "id": "5.2",
+          "title": "Substitution and integration by parts"
+        },
+        {
+          "id": "5.3",
+          "title": "Integration with partial fractions"
+        },
+        {
+          "id": "5.4",
+          "title": "Trapezium rule"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Numerical solution of equations",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Locating roots and iteration"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Vectors",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Vector geometry and lines"
+        },
+        {
+          "id": "7.2",
+          "title": "Planes (older syllabus)"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Differential equations",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Separable differential equations"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Complex numbers",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Complex arithmetic and the Argand diagram"
+        },
+        {
+          "id": "9.2",
+          "title": "Loci in the Argand diagram"
+        },
+        {
+          "id": "9.3",
+          "title": "Polynomial equations with complex roots"
+        }
+      ]
+    }
+  ]
+}

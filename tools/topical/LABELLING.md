@@ -40,3 +40,18 @@ Topic and subtopic ids come from the paper's outline (in the packet, from
 Before handing back, check that every packet header is a key, every subtopic
 belongs to its topic, and no question repeats a subtopic. `build.mjs` repeats
 these checks and reports anything left over.
+
+## Cambridge sciences and 9709
+
+- **Multiple choice (Paper 1).** One label per question, never a `focus`.
+- **A Level structured papers (Paper 4)** list the AS topics too. Use the A Level
+  subtopic when the question tests A Level content (a Born–Haber cycle is 23.1, not
+  5.2); use an AS subtopic only when the part is purely AS content.
+- **Practical papers (Paper 3)** are labelled by the experiment: a titration is 1.1
+  however the results are later used, and a qualitative-analysis question is 2.1 or
+  2.2. Biology drawing and graticule work is topic 2.
+- **Planning papers (Paper 5)** are labelled by the skill most of the marks test.
+  Split into planning and analysis only when both are substantial.
+- **Older syllabus.** Content no longer in the syllabus (chemistry applications,
+  biology crop plants, ecology, 9709 planes) goes under the topic marked
+  "(older syllabus)"; anything else goes under the closest current subtopic.

@@ -1,0 +1,122 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Quadratics",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Quadratics: completing the square, discriminant and inequalities"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Functions",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Domain, range, composite and inverse functions"
+        },
+        {
+          "id": "2.2",
+          "title": "Transformations of graphs"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Coordinate geometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Straight lines"
+        },
+        {
+          "id": "3.2",
+          "title": "Circles"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Circular measure",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Radians, arc length and sector area"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Trigonometric graphs and exact values"
+        },
+        {
+          "id": "5.2",
+          "title": "Identities and equations"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Series",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Binomial expansion"
+        },
+        {
+          "id": "6.2",
+          "title": "Arithmetic and geometric progressions"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "7.1",
+          "title": "Differentiation and the chain rule"
+        },
+        {
+          "id": "7.2",
+          "title": "Tangents, normals and stationary points"
+        },
+        {
+          "id": "7.3",
+          "title": "Rates of change"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "8.1",
+          "title": "Integration and finding a curve's equation"
+        },
+        {
+          "id": "8.2",
+          "title": "Areas and volumes of revolution"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Vectors (older syllabus)",
+      "subtopics": [
+        {
+          "id": "9.1",
+          "title": "Vectors in two and three dimensions"
+        }
+      ]
+    }
+  ]
+}
