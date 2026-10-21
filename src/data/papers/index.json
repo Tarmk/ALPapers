@@ -1,4 +1,58 @@
 {
+ "biology": {
+  "P1": {
+   "title": "Multiple Choice",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "AS Level Structured Questions",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P3": {
+   "title": "Advanced Practical Skills",
+   "sessions": 183,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "A Level Structured Questions",
+   "sessions": 113,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Planning, Analysis and Evaluation",
+   "sessions": 113,
+   "years": "2008–2026"
+  }
+ },
+ "chemistry": {
+  "P1": {
+   "title": "Multiple Choice",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "AS Level Structured Questions",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P3": {
+   "title": "Advanced Practical Skills",
+   "sessions": 185,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "A Level Structured Questions",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Planning, Analysis and Evaluation",
+   "sessions": 115,
+   "years": "2008–2026"
+  }
+ },
  "comsci": {
   "P1": {
    "title": "Theory Fundamentals (AS)",
@@ -19,6 +73,43 @@
    "title": "Further Problem-solving and Programming (A Level)",
    "sessions": 32,
    "years": "2021–2026"
+  }
+ },
+ "maths-cie": {
+  "P1": {
+   "title": "Pure Mathematics 1",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "Pure Mathematics 2",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "P3": {
+   "title": "Pure Mathematics 3",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "M1": {
+   "title": "Mechanics",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "M2": {
+   "title": "Mechanics 2 (until 2019)",
+   "sessions": 69,
+   "years": "2008–2019"
+  },
+  "S1": {
+   "title": "Probability and Statistics 1",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "S2": {
+   "title": "Probability and Statistics 2",
+   "sessions": 114,
+   "years": "2008–2026"
   }
  },
  "maths": {
