@@ -1,0 +1,28 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Planning",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Planning an investigation: variables, method and safety"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Analysis and evaluation",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Processing data, graphs and statistics"
+        },
+        {
+          "id": "2.2",
+          "title": "Conclusions and evaluation"
+        }
+      ]
+    }
+  ]
+}

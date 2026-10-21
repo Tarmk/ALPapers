@@ -1,0 +1,74 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Forces and equilibrium",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Resolving forces and equilibrium"
+        },
+        {
+          "id": "1.2",
+          "title": "Friction"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Kinematics of motion in a straight line",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Constant acceleration"
+        },
+        {
+          "id": "2.2",
+          "title": "Displacement-time and velocity-time graphs"
+        },
+        {
+          "id": "2.3",
+          "title": "Variable acceleration using calculus"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Momentum",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Conservation of momentum and collisions"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Newton's laws of motion",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Newton's second law"
+        },
+        {
+          "id": "4.2",
+          "title": "Connected particles and pulleys"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Energy, work and power",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Work and energy"
+        },
+        {
+          "id": "5.2",
+          "title": "Power"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Split Cambridge (CAIE) physics and computer science papers for topical mode.
+Split Cambridge (CAIE) papers for topical mode.
 
 Question papers are cut at the original tools/extract-questions splitter's question
 markers, then cropped to the printed question like the Edexcel papers: page
@@ -35,7 +35,15 @@ import split_edexcel as ed  # noqa: E402
 from common import PUBLIC_TOPICAL, WORK_ROOT, load_registry, pdf_path  # noqa: E402
 from pdfclean import clean_document  # noqa: E402
 
-FOLDER = {"physics": ("physics-cie", "PHY-"), "comsci": ("comsci-cie", "")}
+FOLDER = {
+    "physics": ("physics-cie", "PHY-"),
+    "comsci": ("comsci-cie", ""),
+    "chemistry": ("chemistry-cie", ""),
+    "biology": ("biology-cie", ""),
+    "maths-cie": ("maths-cie", ""),
+}
+# Paper 1 of the sciences is multiple choice: its mark scheme is one answer table.
+MULTIPLE_CHOICE = {("physics", "P1"), ("chemistry", "P1"), ("biology", "P1")}
 
 
 def out_dirs(row: dict, kind: str) -> tuple[Path, str, str]:
@@ -79,12 +87,114 @@ def region_text(doc: fitz.Document, markers: list, i: int) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+# Reference pages printed after the last question (chemistry and biology): their
+# numbered tables would otherwise be read as extra questions.
+APPENDIX = re.compile(
+    r"^(Qualitative analysis notes|Important values, constants and standards|The Periodic Table of Elements)\s*$",
+    re.IGNORECASE,
+)
+
+
+def appendix_start(doc: fitz.Document, after_page: int) -> tuple[int, float] | None:
+    for pi in range(after_page + 1, len(doc)):
+        for block in doc[pi].get_text("dict")["blocks"]:
+            for line in block.get("lines", []):
+                text = "".join(s["text"] for s in line["spans"]).strip()
+                if APPENDIX.match(text):
+                    return pi, line["bbox"][1]
+    return None
+
+
+def fill_gaps(doc: fitz.Document, markers: list) -> list:
+    """A lone number followed by a diagram or formula fails the 'question text follows'
+    test. When n-1 and n+1 were found, take a lone n in the margin between them; also
+    look once past the last question found (before any reference pages)."""
+    found = {m.num: m for m in markers}
+    if not found:
+        return markers
+    end = appendix_start(doc, min(m.page for m in markers))
+    last = max(found)
+    for n in range(2, last + 2):
+        if n in found or n - 1 not in found or (n <= last and n + 1 not in found):
+            continue
+        lo = found[n - 1]
+        hi = found.get(n + 1) or (legacy.QuestionMarker(num=0, page=end[0], y0=end[1], y1=end[1], x0=0, x1=0) if end else None)
+        for pi in range(lo.page, (hi.page if hi else len(doc) - 1) + 1):
+            for block in doc[pi].get_text("dict")["blocks"]:
+                for line in block.get("lines", []):
+                    x0, y0, x1, y1 = line["bbox"]
+                    text = "".join(s["text"] for s in line["spans"]).replace("\x07", "").replace("\ufffd", "").strip()
+                    after_lo = pi > lo.page or y0 > lo.y0 + 5
+                    before_hi = hi is None or pi < hi.page or y0 < hi.y0 - 5
+                    if text == str(n) and 35 <= x0 <= 65 and 46 <= y0 <= 760 and after_lo and before_hi and n not in found:
+                        found[n] = legacy.QuestionMarker(num=n, page=pi, y0=y0, y1=y1, x0=x0, x1=x1)
+    return sorted(found.values(), key=lambda m: (m.page, m.y0))
+
+
+def lone_numbers(doc: fitz.Document) -> list:
+    out = []
+    for pi in range(len(doc)):
+        for block in doc[pi].get_text("dict")["blocks"]:
+            for line in block.get("lines", []):
+                x0, y0, x1, y1 = line["bbox"]
+                text = "".join(s["text"] for s in line["spans"]).replace(chr(7), "").replace(chr(0xFFFD), "").strip()
+                if re.fullmatch(r"\d{1,2}", text) and 35 <= x0 <= 65 and 46 <= y0 <= 760:
+                    out.append(legacy.QuestionMarker(num=int(text), page=pi, y0=y0, y1=y1, x0=x0, x1=x1))
+    return out
+
+
+def is_bold(doc: fitz.Document, m) -> bool:
+    for block in doc[m.page].get_text("dict")["blocks"]:
+        for line in block.get("lines", []):
+            x0, y0 = line["bbox"][:2]
+            if abs(y0 - m.y0) < 2 and abs(x0 - m.x0) < 2 and line["spans"]:
+                span = line["spans"][0]
+                return bool(span["flags"] & 16) or "bold" in span["font"].lower()
+    return False
+
+
+def prefer_bold(doc: fitz.Document, markers: list) -> list:
+    """Question numbers are bold; numbered list items inside a question are not.
+    When most candidates are bold, drop the plain ones."""
+    bold = [is_bold(doc, m) for m in markers]
+    if sum(bold) >= 2 and sum(bold) >= len(markers) / 2:
+        return [m for m, b in zip(markers, bold) if b]
+    return markers
+
+
+def in_sequence(markers: list) -> list:
+    """Questions run 1, 2, 3, ... in reading order. Drop stray numbers (graph axes,
+    "5 minutes" at the start of a line) that break the run; one missing number is
+    tolerated so a single undetected question doesn't lose the rest."""
+    out: list = []
+    pos = -1
+    want = 1
+    while True:
+        later = markers[pos + 1 :]
+        hit = next((m for m in later if m.num == want), None) or next((m for m in later if m.num == want + 1), None)
+        if hit is None:
+            return out
+        out.append(hit)
+        pos = markers.index(hit)
+        want = hit.num + 1
+
+
 def qp_markers(doc: fitz.Document) -> list:
     markers = legacy.find_question_markers(doc)
     cie = legacy.find_question_markers_cambridge_cie(doc)
     if len(cie) >= 2 and len(cie) >= len(markers):
         markers = cie
-    return sorted(markers, key=lambda m: (m.page, m.y0))
+    markers = fill_gaps(doc, sorted(markers, key=lambda m: (m.page, m.y0)))
+    # Lone numbers in the margin (often beside a diagram) are only weak evidence on
+    # their own; in_sequence keeps them only where they continue the run.
+    have = {(m.page, round(m.y0)) for m in markers}
+    weak = [m for m in lone_numbers(doc) if (m.page, round(m.y0)) not in have]
+    markers = in_sequence(prefer_bold(doc, sorted(markers + weak, key=lambda m: (m.page, m.y0))))
+    if markers:
+        end = appendix_start(doc, markers[0].page)
+        if end:
+            markers = [m for m in markers if (m.page, m.y0) < end]
+    return markers
 
 
 # --- compact question images ---------------------------------------------
@@ -99,7 +209,17 @@ CIE_END = re.compile(r"^(Additional page|If you use the following lined page|BLA
 
 def cie_body(page: fitz.Page) -> fitz.Rect:
     h = page.rect.height
-    return fitz.Rect(30, 58, page.rect.width - 30, h - 62)
+    # Some papers (e.g. March 2020) start the text at y=53, just under the centred
+    # page number; the left margin above 58 is otherwise empty.
+    top = 58.0
+    for block in page.get_text("dict")["blocks"]:
+        for line in block.get("lines", []):
+            x0, y0 = line["bbox"][:2]
+            text = "".join(s["text"] for s in line["spans"]).replace(chr(7), "").strip()
+            # Only a question number or part label; barcodes are also set as text here.
+            if x0 < 75 and 46 <= y0 < top and re.match(r"^(\d{1,2}\b|\([a-z]+\))", text):
+                top = y0 - 2
+    return fitz.Rect(30, top, page.rect.width - 30, h - 62)
 
 
 def compact_qp_export(doc: fitz.Document, out_dir: Path, url_base: str) -> dict[int, dict]:
@@ -110,7 +230,7 @@ def compact_qp_export(doc: fitz.Document, out_dir: Path, url_base: str) -> dict[
     end = None
     last = markers[-1]
     for p in pages[last.page:]:
-        hit = next((it for it in p.lines if CIE_END.match(it.text) and (p.index > last.page or it.rect.y0 > last.y)), None)
+        hit = next((it for it in p.lines if (CIE_END.match(it.text) or APPENDIX.match(it.text)) and (p.index > last.page or it.rect.y0 > last.y)), None)
         if hit:
             end = (p.index, hit.rect.y0)
             break
@@ -139,7 +259,7 @@ def compact_qp_export(doc: fitz.Document, out_dir: Path, url_base: str) -> dict[
 # --- pre-2017 mark schemes ------------------------------------------------
 
 
-OLD_MS_LABEL = re.compile(r"^(\d{1,2})(?:\s*\(|\s*$|\s+[A-Za-z(])")
+OLD_MS_LABEL = re.compile(r"^(\d{1,2})\.?(?:\s*$|\s+\S|\s*\()")
 
 
 def old_ms_markers(pages: list[ed.PageInfo]) -> list[ed.Marker]:
@@ -164,25 +284,38 @@ TABLE_LABEL = re.compile(r"^(\d{1,2})\s*(?:\(|$)")
 def table_markers(pages: list[ed.PageInfo]) -> list[ed.Marker]:
     """Labels like 1(a)(i) under a 'Question' column header, wherever that column sits."""
     cands = []
+    last_x = None
     for p in pages:
         heads = [
             it
             for it in p.lines
             if TABLE_HEAD.match(it.text)
-            and it.rect.x0 < 140
+            and it.rect.x0 < 200
             and (
                 " " in it.text.strip()
-                or any(re.match(r"^(Answer|Marks|Scheme)", o.text, re.I) and abs(o.rect.y0 - it.rect.y0) < 30 for o in p.lines)
+                or any(re.match(r"^(Answer|Mark|Scheme|Expected|Guidance)", o.text, re.I) and abs(o.rect.y0 - it.rect.y0) < 30 for o in p.lines)
             )
         ]
-        if not heads:
+        if heads:
+            x, top = heads[0].rect.x0, heads[0].rect.y1 - 2
+        elif last_x is not None:
+            # Some schemes print the header on the first page only.
+            x, top = last_x, 66
+        else:
             continue
-        x = heads[0].rect.x0
+        last_x = x
         for it in p.lines:
-            if x - 22 <= it.rect.x0 <= x + 60 and it.size >= 9 and it.rect.y0 > heads[0].rect.y1 - 2:
+            if x - 22 <= it.rect.x0 <= x + 60 and it.size >= 9 and it.rect.y0 > top:
                 m = TABLE_LABEL.match(it.text)
                 if m:
                     cands.append(ed.Marker(int(m.group(1)), p.index, it.rect.y0))
+    if last_x is None:
+        # No readable header anywhere (some schemes print it one glyph run at a
+        # time): take lone numbers in the left-hand column instead.
+        for p in pages:
+            for it in p.lines:
+                if it.rect.x0 < 140 and it.size >= 9 and it.rect.y0 > 66 and re.fullmatch(r"\d{1,2}", it.text.strip()):
+                    cands.append(ed.Marker(int(it.text.strip()), p.index, it.rect.y0))
     return ed.chain(cands)
 
 
@@ -239,14 +372,34 @@ def run_legacy(doc: fitz.Document, out_dir: Path, prefix: str, mode: str, mc: bo
         return []
 
 
+def open_a4(path: Path) -> fitz.Document:
+    """Every position check here assumes upright A4 pages. A few papers are A3 (some
+    2015-2016 chemistry), and some landscape mark schemes are portrait pages with a
+    /Rotate flag, whose text comes out in unrotated coordinates. Make every page
+    upright, and redraw A3 pages at A4 size."""
+    doc = fitz.open(path)
+    for page in doc:
+        if page.rotation:
+            page.remove_rotation()
+    if max(doc[0].rect.width, doc[0].rect.height) < 1000:
+        return doc
+    scaled = fitz.open()
+    for page in doc:
+        r = page.rect
+        k = 842 / max(r.width, r.height)
+        new = scaled.new_page(width=r.width * k, height=r.height * k)
+        new.show_pdf_page(new.rect, doc, page.number)
+    return scaled
+
+
 def split_ms(row: dict, expected: set[int]) -> tuple[dict[int, dict], str]:
     """Try each layout in its own scratch folder and keep the one that finds the most questions."""
     if not row["ms"] or not pdf_path(row, "ms").exists():
         return {}, "no mark scheme"
     out_dir, url_base, stem = out_dirs(row, "ms")
-    doc = fitz.open(pdf_path(row, "ms"))
+    doc = open_a4(pdf_path(row, "ms"))
     clean_document(doc)
-    mc = row["subject"] == "physics" and row["paper"] == "P1"
+    mc = (row["subject"], row["paper"]) in MULTIPLE_CHOICE
 
     scratch = WORK_ROOT / "_scratch" / out_dir.name
     attempts = {
@@ -283,7 +436,7 @@ def process(row: dict, ms_only: bool, force: bool) -> dict:
         return json.loads(work.read_text(encoding="utf-8"))
     record: dict = {"session": row["session"], "paper": row["paper"], "warnings": [], "questions": []}
 
-    doc = fitz.open(pdf_path(row, "qp"))
+    doc = open_a4(pdf_path(row, "qp"))
     clean_document(doc)
     markers = qp_markers(doc)
     numbers = [m.num for m in markers]

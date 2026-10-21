@@ -1,0 +1,58 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Motion of a projectile",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Projectiles"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Equilibrium of a rigid body",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Centres of mass"
+        },
+        {
+          "id": "2.2",
+          "title": "Moments and equilibrium of rigid bodies"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Uniform motion in a circle",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Circular motion"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hooke's law",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Elastic strings and springs, elastic energy"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Linear motion under a variable force",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Variable forces and differential equations"
+        }
+      ]
+    }
+  ]
+}

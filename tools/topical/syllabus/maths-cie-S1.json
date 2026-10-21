@@ -1,0 +1,66 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Representation of data",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "Diagrams: stem-and-leaf, box plots, histograms, cumulative frequency"
+        },
+        {
+          "id": "1.2",
+          "title": "Measures of location and spread"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Permutations and combinations",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Permutations and combinations"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Probability",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Probability, conditional probability and independence"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Discrete random variables",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Probability distributions, expectation and variance"
+        },
+        {
+          "id": "4.2",
+          "title": "Binomial and geometric distributions"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "The normal distribution",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "The normal distribution"
+        },
+        {
+          "id": "5.2",
+          "title": "Normal approximation to the binomial"
+        }
+      ]
+    }
+  ]
+}

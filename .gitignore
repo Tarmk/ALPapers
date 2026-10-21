@@ -51,3 +51,4 @@ tools/extract-questions/.venv
 
 # Question images: stored in R2 and served from VITE_ASSET_BASE (see tools/topical/sync-media.mjs)
 /media/
+/offline/logs/

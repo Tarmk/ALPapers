@@ -120,7 +120,8 @@ def _next_meaningful_line(lines: list[tuple[str, tuple[float, float, float, floa
     while j < len(lines):
         raw = lines[j][0]
         j += 1
-        s = raw.strip().replace("\u2011", "-").replace("\u2212", "-")
+        # Some 2016-2020 Cambridge PDFs start lines with a \x07 or U+FFFD character.
+        s = raw.replace("\x07", "").replace("\ufffd", "").strip().replace("\u2011", "-").replace("\u2212", "-")
         if not s:
             continue
         sl = s.lstrip("*¬").strip()
@@ -183,12 +184,12 @@ def find_question_markers_cambridge_cie(doc: fitz.Document) -> list[QuestionMark
         page = doc[page_index]
         lines = iter_page_lines(page)
         for li, (_, bbox) in enumerate(lines):
-            t = lines[li][0].strip().replace("\u2011", "-")
+            t = lines[li][0].replace("\x07", "").replace("\ufffd", "").strip().replace("\u2011", "-")
             x0, y0, x1, y1 = bbox
 
             # Real question markers in CIE 9618 papers sit near the left content margin.
             # This excludes centred page numbers, header/footer codes, and most tables/graphs.
-            if not (35 <= x0 <= 65 and 55 <= y0 <= 760):
+            if not (35 <= x0 <= 65 and 46 <= y0 <= 760):
                 continue
 
             sm = solo.match(t)

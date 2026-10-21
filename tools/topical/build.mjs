@@ -5,7 +5,7 @@
 //
 // Physics and computer science keep their existing, reviewed topic labels; this
 // adds new sessions and takes the images (question and mark scheme) from the
-// latest split of each session. Maths indexes
+// latest split of each session. The other subjects' indexes
 // are rebuilt from the split output. Papers whose work folder is absent (e.g. a
 // fresh clone) are left as they are, so the build is safe to run anywhere.
 //
@@ -21,7 +21,14 @@ const PAPERS = {
   physics: ["P1", "P2", "P3", "P4", "P5"],
   comsci: ["P1", "P2", "P3", "P4"],
   maths: ["P1", "P2", "P3", "P4", "S1", "S2", "S3", "M1", "M2", "M3", "D1", "FP1", "FP2", "FP3"],
+  "maths-cie": ["P1", "P2", "P3", "M1", "M2", "S1", "S2"],
+  chemistry: ["P1", "P2", "P3", "P4", "P5"],
+  biology: ["P1", "P2", "P3", "P4", "P5"],
 };
+
+// Built from scratch: every question comes from the split output and is labelled in
+// tools/topical/labels. Physics and computer science extend an older reviewed index.
+const FRESH = new Set(["maths", "maths-cie", "chemistry", "biology"]);
 
 const slug = (s) =>
   s.toLowerCase().replace(/[()]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -110,8 +117,8 @@ function buildCie(subject, paper, work) {
   return data;
 }
 
-function buildMaths(paper, work) {
-  const key = `maths-${paper}`;
+function buildFresh(subject, paper, work) {
+  const key = `${subject}-${paper}`;
   const syllabus = readJson(`tools/topical/syllabus/${key}.json`);
   const labels = readLabels(key);
   const questions = [];
@@ -149,7 +156,7 @@ for (const [subject, papers] of Object.entries(PAPERS)) {
     const file = `src/data/topical/${key}.json`;
     const work = readWork(subject, paper);
     let data;
-    if (work && subject === "maths") data = buildMaths(paper, work);
+    if (work && FRESH.has(subject)) data = buildFresh(subject, paper, work);
     else if (work) data = buildCie(subject, paper, work);
     else if (existsSync(path(file))) data = readJson(file);
     else continue;

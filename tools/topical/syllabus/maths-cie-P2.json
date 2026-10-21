@@ -1,0 +1,84 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "Algebra",
+      "subtopics": [
+        {
+          "id": "1.1",
+          "title": "The modulus function"
+        },
+        {
+          "id": "1.2",
+          "title": "Polynomials, factor and remainder theorems"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Logarithmic and exponential functions",
+      "subtopics": [
+        {
+          "id": "2.1",
+          "title": "Logarithms and exponential equations"
+        },
+        {
+          "id": "2.2",
+          "title": "Reducing to linear form"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Trigonometry",
+      "subtopics": [
+        {
+          "id": "3.1",
+          "title": "Reciprocal functions and identities"
+        },
+        {
+          "id": "3.2",
+          "title": "Addition formulae, double angles and R cos(θ ± α)"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Differentiation",
+      "subtopics": [
+        {
+          "id": "4.1",
+          "title": "Product, quotient and chain rules"
+        },
+        {
+          "id": "4.2",
+          "title": "Parametric and implicit differentiation"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Integration",
+      "subtopics": [
+        {
+          "id": "5.1",
+          "title": "Standard integrals"
+        },
+        {
+          "id": "5.4",
+          "title": "Trapezium rule"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Numerical solution of equations",
+      "subtopics": [
+        {
+          "id": "6.1",
+          "title": "Locating roots and iteration"
+        }
+      ]
+    }
+  ]
+}
