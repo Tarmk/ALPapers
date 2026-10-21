@@ -24,6 +24,22 @@ const SCIENCE = (code) => ({
   },
 });
 
+// The IGCSE sciences were restructured from June 2016: before it, Paper 1 was the
+// only multiple-choice paper and the theory papers were 2 (Core) and 3 (Extended);
+// since, 1 and 2 are Core and Extended multiple choice and 3 and 4 the theory papers.
+const NEW_IGCSE_SCIENCE = 2016;
+const IGCSE_SCIENCE = (code) => ({
+  code,
+  papers: {
+    P1: { description: "Paper 1 - Multiple Choice (Core)", component: () => 1 },
+    P2: { description: "Paper 2 - Multiple Choice (Extended)", component: (y) => (y < NEW_IGCSE_SCIENCE ? null : 2) },
+    P3: { description: "Paper 3 - Theory (Core)", component: (y) => (y < NEW_IGCSE_SCIENCE ? 2 : 3) },
+    P4: { description: "Paper 4 - Theory (Extended)", component: (y) => (y < NEW_IGCSE_SCIENCE ? 3 : 4) },
+    P5: { description: "Paper 5 - Practical Test", component: () => 5 },
+    P6: { description: "Paper 6 - Alternative to Practical", component: () => 6 },
+  },
+});
+
 // 9709 was renumbered in 2020: Mechanics 2 was dropped and statistics moved from 6/7 to 5/6.
 const NEW_9709 = 2020;
 const SYLLABI = {
@@ -39,6 +55,25 @@ const SYLLABI = {
       M2: { description: "Paper 5 - Mechanics 2 (until 2019)", component: (y) => (y < NEW_9709 ? 5 : null) },
       S1: { description: "Paper 5 - Probability and Statistics 1", component: (y) => (y < NEW_9709 ? 6 : 5) },
       S2: { description: "Paper 6 - Probability and Statistics 2", component: (y) => (y < NEW_9709 ? 7 : 6) },
+    },
+  },
+  "igcse-maths": {
+    code: "0580",
+    papers: {
+      P1: { description: "Paper 1 - Core (short answer)", component: () => 1 },
+      P2: { description: "Paper 2 - Extended (short answer)", component: () => 2 },
+      P3: { description: "Paper 3 - Core (structured)", component: () => 3 },
+      P4: { description: "Paper 4 - Extended (structured)", component: () => 4 },
+    },
+  },
+  "igcse-physics": IGCSE_SCIENCE("0625"),
+  "igcse-chemistry": IGCSE_SCIENCE("0620"),
+  "igcse-biology": IGCSE_SCIENCE("0610"),
+  "igcse-comsci": {
+    code: "0478",
+    papers: {
+      P1: { description: "Paper 1 - Computer Systems (Theory)", component: () => 1 },
+      P2: { description: "Paper 2 - Algorithms, Programming and Logic", component: () => 2 },
     },
   },
 };
