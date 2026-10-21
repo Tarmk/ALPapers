@@ -122,6 +122,68 @@ export const SUBJECTS: Subject[] = [
       { label: "A Level", codes: ["P3", "P4"] },
     ],
   },
+  {
+    key: "igcse-maths",
+    name: "Mathematics",
+    short: "IGCSE Maths",
+    board: "cie",
+    level: "igcse",
+    code: "0580",
+    groups: [
+      { label: "Core", codes: ["P1", "P3"] },
+      { label: "Extended", codes: ["P2", "P4"] },
+    ],
+  },
+  {
+    key: "igcse-physics",
+    name: "Physics",
+    short: "IGCSE Physics",
+    board: "cie",
+    level: "igcse",
+    code: "0625",
+    groups: [
+      { label: "Multiple choice", codes: ["P1", "P2"] },
+      { label: "Theory", codes: ["P3", "P4"] },
+      { label: "Practical", codes: ["P5", "P6"] },
+    ],
+  },
+  {
+    key: "igcse-chemistry",
+    name: "Chemistry",
+    short: "IGCSE Chemistry",
+    board: "cie",
+    level: "igcse",
+    code: "0620",
+    groups: [
+      { label: "Multiple choice", codes: ["P1", "P2"] },
+      { label: "Theory", codes: ["P3", "P4"] },
+      { label: "Practical", codes: ["P5", "P6"] },
+    ],
+  },
+  {
+    key: "igcse-biology",
+    name: "Biology",
+    short: "IGCSE Biology",
+    board: "cie",
+    level: "igcse",
+    code: "0610",
+    groups: [
+      { label: "Multiple choice", codes: ["P1", "P2"] },
+      { label: "Theory", codes: ["P3", "P4"] },
+      { label: "Practical", codes: ["P5", "P6"] },
+    ],
+  },
+  {
+    key: "igcse-comsci",
+    name: "Computer Science",
+    short: "IGCSE Computer Science",
+    board: "cie",
+    level: "igcse",
+    code: "0478",
+    groups: [
+      { label: "Papers", codes: ["P1", "P2"] },
+    ],
+  },
 ];
 
 export type PaperSummary = {

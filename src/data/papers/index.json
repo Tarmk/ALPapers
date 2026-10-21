@@ -75,6 +75,136 @@
    "years": "2021–2026"
   }
  },
+ "igcse-biology": {
+  "P1": {
+   "title": "Multiple Choice (Core)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "Multiple Choice (Extended)",
+   "sessions": 74,
+   "years": "2016–2026"
+  },
+  "P3": {
+   "title": "Theory (Core)",
+   "sessions": 112,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "Theory (Extended)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Practical Test",
+   "sessions": 112,
+   "years": "2008–2026"
+  },
+  "P6": {
+   "title": "Alternative to Practical",
+   "sessions": 113,
+   "years": "2008–2026"
+  }
+ },
+ "igcse-chemistry": {
+  "P1": {
+   "title": "Multiple Choice (Core)",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "Multiple Choice (Extended)",
+   "sessions": 74,
+   "years": "2016–2026"
+  },
+  "P3": {
+   "title": "Theory (Core)",
+   "sessions": 112,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "Theory (Extended)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Practical Test",
+   "sessions": 110,
+   "years": "2008–2026"
+  },
+  "P6": {
+   "title": "Alternative to Practical",
+   "sessions": 114,
+   "years": "2008–2026"
+  }
+ },
+ "igcse-comsci": {
+  "P1": {
+   "title": "Computer Systems (Theory)",
+   "sessions": 76,
+   "years": "2015–2026"
+  },
+  "P2": {
+   "title": "Algorithms, Programming and Logic",
+   "sessions": 76,
+   "years": "2015–2026"
+  }
+ },
+ "igcse-maths": {
+  "P1": {
+   "title": "Core (short answer)",
+   "sessions": 115,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "Extended (short answer)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P3": {
+   "title": "Core (structured)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "Extended (structured)",
+   "sessions": 112,
+   "years": "2008–2026"
+  }
+ },
+ "igcse-physics": {
+  "P1": {
+   "title": "Multiple Choice (Core)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P2": {
+   "title": "Multiple Choice (Extended)",
+   "sessions": 74,
+   "years": "2016–2026"
+  },
+  "P3": {
+   "title": "Theory (Core)",
+   "sessions": 112,
+   "years": "2008–2026"
+  },
+  "P4": {
+   "title": "Theory (Extended)",
+   "sessions": 114,
+   "years": "2008–2026"
+  },
+  "P5": {
+   "title": "Practical Test",
+   "sessions": 113,
+   "years": "2008–2026"
+  },
+  "P6": {
+   "title": "Alternative to Practical",
+   "sessions": 113,
+   "years": "2008–2026"
+  }
+ },
  "maths-cie": {
   "P1": {
    "title": "Pure Mathematics 1",
